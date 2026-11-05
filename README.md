@@ -82,6 +82,20 @@ of the authors' experiment or evidence of LLM superiority. Published Table 8A
 observations are shown separately, including documented inconsistencies with the
 paper's narrative. No energy-savings or NECB-compliance claims are inferred.
 
+## Orchestrator agent
+
+Coordinate registered specialists through dependency-aware tasks, isolated handoffs,
+bounded scheduling and explicit completed/failed/blocked/pending states. Use the
+deterministic scheduler or an optional LLM prioritizer. The delivery-team adapter
+connects the forward-deployed and Python/ML engineers when their modules are present.
+
+```bash
+python examples/orchestration/plot_orchestrator.py
+```
+
+See the [orchestrator guide](docs/sphinx/source/orchestrator.rst). Successful routing
+is not independent validation, code execution or deployment authorization.
+
 ## Install and run
 
 From this source checkout (not yet published to PyPI):

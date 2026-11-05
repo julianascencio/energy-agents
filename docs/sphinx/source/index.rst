@@ -16,6 +16,7 @@ scripted tool counts with clearly separated published observations.
    forward_deployed
    installation
    user_guide
+   orchestrator
    professional_roles
    pv_operations
    bess_business
