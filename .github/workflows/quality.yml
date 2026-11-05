@@ -21,3 +21,4 @@ jobs:
       - run: python -m pytest
       - run: python -m build
       - run: energy-agents --output outputs/building_edits
+      - run: energy-agents-pv --output outputs/pv_operations
