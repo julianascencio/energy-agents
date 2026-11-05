@@ -70,6 +70,19 @@ PV_ROLES = (
 )
 
 
-def role_catalogue():
-    """Return independent serialisable copies of implemented role contracts."""
-    return [role.as_dict() for role in PV_ROLES]
+PYTHON_ENGINEER = RoleSpec(
+    id="python_ml_engineer",
+    title="Principal Python, Data Science and ML Engineer",
+    mandate="Turn energy business questions into reproducible, tested Python contributions.",
+    inputs=("task", "repository_context"),
+    tool="propose_files",
+    output="source_bundle",
+    acceptance="Source, independent tests and runnable example; external checks still required.",
+    technology="cross_technology",
+    authority="propose_code_only",
+)
+
+def role_catalogue(*, include_engineering=False):
+    """Return PV contracts; optionally include the independent coding workflow."""
+    roles = (*PV_ROLES, PYTHON_ENGINEER) if include_engineering else PV_ROLES
+    return [role.as_dict() for role in roles]

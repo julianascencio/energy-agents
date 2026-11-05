@@ -1,5 +1,5 @@
 Public API
-==============
+====================================================================================================
 
 Methods
 -----------
@@ -37,6 +37,11 @@ Professional roles and PV operations
 
 .. automodule:: energy_agents.pv.analysis
    :members: run_comparison, export
+
+Python engineering
+------------------
+.. automodule:: energy_agents.python_engineer
+   :members: PythonEngineeringPlanner, run_python_engineer, validate_bundle
 
 BESS business-case tools
 --------------------------
