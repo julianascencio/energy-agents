@@ -196,6 +196,10 @@ Source observations, synthetic examples and measured live runs must remain separ
 Code: MIT. The included paper has its own CC BY attribution and is not relicensed.
 See [literature notes](docs/literature/01_building_energy_agents.md).
 
+## Industrial demand flexibility
+
+Run `energy-agents-flex --output outputs/industrial_flexibility` for an advisory industrial energy manager example. It shifts fixed production batches around on-site solar, import limits and customer prices, accounting for lost export credits and rescheduling fees. Inputs are synthetic. See the [business case](docs/sphinx/source/industrial_flexibility.rst) and runnable demand-flexibility gallery.
+
 ## Wind commissioning business case
 
 The Project Controls Engineer compares dependency-aware acceleration packages

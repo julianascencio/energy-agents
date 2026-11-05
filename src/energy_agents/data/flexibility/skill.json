@@ -1,0 +1,25 @@
+{
+  "id": "industrial-load-shifting",
+  "role": "industrial_energy_manager",
+  "tools": [
+    "optimise_batches",
+    "finish"
+  ],
+  "inputs": "24 UTC hourly load, solar and contracted buy/sell prices; allowed contiguous batch starts; import limit; rescheduling costs",
+  "acceptance": [
+    "all batches retain energy and duration",
+    "baseline is feasible",
+    "net savings include lost export revenue and shift costs",
+    "human approval before execution"
+  ],
+  "edi_awareness": {
+    "repository": "https://github.com/julianascencio/energy-data-insights",
+    "commit": "600db672269079ab8a92224ad5de3cf80e8206bf",
+    "inspected": [
+      "examples/connectors/plot_generation_ree.py",
+      "methods/src/energy_methods/hybrid_dispatch.py"
+    ],
+    "status": "discovery_only",
+    "boundary": "REE national daily generation is not site hourly solar or a retail tariff. Hybrid storage dispatch is not batch scheduling. Obtain site telemetry and the customer tariff before deployment."
+  }
+}

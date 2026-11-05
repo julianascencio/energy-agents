@@ -18,6 +18,7 @@ docs = ["sphinx>=8,<9", "pydata-sphinx-theme>=0.16,<0.17", "sphinx-gallery>=0.19
 
 [project.scripts]
 energy-agents = "energy_agents.analysis:main"
+energy-agents-flex = "energy_agents.flexibility:main"
 energy-agents-pv = "energy_agents.pv.analysis:main"
 energy-agents-commissioning = "energy_agents.commissioning:main"
 
