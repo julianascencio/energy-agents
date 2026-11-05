@@ -17,6 +17,39 @@ Reusable inputs, connectors, domain methods, bounded agent workflows and runnabl
 Documentation links become live after merging and enabling GitHub Pages with the
 **GitHub Actions** source. PR documentation builds are available as workflow artifacts.
 
+## Professional role agents: PV operations
+
+The first role team combines **Performance Engineer, Reliability Engineer,
+Commercial Asset Manager, Maintenance Planner and Technical Asset Manager**.
+A bounded coordinator shares one versioned plant case, enforces role tools and
+handoffs, and checks evidence and accounting before accepting the result.
+
+```bash
+energy-agents-pv --output outputs/pv_operations
+python examples/operations/plot_pv_role_team.py
+```
+
+```python
+from energy_agents.pv import synthetic_pv_case, run_pv_workflow
+
+result = run_pv_workflow(synthetic_pv_case())
+assert result["success"]
+print(result["reports"]["asset_summary"]["data"])
+```
+
+The offline case is **synthetic**, with deterministic/scripted planners. It compares
+baseline, single-planner and five-role execution using identical tools. It reports
+energy deficits, fault associations, conditional recovery value and proposed
+inspections. Missing data and unresolved losses stay visible. No live LLM quality,
+causal diagnosis, field validation or execution authority is claimed.
+
+- [Lifecycle catalogue and agent architecture](docs/sphinx/source/professional_roles.rst)
+- [PV workflow, evidence schema and optional LLM planner](docs/sphinx/source/pv_operations.rst)
+- [Runnable gallery source](examples/operations/plot_pv_role_team.py)
+
+Only the five PV roles are executable in this workflow; the wider renewable
+lifecycle, other technologies and additional agent families are documented plans.
+
 ## First research example: building energy model edits
 
 Shirzadi, Lopez & Stylianou (2026), *Tool-augmented vs. autonomous LLM agents for
