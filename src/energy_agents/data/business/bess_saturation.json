@@ -1,0 +1,35 @@
+{
+  "case_id": "2026-11-05-bess-revenue-saturation",
+  "currency": "EUR",
+  "source": {
+    "url": "https://www.cleanhorizon.com/news/where-are-battery-storage-revenues-heading-in-europe/",
+    "publisher": "Clean Horizon",
+    "published_date": "2026-11-04",
+    "event_date": "2026-10-01",
+    "retrieved_date": "2026-11-05",
+    "classification": "imported_published_model_output_not_metered_revenue",
+    "scope": "Poland, two-hour battery, annualised January-August 2026 index",
+    "gross_eur_per_mw_year": 587000,
+    "ancillary_eur_per_mw_year": 456000,
+    "limitations": "Published modelled gross index, not a project forecast or realised cash flow. Its efficiency assumptions are already embedded; do not apply round-trip efficiency again."
+  },
+  "assumptions": {
+    "classification": "illustrative_user_scenario_not_source_forecast",
+    "power_mw": 10,
+    "duration_hours": 2,
+    "years": 15,
+    "capex_eur": 12000000,
+    "annual_fixed_cost_eur_per_mw": 45000,
+    "availability": 0.95,
+    "annual_revenue_derating": 0.015,
+    "discount_rate": 0.10,
+    "cash_flow_basis": "constant-real-EUR; year-end unlevered pretax cash flows",
+    "excluded": ["tax", "debt", "subsidies", "augmentation", "residual value", "decommissioning", "project-specific market eligibility and dispatch constraints"],
+    "cost_scope": "Illustrative combined recurring O&M, grid and service costs; not a Polish tariff quote"
+  },
+  "scenarios": {
+    "flat_index": {"ancillary_retention": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], "other_retention": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]},
+    "saturation": {"ancillary_retention": [1,0.65,0.35,0.15,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10], "other_retention": [1,0.95,0.9,0.85,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8]},
+    "severe": {"ancillary_retention": [1,0.35,0.10,0,0,0,0,0,0,0,0,0,0,0,0], "other_retention": [1,0.85,0.7,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6]}
+  }
+}

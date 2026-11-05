@@ -21,6 +21,8 @@ energy-agents = "energy_agents.analysis:main"
 energy-agents-pv = "energy_agents.pv.analysis:main"
 energy-agents-commissioning = "energy_agents.commissioning:main"
 
+energy-agents-bess = "energy_agents.business.analysis:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/energy_agents"]
 

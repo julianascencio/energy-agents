@@ -1,5 +1,5 @@
 Public API
-==============
+====================================================================================================
 
 Methods
 -----------
@@ -42,3 +42,16 @@ Commissioning business skill
 -------------------------------
 .. automodule:: energy_agents.commissioning
    :members: reference_case, rank_acceleration, run_commissioning_agent, CommissioningReplayPlanner
+
+Python engineering
+------------------
+.. automodule:: energy_agents.python_engineer
+   :members: PythonEngineeringPlanner, run_python_engineer, validate_bundle
+
+BESS business-case tools
+--------------------------
+.. automodule:: energy_agents.business.bess
+   :members: reference_case, stress_revenues, review_screen, run_bess_agent, BESSReplayPlanner
+
+.. automodule:: energy_agents.business.edi
+   :members: inspect_bess_inventory

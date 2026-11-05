@@ -81,3 +81,16 @@ class CommissioningChatCompletionsPlanner(ChatCompletionsPlanner):
         from importlib.resources import files
         return json.loads(files("energy_agents").joinpath(
             "data/commissioning/skill.json").read_text())["system_prompt"]
+
+
+class BESSChatCompletionsPlanner(ChatCompletionsPlanner):
+    """Optional finance-role planner; complete case is sent to the configured endpoint.
+
+    No live-provider run is implied. The local BESS runner enforces tool authority.
+    """
+
+    @property
+    def instruction_override(self):
+        from importlib.resources import files
+        return json.loads(files("energy_agents").joinpath(
+            "data/business/bess_skill.json").read_text())["system_prompt"]
