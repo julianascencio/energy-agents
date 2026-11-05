@@ -14,6 +14,6 @@ Reproduce: `energy-agents-commissioning --output outputs/wind_commissioning` and
 
 EDI catalogue aa842b959bebe8b4279a449f91176be26f0ad6a5 and source 600db672269079ab8a92224ad5de3cf80e8206bf consulted. No suitable critical-path method found; wind metadata and forecast capability discovered but not executed. No artificial claim of integration.
 
-Branch: `feat/wind-commissioning-revenue`. PR link will be recorded after publication. Leave open for review.
+Branch: `feat/wind-commissioning-revenue`. [PR #5](https://github.com/julianascencio/energy-agents/pull/5). Leave open for review.
 
 Local validation: 69 tests passed; Ruff and diff whitespace checks passed; strict Sphinx/gallery build passed and rendered chart inspected; source and wheel distributions built; installed-wheel CLI smoke completed. Reference outputs reproduced. Live LLM not run.
