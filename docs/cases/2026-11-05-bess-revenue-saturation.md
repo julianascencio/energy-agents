@@ -32,7 +32,7 @@ EDI knowledge catalogue consulted at aa842b959bebe8b4279a449f91176be26f0ad6a5. C
 
 ## Publication
 
-Branch: `feat/bess-revenue-saturation-case`. PR link and final CI evidence will be recorded after publication. Leave open for review.
+Branch: `feat/bess-revenue-saturation-case`. PR: https://github.com/julianascencio/energy-agents/pull/4. Final check status is available on the PR's Checks tab. Leave open for review.
 
 ## Local validation completed
 
