@@ -37,3 +37,8 @@ Professional roles and PV operations
 
 .. automodule:: energy_agents.pv.analysis
    :members: run_comparison, export
+
+Commissioning business skill
+-------------------------------
+.. automodule:: energy_agents.commissioning
+   :members: reference_case, rank_acceleration, run_commissioning_agent, CommissioningReplayPlanner
