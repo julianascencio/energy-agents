@@ -23,3 +23,7 @@ jobs:
       - run: energy-agents --output outputs/building_edits
       - run: energy-agents-pv --output outputs/pv_operations
       - run: energy-agents-flex --output outputs/industrial_flexibility
+
+      - run: energy-agents-commissioning --output outputs/wind_commissioning
+
+      - run: energy-agents-bess --output outputs/bess_saturation

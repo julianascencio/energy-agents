@@ -1,0 +1,27 @@
+{
+  "case_id": "2026-11-05-wind-commissioning-revenue",
+  "evidence_kind": "synthetic_schedule_and_economics",
+  "news": {
+    "publisher": "Orsted", "publication_date": "2026-11-05",
+    "url": "https://orsted.com/en/company-announcement-list/2026/11/orsted-delivers-strong-earnings-with-19--ebitda-gr-152708491",
+    "context": "Issuer update reports commercial-operation milestones. It supplies motivation only, not this project's schedule or economic inputs.",
+    "verification": "Official announcement indexed by search; full-page retrieval unavailable during run; corroborating issuer release indexed on EQS"
+  },
+  "economics": {"power_mw": 100, "capacity_factor": 0.4, "availability": 1.0, "price_eur_per_mwh": 75, "variable_cost_eur_per_mwh": 5, "budget_eur": 150000},
+  "tasks": [
+    {"id": "turbine_tests", "duration_days": 6, "minimum_days": 3, "dependencies": []},
+    {"id": "substation_tests", "duration_days": 8, "minimum_days": 5, "dependencies": []},
+    {"id": "protection_tests", "duration_days": 3, "minimum_days": 2, "dependencies": ["substation_tests"]},
+    {"id": "grid_witness", "duration_days": 4, "minimum_days": 2, "dependencies": ["turbine_tests", "protection_tests"]},
+    {"id": "energisation", "duration_days": 2, "minimum_days": 2, "dependencies": ["grid_witness"]},
+    {"id": "reliability_run", "duration_days": 7, "minimum_days": 7, "dependencies": ["energisation"]},
+    {"id": "handover", "duration_days": 1, "minimum_days": 1, "dependencies": ["reliability_run"]}
+  ],
+  "options": [
+    {"id": "extra_turbine_crew", "task": "turbine_tests", "new_duration_days": 3, "cost_eur": 40000},
+    {"id": "extra_substation_crew", "task": "substation_tests", "new_duration_days": 5, "cost_eur": 60000},
+    {"id": "reserved_witness_slot", "task": "grid_witness", "new_duration_days": 2, "cost_eur": 80000},
+    {"id": "extra_protection_crew", "task": "protection_tests", "new_duration_days": 2, "cost_eur": 90000}
+  ],
+  "limitations": ["All durations, prices, costs and interventions are illustrative", "Acceleration options require qualified engineer and utility acceptance; no test scope is waived", "Unlimited parallel resources except dependencies; no weather or resource-constrained scheduling", "Constant expected generation and price over recovered days; no dispatch, capture-price or partial-COD model", "No financing carry, tax, contract penalties, discounting or extra lifetime generation is claimed", "Earlier operation is valued over the fixed baseline completion window; actual project economics may differ"]
+}
