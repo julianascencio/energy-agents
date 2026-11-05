@@ -37,3 +37,11 @@ Professional roles and PV operations
 
 .. automodule:: energy_agents.pv.analysis
    :members: run_comparison, export
+
+BESS business-case tools
+--------------------------
+.. automodule:: energy_agents.business.bess
+   :members: reference_case, stress_revenues, review_screen, run_bess_agent, BESSReplayPlanner
+
+.. automodule:: energy_agents.business.edi
+   :members: inspect_bess_inventory
