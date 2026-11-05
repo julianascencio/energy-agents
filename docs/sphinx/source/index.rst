@@ -15,6 +15,7 @@ scripted tool counts with clearly separated published observations.
 
    installation
    user_guide
+   orchestrator
    professional_roles
    pv_operations
    gallery/index
