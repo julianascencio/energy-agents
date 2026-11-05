@@ -1,5 +1,5 @@
 """Industrial solar: shift batches, preserve output
-===============================================
+================================================
 
 Synthetic advisory case inspired by the IEA Spain review of 5 November 2026.
 Production is unchanged; all prices, solar and site inputs are illustrative.
