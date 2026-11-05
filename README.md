@@ -196,6 +196,20 @@ Source observations, synthetic examples and measured live runs must remain separ
 Code: MIT. The included paper has its own CC BY attribution and is not relicensed.
 See [literature notes](docs/literature/01_building_energy_agents.md).
 
+## Wind commissioning business case
+
+The Project Controls Engineer compares dependency-aware acceleration packages
+against no action. The runnable synthetic example brings completion forward five
+days and calculates expected contribution minus acceleration cost. Minimum test
+durations and budget limits remain enforced; no realised revenue is claimed.
+
+```bash
+energy-agents-commissioning --output outputs/wind_commissioning
+python examples/project_delivery/plot_wind_commissioning.py
+```
+
+See [method, evidence and prompts](docs/sphinx/source/commissioning_business.rst).
+
 ## News-driven BESS investment screening
 
 The Project Finance Analyst now has a reusable revenue-concentration screening

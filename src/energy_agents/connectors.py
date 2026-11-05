@@ -73,6 +73,16 @@ class PVChatCompletionsPlanner(ChatCompletionsPlanner):
     )
 
 
+class CommissioningChatCompletionsPlanner(ChatCompletionsPlanner):
+    """Optional planner; sends the supplied case to the configured HTTPS endpoint."""
+
+    @property
+    def instruction_override(self):
+        from importlib.resources import files
+        return json.loads(files("energy_agents").joinpath(
+            "data/commissioning/skill.json").read_text())["system_prompt"]
+
+
 class BESSChatCompletionsPlanner(ChatCompletionsPlanner):
     """Optional finance-role planner; complete case is sent to the configured endpoint.
 

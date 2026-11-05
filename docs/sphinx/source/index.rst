@@ -19,6 +19,8 @@ scripted tool counts with clearly separated published observations.
    orchestrator
    professional_roles
    pv_operations
+   commissioning_business
+
    python_engineer
 
    bess_business
