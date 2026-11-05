@@ -17,6 +17,7 @@ scripted tool counts with clearly separated published observations.
    user_guide
    professional_roles
    pv_operations
+   python_engineer
    gallery/index
    api
    literature

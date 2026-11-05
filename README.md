@@ -50,6 +50,24 @@ causal diagnosis, field validation or execution authority is claimed.
 Only the five PV roles are executable in this workflow; the wider renewable
 lifecycle, other technologies and additional agent families are documented plans.
 
+## Python, data science and ML engineering agent
+
+The **Principal Python, Data Science and ML Engineer** proposes reusable code,
+independent tests and runnable examples for energy applications. Its engineering
+contract follows Energy Data Insights conventions: typed scientific APIs, explicit
+units and provenance, leakage-free ML evaluation, baseline comparisons and
+reproducible analysis. A bounded loop validates proposal paths and Python syntax
+and returns errors to the planner for repair.
+
+```bash
+python examples/engineering/plot_python_engineer.py
+```
+
+Use `PythonEngineeringPlanner` for an explicitly configured LLM provider or supply
+your own `next_action` planner. The offline demo is scripted. The runner returns
+unexecuted code proposals; tests, scientific validity and live LLM quality remain
+separate checks. See the [agent guide](docs/sphinx/source/python_engineer.rst).
+
 ## First research example: building energy model edits
 
 Shirzadi, Lopez & Stylianou (2026), *Tool-augmented vs. autonomous LLM agents for
