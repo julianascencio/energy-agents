@@ -17,6 +17,21 @@ Reusable inputs, connectors, domain methods, bounded agent workflows and runnabl
 Documentation links become live after merging and enabling GitHub Pages with the
 **GitHub Actions** source. PR documentation builds are available as workflow artifacts.
 
+## AI Forward-Deployed Engineer
+
+Turn a customer energy problem into a staged **discovery, solution, evaluation
+and rollout proposal**, with business KPIs, integration contracts, pilot gates,
+cost/latency budgets, monitoring and rollback. The bounded workflow produces an
+explicit implementation handoff for the Python/data-science/ML engineer.
+
+```bash
+python examples/delivery/plot_forward_deployed_engineer.py
+```
+
+The offline solar O&M copilot case is synthetic and scripted. Accepted plans are
+structurally validated proposals, not deployed systems or verified business results.
+See the [agent guide and live LLM setup](docs/sphinx/source/forward_deployed.rst).
+
 ## Professional role agents: PV operations
 
 The first role team combines **Performance Engineer, Reliability Engineer,

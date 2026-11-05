@@ -13,6 +13,7 @@ scripted tool counts with clearly separated published observations.
 .. toctree::
    :maxdepth: 2
 
+   forward_deployed
    installation
    user_guide
    professional_roles
