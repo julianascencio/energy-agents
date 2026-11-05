@@ -16,6 +16,7 @@ class RoleSpec:
     acceptance: str
     technology: str = "solar_pv"
     authority: str = "advisory_only"
+    knowledge_sources: tuple[str, ...] = ()
 
     def as_dict(self):
         return asdict(self)
@@ -66,6 +67,7 @@ PV_ROLES = (
         "summarise_asset",
         "asset_summary",
         "Incomplete coverage and unresolved losses remain visible in the decision.",
+        knowledge_sources=("julianascencio/energy-data-insights",),
     ),
 )
 

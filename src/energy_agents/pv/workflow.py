@@ -5,6 +5,7 @@ import json
 from copy import deepcopy
 from dataclasses import dataclass
 
+from ..knowledge import EnergyDataInsightsAgent
 from ..roles import PV_ROLES
 from .inputs import validate_case
 from .methods import TOOLS, review_evidence
@@ -25,13 +26,24 @@ class PVReplayPlanner:
         return {"tool": "finish", "arguments": {}}
 
 
-def run_pv_workflow(case, *, mode="role_team", planners=None, max_calls=12):
+def run_pv_workflow(
+    case,
+    *,
+    mode="role_team",
+    planners=None,
+    max_calls=12,
+    repository_query="PV performance degradation maintenance examples",
+    knowledge_agent=None,
+):
     """Run a deterministic baseline, one planner, or five bounded role planners.
 
     ``planners`` maps role IDs (or ``single_agent``) to Planner-compatible objects.
     A missing mapping uses the labelled scripted replay. Planner contexts are copies;
     only allowlisted deterministic tools can produce reports. The total call budget
     includes finish and is shared by the team. Any rejected action stops the run.
+    The Technical Asset Manager receives source-backed repository context from a
+    pinned offline catalogue. Set repository_query=None to disable retrieval.
+    Repository suggestions are separate from the plant's numerical evidence.
     """
     if mode not in {"deterministic", "single_agent", "role_team"}:
         raise ValueError("Unknown execution mode")
@@ -56,6 +68,11 @@ def run_pv_workflow(case, *, mode="role_team", planners=None, max_calls=12):
         "tool_calls": 0,
         "execution": "external_planner" if planners else "deterministic_or_scripted",
     }
+    state["repository_knowledge"] = (
+        (knowledge_agent or EnergyDataInsightsAgent()).context(repository_query)
+        if repository_query is not None
+        else None
+    )
     reports = state["reports"]
     if mode == "deterministic":
         for role in PV_ROLES:
@@ -85,6 +102,9 @@ def run_pv_workflow(case, *, mode="role_team", planners=None, max_calls=12):
                                 "allowed_tools": [r.tool for r in roles] + ["finish"],
                                 "history": state["trace"][:-1],
                                 "authority": "advisory_only",
+                                "repository_knowledge": state["repository_knowledge"]
+                                if owner in {"technical_asset_manager", "single_agent"}
+                                else None,
                             }
                         )
                     )

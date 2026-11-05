@@ -37,3 +37,11 @@ Professional roles and PV operations
 
 .. automodule:: energy_agents.pv.analysis
    :members: run_comparison, export
+
+Repository knowledge
+------------------------
+.. automodule:: energy_agents.knowledge.agent
+   :members: EnergyDataInsightsAgent
+
+.. automodule:: energy_agents.knowledge.catalogue
+   :members: build_catalogue, load_catalogue, save_catalogue
