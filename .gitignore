@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+outputs/
+docs/sphinx/build/
+docs/sphinx/source/gallery/
+docs/sphinx/source/sg_execution_times.rst

@@ -1,0 +1,114 @@
+[
+  {
+    "building": "Calgary low-rise",
+    "surface": "domain",
+    "calls": 1,
+    "tokens": 15965,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Calgary low-rise",
+    "surface": "primitive",
+    "calls": 10,
+    "tokens": 13726,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Toronto mid-rise",
+    "surface": "domain",
+    "calls": 1,
+    "tokens": 15764,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Toronto mid-rise",
+    "surface": "primitive",
+    "calls": 7,
+    "tokens": 10777,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Vancouver high-rise",
+    "surface": "domain",
+    "calls": 1,
+    "tokens": 15825,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Vancouver high-rise",
+    "surface": "primitive",
+    "calls": 11,
+    "tokens": 13750,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal restaurant",
+    "surface": "domain",
+    "calls": 3,
+    "tokens": 15360,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal restaurant",
+    "surface": "primitive",
+    "calls": 4,
+    "tokens": 10205,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal secondary school",
+    "surface": "domain",
+    "calls": 3,
+    "tokens": 15319,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal secondary school",
+    "surface": "primitive",
+    "calls": 4,
+    "tokens": 10215,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal warehouse",
+    "surface": "domain",
+    "calls": 3,
+    "tokens": 15347,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal warehouse",
+    "surface": "primitive",
+    "calls": 4,
+    "tokens": 13092,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal small office",
+    "surface": "domain",
+    "calls": 3,
+    "tokens": 15316,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  },
+  {
+    "building": "Montreal small office",
+    "surface": "primitive",
+    "calls": 4,
+    "tokens": 10201,
+    "evidence": "published Table 8A; manually transcribed",
+    "source": "https://doi.org/10.1016/j.egyai.2026.100896"
+  }
+]
