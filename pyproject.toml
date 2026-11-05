@@ -19,6 +19,7 @@ docs = ["sphinx>=8,<9", "pydata-sphinx-theme>=0.16,<0.17", "sphinx-gallery>=0.19
 [project.scripts]
 energy-agents = "energy_agents.analysis:main"
 energy-agents-pv = "energy_agents.pv.analysis:main"
+energy-agents-bess = "energy_agents.business.analysis:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/energy_agents"]

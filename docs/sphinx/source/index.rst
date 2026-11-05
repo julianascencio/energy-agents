@@ -1,5 +1,5 @@
 Energy Agents
-=============
+====================================================================================================
 
 **Agentic engineering for energy systems — created by ASVA Consulting.**
 
@@ -13,11 +13,15 @@ scripted tool counts with clearly separated published observations.
 .. toctree::
    :maxdepth: 2
 
+   forward_deployed
    installation
    user_guide
+   orchestrator
    professional_roles
    pv_operations
    python_engineer
+
+   bess_business
    gallery/index
    api
    literature

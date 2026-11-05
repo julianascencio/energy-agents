@@ -17,6 +17,21 @@ Reusable inputs, connectors, domain methods, bounded agent workflows and runnabl
 Documentation links become live after merging and enabling GitHub Pages with the
 **GitHub Actions** source. PR documentation builds are available as workflow artifacts.
 
+## AI Forward-Deployed Engineer
+
+Turn a customer energy problem into a staged **discovery, solution, evaluation
+and rollout proposal**, with business KPIs, integration contracts, pilot gates,
+cost/latency budgets, monitoring and rollback. The bounded workflow produces an
+explicit implementation handoff for the Python/data-science/ML engineer.
+
+```bash
+python examples/delivery/plot_forward_deployed_engineer.py
+```
+
+The offline solar O&M copilot case is synthetic and scripted. Accepted plans are
+structurally validated proposals, not deployed systems or verified business results.
+See the [agent guide and live LLM setup](docs/sphinx/source/forward_deployed.rst).
+
 ## Professional role agents: PV operations
 
 The first role team combines **Performance Engineer, Reliability Engineer,
@@ -84,6 +99,20 @@ It is runnable without API keys, EnergyPlus or network access. It is not a rerun
 of the authors' experiment or evidence of LLM superiority. Published Table 8A
 observations are shown separately, including documented inconsistencies with the
 paper's narrative. No energy-savings or NECB-compliance claims are inferred.
+
+## Orchestrator agent
+
+Coordinate registered specialists through dependency-aware tasks, isolated handoffs,
+bounded scheduling and explicit completed/failed/blocked/pending states. Use the
+deterministic scheduler or an optional LLM prioritizer. The delivery-team adapter
+connects the forward-deployed and Python/ML engineers when their modules are present.
+
+```bash
+python examples/orchestration/plot_orchestrator.py
+```
+
+See the [orchestrator guide](docs/sphinx/source/orchestrator.rst). Successful routing
+is not independent validation, code execution or deployment authorization.
 
 ## Install and run
 
@@ -166,3 +195,19 @@ Source observations, synthetic examples and measured live runs must remain separ
 
 Code: MIT. The included paper has its own CC BY attribution and is not relicensed.
 See [literature notes](docs/literature/01_building_energy_agents.md).
+
+## News-driven BESS investment screening
+
+The Project Finance Analyst now has a reusable revenue-concentration screening
+skill inspired by Clean Horizon's 4 November 2026 analysis. Run:
+
+```bash
+energy-agents-bess --output outputs/bess_saturation
+python examples/business/plot_bess_saturation.py
+```
+
+It compares flat and stressed revenue paths, NPV, upfront budget and discount-rate
+sensitivity. Inputs distinguish published model outputs from illustrative scenarios.
+Prompts, bounded tools and an optional read-only Energy Data Insights catalogue
+adapter are included. No realised returns or live LLM advantage are claimed.
+See [business case and reproduction](docs/sphinx/source/bess_business.rst).
