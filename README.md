@@ -50,6 +50,31 @@ causal diagnosis, field validation or execution authority is claimed.
 Only the five PV roles are executable in this workflow; the wider renewable
 lifecycle, other technologies and additional agent families are documented plans.
 
+## Energy Data Insights awareness
+
+The **Energy Data Insights Specialist** indexes connectors, methods, analyses,
+documentation, scripts and every gallery example from a pinned source commit.
+The **Technical Asset Manager** receives relevant catalogue references by default.
+The bundled snapshot covers 626 files, 1,219 public symbols and all 65 gallery
+examples at commit `aa842b959bebe8b4279a449f91176be26f0ad6a5`.
+
+```bash
+energy-agents-knowledge search "PVGIS terrain weather" --category example
+energy-agents-knowledge search "PV degradation lifetime"
+energy-agents-knowledge inventory
+```
+
+```python
+from energy_agents.knowledge import EnergyDataInsightsAgent
+
+matches = EnergyDataInsightsAgent().search("Timestral solar wind forecast")
+```
+
+Results carry commit-pinned citations and source hashes. Discovery is offline;
+refresh from a local Git checkout is explicit. Retrieval does not install or run
+Energy Data Insights and does not verify its scientific claims.
+See [repository awareness and refresh instructions](docs/sphinx/source/repository_knowledge.rst).
+
 ## First research example: building energy model edits
 
 Shirzadi, Lopez & Stylianou (2026), *Tool-augmented vs. autonomous LLM agents for
