@@ -148,3 +148,19 @@ Source observations, synthetic examples and measured live runs must remain separ
 
 Code: MIT. The included paper has its own CC BY attribution and is not relicensed.
 See [literature notes](docs/literature/01_building_energy_agents.md).
+
+## News-driven BESS investment screening
+
+The Project Finance Analyst now has a reusable revenue-concentration screening
+skill inspired by Clean Horizon's 4 November 2026 analysis. Run:
+
+```bash
+energy-agents-bess --output outputs/bess_saturation
+python examples/business/plot_bess_saturation.py
+```
+
+It compares flat and stressed revenue paths, NPV, upfront budget and discount-rate
+sensitivity. Inputs distinguish published model outputs from illustrative scenarios.
+Prompts, bounded tools and an optional read-only Energy Data Insights catalogue
+adapter are included. No realised returns or live LLM advantage are claimed.
+See [business case and reproduction](docs/sphinx/source/bess_business.rst).
