@@ -8,7 +8,7 @@ Deliverables: professional role, packaged task contract, prompt, optional provid
 
 Buyer: industrial operator or ESCO. Commercial offering: site-specific production/energy feasibility study. KPI: avoided net electricity expense less rescheduling costs, for a single synthetic day. No revenue guarantee, annualisation or claim of live LLM superiority.
 
-PR: pending publication. Leave open for review.
+PR: [#6](https://github.com/julianascencio/energy-agents/pull/6). Leave open for review.
 
 Reference outcome: EUR 3,320 baseline cost versus EUR 2,240 including EUR 160 rescheduling fees; EUR 1,080 net saving on the synthetic day. Both schedules deliver 8 MWh of batch production. Export credits decrease by EUR 280. No annual extrapolation.
 
