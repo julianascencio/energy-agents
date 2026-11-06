@@ -25,6 +25,7 @@ scripted tool counts with clearly separated published observations.
 
    python_engineer
 
+   bridge_power
    bess_business
    gallery/index
    api

@@ -1,0 +1,10 @@
+{
+  "records": 3330,
+  "input_sha256": "89bc16f70ad76e094d7f77c59f0da8a521097bfd61f033aaa9c55e62ce2dfd1e",
+  "execution": "EDI load_records and validate_record",
+  "use": "inventory_context_only_not_financial_calibration",
+  "commit": "036429f93354749517d91ac62b18390ec7bccddc",
+  "package_version": "0.1.0",
+  "python": "3.12",
+  "executed_on": "2026-11-06"
+}

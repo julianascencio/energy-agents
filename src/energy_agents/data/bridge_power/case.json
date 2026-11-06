@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "currency": "EUR",
+  "classification": "synthetic_scenario",
+  "source": {
+    "url": "https://www.bloomenergy.com/news/ntt-data-announces-agreement-with-bloom-energy-for-900-mw-of-onsite-power-generation-across-multiple-data-center-projects/",
+    "publication_date": "2026-11-05",
+    "event_date": "2026-11-05",
+    "classification": "issuer_announcement",
+    "observed_statement": "Agreement announced for 900 MW across multiple data center projects; initial shipments planned for 2027. Neither commissioned capacity nor realised cash flow."
+  },
+  "assumptions": {
+    "it_mw": 10,
+    "pue": 1.3,
+    "utilization": 0.8,
+    "availability": 0.95,
+    "margin_eur_per_it_mwh": 300,
+    "power_eur_per_facility_mwh": 140,
+    "monthly_fixed_eur": 100000,
+    "upfront_eur": 2000000,
+    "annual_discount_rate": 0.1,
+    "hours_per_month": 730,
+    "grid_month": 12,
+    "bridge_month": 3,
+    "cost_basis": "Hypothetical temporary power service. Margin is IT contribution after non-energy variable costs, before electricity; power price includes fuel, conversion losses and variable O&M. Fixed fee covers standby service. Upfront cost includes mobilization, connection, demobilization and all incremental fixed costs. Common facility capex and post-grid operation cancel. No residual value, tax, financing, carbon price, outage penalty, minimum take or stranded contract liability modelled. Permits, gas capacity, customer readiness and SLA feasibility require diligence."
+  }
+}
