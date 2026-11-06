@@ -81,4 +81,10 @@ the deterministic scheduler, but there is no claim of improved economic results.
 
 ## Publication and validation
 
-PR link and final validation recorded after publication below.
+PR: https://github.com/julianascencio/energy-agents/pull/10 (non-draft, left open).
+
+Local validation: 173 tests pass; Ruff and diff checks pass; wheel/sdist and
+installed-wheel CLI smoke pass. Strict documentation build executes the gallery
+without warnings; sensitivity chart visually inspected. GitHub quality and
+documentation checks must be read on the current PR head; their live status is
+not frozen in this record. No live LLM/provider benchmark was run.
