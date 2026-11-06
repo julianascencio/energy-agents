@@ -229,3 +229,7 @@ sensitivity. Inputs distinguish published model outputs from illustrative scenar
 Prompts, bounded tools and an optional read-only Energy Data Insights catalogue
 adapter are included. No realised returns or live LLM advantage are claimed.
 See [business case and reproduction](docs/sphinx/source/bess_business.rst).
+
+### Data centre bridge-power business case
+
+Run `energy-agents-bridge --output outputs/bridge_power` for the synthetic NTT/Bloom-news-inspired incremental investment screen. Reuses the finance role and orchestrator; compares against waiting and direct deterministic execution. See [methodology](docs/sphinx/source/bridge_power.rst) and [case history](docs/cases/2026-11-06-data-center-bridge-power.md).

@@ -27,3 +27,5 @@ jobs:
       - run: energy-agents-commissioning --output outputs/wind_commissioning
 
       - run: energy-agents-bess --output outputs/bess_saturation
+
+      - run: energy-agents-bridge --output outputs/bridge_power

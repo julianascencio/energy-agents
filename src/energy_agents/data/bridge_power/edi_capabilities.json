@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "036429f93354749517d91ac62b18390ec7bccddc",
+  "commit_date": "2026-11-06T05:07:15Z",
+  "coverage": {
+    "selected_files": 735,
+    "indexed_files": 735,
+    "categories": {
+      "analysis": 56,
+      "benchmark": 1,
+      "connector": 282,
+      "documentation": 69,
+      "example": 107,
+      "method": 48,
+      "package": 4,
+      "script": 168
+    },
+    "gallery_examples": 71,
+    "public_symbols": 1481,
+    "errors": [],
+    "complete_within_scope": true
+  },
+  "scope": "Committed Python and text documentation in packages, examples, docs, scripts and benchmarks; data, tests, reports and vendored assets excluded",
+  "entries": [
+    {
+      "path": "data-retrieval/src/energy_data_retrieval/data_center_catalogue/catalogue.py",
+      "category": "connector",
+      "title": "Evidence-bound data center projects and exact OEM models, using JSONL/Parquet.",
+      "summary": "Evidence-bound data center projects and exact OEM models, using JSONL/Parquet.\n\nReuse the PV catalogue's canonical encoding, shard reader and non-overwriting\nupsert. No network access, geocoding or inferred IT capacity occurs here.",
+      "summary_truncated": false,
+      "symbols": [
+        {
+          "name": "stable_id",
+          "line": 36,
+          "signature": "entity_type: str, *identity: str",
+          "summary": "Choose immutable external identity once; keep model punctuation/case."
+        },
+        {
+          "name": "validate_record",
+          "line": 55,
+          "signature": "row: dict[str, Any], sources: dict[str, Any]",
+          "summary": "Validate units, evidence, scope and nullable ratings before any publication."
+        },
+        {
+          "name": "validate_catalogue",
+          "line": 135,
+          "signature": "rows: list[dict[str, Any]], sources: dict[str, Any], *, bess_projects: set[str] | None=None, bess_equipment: set[str] | None=None",
+          "summary": "Reject duplicate identities, cycles, orphan links and unsafe aggregate roles."
+        },
+        {
+          "name": "capacity_summary",
+          "line": 190,
+          "signature": "rows: list[dict[str, Any]], field: str",
+          "summary": "Sum compatible basis groups only; exclude overlaps and keep unknown as null.\n\nUnresolved overlap groups are conservatively excluded even after filtering. Aggregate\nexclusions are persistent, independent of filters, so filtering out children\ncannot turn an overlapping campus total into an eligible facility."
+        },
+        {
+          "name": "upsert_records",
+          "line": 217,
+          "signature": "existing: list[dict[str, Any]], incoming: list[dict[str, Any]], *, now: str",
+          "summary": "Reuse PV upsert for safe facts; quarantine only conflicting fields.\n\nSource dates/boundaries travel with both observations. Creation timestamps\nsurvive. Empty incoming values never erase facts. Identical rows do not churn\nupdated_at. Explicit review is needed to resolve quarantined fields."
+        },
+        {
+          "name": "build_parquet",
+          "line": 299,
+          "signature": "root: Path, output: Path",
+          "summary": "Build both immutable Zstandard tables and a reproducible coverage manifest."
+        }
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "energy_data_retrieval.bess_catalogue.catalogue",
+        "energy_data_retrieval.catalogue_common",
+        "energy_data_retrieval.pv_catalogue.catalogue",
+        "importlib.resources",
+        "json",
+        "pathlib",
+        "re",
+        "typing",
+        "unicodedata",
+        "uuid"
+      ],
+      "module": "energy_data_retrieval.data_center_catalogue.catalogue",
+      "sha256": "c87e3c1edf4b2e4573da6767fd0a76339dd5b9b1923ad0be53caff160418a99b",
+      "source_url": "https://github.com/julianascencio/energy-data-insights/blob/036429f93354749517d91ac62b18390ec7bccddc/data-retrieval/src/energy_data_retrieval/data_center_catalogue/catalogue.py",
+      "runnable_example": false,
+      "execution_status": "not_executed_by_catalogue"
+    },
+    {
+      "path": "docs/data-center-catalogue.md",
+      "category": "documentation",
+      "title": "Global Data Center Database",
+      "summary": "# Global Data Center Database\n\n## Data Center Projects\n\nThe current continuation branch has 556 project records across 39 countries:\n427 facilities, three phases and 126 explicitly scoped campus aggregates, from 19 operators.\nCoverage spans North America, Latin America, Europe, Africa, the Middle East and\nAsia-Pacific. This is a research catalogue, not an operating-capacity census.\n\nUse the [interactive viewer](https://julianascencio.github.io/energy-data-insights/data-center-database-viewer.html?table=projects)\nfor search, lifecycle/country/cooling filters, map and expandable field evidence.\nThe map includes operator-reported pins only; it never geocodes a city as a site.\n\n`record_id`, `facility_id`, `campus_id`, `phase_id`, `parent_record_id`, aliases,\nexternal identifiers and organization-role IDs preserve identity through changes.\nEach row states `record_scope`, `capacity_scope`, `aggregation_role`, dated status\nand whether its date is a publication/event date or retrieval of an undated page.\nA campus may reference named children; phase rows require a phase ID. Links are\nvalidated for missing parents, cycles and duplicate identities. Campus totals\nand unresolved overlap groups never enter capacity sums, even under filtering.\n\nThree independent columns represent IT load, utility connection and total\nfacility demand: `it_capacity_mw`, `grid_capacity_mw`, `facility_capacity_mw`.\nEach requires its own basis (operational, construction, ultimate planned, design\nmaximum or unspecified). `capacity_summary` reports separate basis groups and\nunknown/excluded counts. It never substitutes backup MW, battery MW/MWh or floor\narea. Rated design IT at an operational site is not measured operating demand.\n\nEvent dates, areas, rack metrics, water, heat rejection and generation can be\nstored directly or as typed observations with units and boundaries. PUE/WUE\nobservations require measured/design/target/unspecified kind and measurement\nperiod (null when undisclosed). Investment observations preserve currency,\nreference year and scope; performance observations must preserve precision,\nworkload and test conditions. `renewable_supply_json` explicitly separates\nphysical generation, contractual procurement and environmental claims.\nCertificates require issuer, scope and validity evidence, not marketing badges.\n\nThe Green Mountain continuation processes the operator's complete cu",
+      "summary_truncated": true,
+      "symbols": [],
+      "imports": [],
+      "module": null,
+      "sha256": "c9958a43a0521d31012a9596d622552b5660851bda4a585c8cd582f1153c116f",
+      "source_url": "https://github.com/julianascencio/energy-data-insights/blob/036429f93354749517d91ac62b18390ec7bccddc/docs/data-center-catalogue.md",
+      "runnable_example": false,
+      "execution_status": "not_executed_by_catalogue"
+    },
+    {
+      "path": "examples/database/plot_data_center_catalogue.py",
+      "category": "example",
+      "title": "Data centers: geography, capacity completeness, cooling and equipment",
+      "summary": "Data centers: geography, capacity completeness, cooling and equipment\n=====================================================================\n\nRebuild the two connected JSONL catalogues into immutable Parquet. Four views\nshow coverage and missingness without treating campuses as additional buildings,\nconverting grid MW into IT MW, or equating accelerator limits with server input.\nSee the :doc:`interactive viewer </data-center-database-viewer>` for field evidence.",
+      "summary_truncated": false,
+      "symbols": [],
+      "imports": [
+        "energy_data_retrieval.data_center_catalogue",
+        "matplotlib.pyplot",
+        "pandas",
+        "pathlib",
+        "tempfile",
+        "textwrap"
+      ],
+      "module": null,
+      "sha256": "34fbbdc90142ea8a85321d4b2b30ccf487a68d5bcf1f2f79db77252e6fecd4a1",
+      "source_url": "https://github.com/julianascencio/energy-data-insights/blob/036429f93354749517d91ac62b18390ec7bccddc/examples/database/plot_data_center_catalogue.py",
+      "runnable_example": true,
+      "execution_status": "not_executed_by_catalogue"
+    }
+  ],
+  "selection_note": "Full source inventory refreshed; focused data-center capability excerpt retained; discovery is not execution."
+}
