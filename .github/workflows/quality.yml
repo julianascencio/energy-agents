@@ -29,3 +29,5 @@ jobs:
       - run: energy-agents-bess --output outputs/bess_saturation
 
       - run: energy-agents-bridge --output outputs/bridge_power
+
+      - run: energy-agents-reserve --output outputs/reserve

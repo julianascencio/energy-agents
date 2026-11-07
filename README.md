@@ -233,3 +233,7 @@ See [business case and reproduction](docs/sphinx/source/bess_business.rst).
 ### Data centre bridge-power business case
 
 Run `energy-agents-bridge --output outputs/bridge_power` for the synthetic NTT/Bloom-news-inspired incremental investment screen. Reuses the finance role and orchestrator; compares against waiting and direct deterministic execution. See [methodology](docs/sphinx/source/bridge_power.rst) and [case history](docs/cases/2026-11-06-data-center-bridge-power.md).
+
+### Residential battery reserve screen
+
+Run `energy-agents-reserve --output outputs/reserve` to compare a reserve-limited grid-service offer against nameplate overcommitment. Uses recorded EDI physics, synthetic USD/event economics and the existing finance role. See [methodology](docs/sphinx/source/reserve_screen.rst) and [case history](docs/cases/2026-11-07-residential-battery-reserve.md).

@@ -1,0 +1,124 @@
+Residential backup reserve and grid-service economics
+====================================================================================================
+
+National Grid's `6 November 2026 BackupBattery+ announcement
+<https://www.nationalgrid.com/news/national-grid-launches-fall-river-area-home-battery-pilot>`_
+sets out a pilot for up to 125 households, combining backup power with local grid
+services. Initial installations are targeted for spring 2027. The announcement
+is motivation, not evidence of installed capacity, measured performance or tariffs.
+
+Business decision
+-----------------
+
+An aggregator needs to screen how much flat service it can offer while preserving
+a specified household reserve. The existing Project Finance Analyst and
+orchestrator are reused; no new professional agent is added. Utilities and VPP
+operators could pay for an auditable pre-bid reserve and contractual-exposure
+review. Willingness to pay and actual customer savings are unmeasured.
+
+All operating and economic inputs are **synthetic**, including the 125-home
+cohorts, SOC, power ratings, critical load, event duration and eligibility flags.
+Four, eight and twelve hours are scenario reserve requirements, not inferred
+utility operating rules. No weather forecast or medical reliability assessment
+is supplied. Households below the reserve target are reported, not treated as
+having guaranteed backup. Eligibility requires consent, fresh telemetry and
+availability; the Boolean flags are caller assertions, not verified telemetry.
+
+Physics and accounting
+----------------------
+
+The bounded adapter calls EDI's ``simulate_storage_peak_shift`` for one flat
+three-hour event per cohort. It removes the DC energy needed for the critical-load
+reserve before exposing any energy to EDI. EDI applies symmetric efficiencies
+sqrt(0.9025) = 0.95; critical load and delivery are AC, stored SOC is DC. Units are
+converted from kW/kWh to MW/MWh at the adapter boundary. The EDI source hash is
+checked before execution. A separate analytical identity verifies each result:
+
+* Reserve DC kWh = critical load kW * reserve hours / discharge efficiency.
+* Available AC kWh = min(power * event hours, max(0, SOC - reserve) * efficiency).
+* Ineligible cohorts deliver zero; no recharging occurs during the event.
+* Recharge after the event = delivered AC kWh / round-trip efficiency.
+
+The reserve-limited offer spreads deliverable energy uniformly over the event;
+it is an envelope, not the EDI greedy intra-event power trace. Constant conditions
+and independently controllable batteries are assumed. No feeder limits, export
+permission, reactive power, stochastic dropout, auxiliary load or SOC error model.
+There is no proof of firm capacity or field-level reserve adequacy.
+
+Payments are USD per delivered AC kWh. Net contribution subtracts recharge energy,
+wear allowance, participant compensation and fixed event cost. A deliberately
+naive nameplate offer faces a synthetic shortfall penalty; both alternatives
+retain household reserves and deliver identical energy. The difference is contract
+exposure, not extra generation or an LLM advantage. No retail savings or export
+income are added. Abstaining gives zero incremental event cash and is retained
+when service is uneconomic. Fixed cost is incurred only when participating.
+
+Example results and limits
+--------------------------
+
+At eight hours of reserve, 480 kW is available for three hours (1,440 kWh), compared
+with 550 kW nameplate. Assumed payment USD 0.60/kWh, recharge USD 0.15/kWh, wear
+USD 0.04/delivered-kWh, participant compensation USD 0.10/delivered-kWh, fixed
+cost USD 50/event and shortfall penalty USD 3/kWh give:
+
+* Reserve-limited contribution: USD 373.06/event.
+* Nameplate-offer contribution: USD -256.94/event.
+* Avoided shortfall penalty: USD 630/event; break-even payment USD 0.34093/kWh.
+
+These are scenarios, not National Grid or Haven contract terms. There is no
+annualization, capex recovery, subsidy, financing, tax or long-run degradation
+model. Recharge availability and price are assumed; repeated events and coincident
+outages are excluded. The gallery varies reserve and penalty levels. Its zero
+penalty case shows that the two offers have equal cash flow when overcommitment
+has no penalty under the assumed delivered-energy payment contract.
+
+Evidence, prompts and execution
+-------------------------------
+
+Versioned user/system prompts, role mandate, schema, tools, handoffs and acceptance
+criteria are in ``energy_agents/data/reserve/skill.json``. The evidence gate checks
+classification, physical-input hash, method provenance and energy identities;
+it does not establish source truth. Finance consumes the isolated validated
+handoff. Only these fixed tasks can be delegated. No bid submission, trading,
+purchases, equipment controls or third-party communication tools exist.
+
+The default example replays ``envelope.json``, generated by actual EDI execution
+from commit ``dbd83f047b8d86f7940446c39b9ffe7fd78e7723``. The focused source-derived
+catalogue records method signatures, file hashes and commit-pinned links.
+The earlier broad EDI catalogue was consulted; this five-file refresh is explicitly
+not a full inventory. EDI source discovery and numerical execution are separate.
+No EDI implementation is copied into energy-agents.
+
+Reproduce offline, without EDI or keys:
+
+.. code-block:: bash
+
+   python -m pip install -e ".[dev,docs]"
+   energy-agents-reserve --output outputs/reserve
+   python examples/residential_storage/plot_reserve_screen.py
+   python -m pytest -q
+   ruff check .
+   python -m build
+   sphinx-build -W --keep-going -b html docs/sphinx/source docs/sphinx/build/html
+
+To recompute the physics, use Python 3.12+ and install ``energy-methods`` 0.1.0
+from the recorded commit's ``methods`` directory, with its declared dependencies.
+Then run ``energy-agents-reserve --edi --output outputs/reserve_edi``. For a minimal
+source audit, the selected EDI module uses only the standard library; the recorded
+run used an editable ``--no-deps`` installation and exercised only that module.
+Do not infer that the rest of EDI was validated by this run. EDI currently carries
+``LicenseRef-ASVA-Noncommercial-1.0``; commercial deployment of that optional
+component requires appropriate permission from its owner.
+
+Refresh the focused catalogue with
+``python scripts/refresh_reserve_capabilities.py /path/to/edi --output catalogue.json``.
+Changing the pinned method requires deliberate review and regeneration of the
+fixture; a different installed method hash fails closed.
+
+The workflow equals direct deterministic execution. No live LLM calls or measured
+agent superiority; token cost and latency are unknown. Optional model-based
+scheduling may use the existing OrchestratorPlanner, but adds no numerical benefit
+established by this example. The CLI writes the full trace and economic report.
+
+.. automodule:: energy_agents.business.reserve
+   :members:
