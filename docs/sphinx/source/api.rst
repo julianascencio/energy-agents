@@ -55,3 +55,8 @@ BESS business-case tools
 
 .. automodule:: energy_agents.business.edi
    :members: inspect_bess_inventory
+
+Data center design
+------------------
+.. automodule:: energy_agents.data_center
+   :members:

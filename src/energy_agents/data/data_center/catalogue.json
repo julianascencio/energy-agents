@@ -1,0 +1,537 @@
+{
+  "post": {
+    "url": "https://lnkd.in/p/e4cNpEE5",
+    "resolved_url": "https://www.linkedin.com/posts/brianbakerman_microsoft-has-at-least-160-people-designing-share-7523096907959771137-igJM/",
+    "author": "Brian Bakerman",
+    "accessed_on": "2026-11-07",
+    "status": "Public post body and visible comments read; embedded image unavailable. Not a verified Microsoft organization chart.",
+    "groups": [
+      {
+        "name": "Design Leaders",
+        "approx_people": 40
+      },
+      {
+        "name": "Electrical & Controls",
+        "approx_people": 35
+      },
+      {
+        "name": "Mechanical & Cooling",
+        "approx_people": 30
+      },
+      {
+        "name": "Structure, Civil & Architecture",
+        "approx_people": 15
+      },
+      {
+        "name": "Design Management",
+        "approx_people": 15
+      },
+      {
+        "name": "E2E Delivery",
+        "approx_people": 25
+      }
+    ],
+    "note": "Counts are author estimates. Detailed agent titles are our functional decomposition, not extracted employee job titles. Telecoms is suggested by a visible comment; sustainability is our addition."
+  },
+  "sources": [
+    {
+      "id": "doe2024",
+      "title": "DOE/FEMP: Best Practices Guide for Energy-Efficient Data Center Design (July 2024)",
+      "url": "https://www.energy.gov/sites/default/files/2024-07/best-practice-guide-data-center-design.pdf",
+      "access": "Public guide; chapters 2\u20137",
+      "context": "Coordinate IT demand, environmental conditions, airflow, cooling, electrical distribution and heat recovery. Evaluate efficiency at consistent measurement boundaries; a single design is not optimal for every site.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "ashrae2023",
+      "title": "ASHRAE Handbook 2023, Chapter 20: Data Centers and Telecommunication Facilities",
+      "url": "https://handbook.ashrae.org/Handbooks/A23/IP/A23_Ch20/a23_ch20_ip.aspx",
+      "access": "Public chapter; equipment-specific limits still required",
+      "context": "Power, space, cooling and networking depend on each other. Use equipment environmental envelopes and measured inlet conditions; coordinate heat loads and serviceability across disciplines.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "ocp",
+      "title": "Open Compute Project: Cold Plate project and contribution catalogue",
+      "url": "https://www.opencompute.org/projects/cooling-environments/cold-plate/",
+      "access": "Public project overview; individual specification revisions must be checked",
+      "context": "Use cold-plate, manifold, fluid and CDU requirements as separate interfaces. Request selected equipment qualification, fluid compatibility, leak response and service procedures before accepting a liquid-cooling concept.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "uptime",
+      "title": "Uptime Institute: Tier Classification System",
+      "url": "https://uptimeinstitute.com/tiers",
+      "access": "Public overview; topology standard and certification are separate",
+      "context": "Review maintainability and distribution paths as well as component redundancy. An N+1 capacity calculation alone cannot establish a Tier classification or certification.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "tia",
+      "title": "TIA-942: Telecommunications Infrastructure Standard for Data Centers",
+      "url": "https://tiaonline.org/standard/tia-942/",
+      "access": "Public overview only; full normative standard not reproduced",
+      "context": "Use a dedicated telecommunications design package and coordinate it with the physical facility. Obtain the applicable standard and project edition before making clause-level compliance claims.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "nist",
+      "title": "NIST SP 800-82 Rev. 3: Guide to Operational Technology Security (2023)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "access": "Public final publication; Rev. 4 initial public draft exists, not substituted",
+      "context": "Treat building automation and physical environment monitoring as OT. Review asset inventories, network boundaries, access, monitoring and recovery with operational reliability constraints.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "cx",
+      "title": "WBDG: Roles and Responsibilities in the Commissioning Process",
+      "url": "https://legacy.wbdg.org/building-commissioning/roles-and-responsibilities-commissioning-process",
+      "access": "Public process guidance",
+      "context": "Link owner requirements, basis of design, design reviews, commissioning plans, issues and operations manuals. Assign acceptance ownership and retain evidence of unresolved issues.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "asce",
+      "title": "ASCE/SEI 7-22: Minimum Design Loads and Associated Criteria",
+      "url": "https://www.asce.org/publications-and-news/codes-and-standards/asce-sei-7-22",
+      "access": "Public publisher overview; US reference, not a global code",
+      "context": "Identify applicable structural loads and local code adoption. Request site-specific hazards and load combinations; this catalogue does not contain normative design values.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "ifc",
+      "title": "buildingSMART: Industry Foundation Classes (IFC)",
+      "url": "https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/?lang=en",
+      "access": "Public overview",
+      "context": "Use explicit IFC exchange versions and validate model exchanges. Preserve object identity, units and discipline ownership when coordinating information across design tools.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "mscooling",
+      "title": "Microsoft: Sustainable by design, next-generation datacenters (9 December 2024)",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "access": "Public vendor announcement, not independent performance evidence",
+      "context": "Microsoft describes cooling without evaporative water consumption. Keep cooling water, total site water and supply-chain water separate; do not infer that every facility has zero water demand.",
+      "reviewed_on": "2026-11-07"
+    },
+    {
+      "id": "msroles",
+      "title": "Microsoft Careers: Datacenters",
+      "url": "https://careers.microsoft.com/v2/global/en/datacenters.html",
+      "access": "Public role descriptions, not an organization chart",
+      "context": "Public examples include electrical and mechanical engineers, construction managers and commissioning managers, complementing the six groups described in the LinkedIn post.",
+      "reviewed_on": "2026-11-07"
+    }
+  ],
+  "roles": [
+    {
+      "id": "design_director",
+      "title": "Data Center Design Director",
+      "source_group": "Design Leaders",
+      "origin": "derived_from_post_group",
+      "mandate": "Translate capacity demand into a staged owner brief and explicit trade-offs across resilience, cost, schedule and energy.",
+      "required_documents": [
+        "owner_requirements",
+        "capacity_roadmap"
+      ],
+      "review_checks": [
+        "Define usable IT capacity separately from utility capacity",
+        "Record availability objectives and expansion phases",
+        "Assign unresolved decisions to accountable specialists"
+      ],
+      "deliverables": [
+        "owner brief",
+        "decision register",
+        "discipline assignments"
+      ],
+      "source_ids": [
+        "msroles",
+        "uptime",
+        "doe2024"
+      ],
+      "metric_keys": [
+        "it_mw",
+        "facility_peak_mw",
+        "rack_count"
+      ]
+    },
+    {
+      "id": "electrical_engineer",
+      "title": "Electrical Power Engineer",
+      "source_group": "Electrical & Controls",
+      "origin": "derived_from_post_group",
+      "mandate": "Develop the grid-to-rack power concept and quantify capacity margins before detailed electrical studies.",
+      "required_documents": [
+        "single_line_diagram",
+        "utility_offer",
+        "protection_study"
+      ],
+      "review_checks": [
+        "Separate peak planning multiplier from annual PUE",
+        "Review UPS bypass and maintenance paths",
+        "Request load-flow, fault-level, selectivity and arc-flash studies from qualified engineers"
+      ],
+      "deliverables": [
+        "load schedule",
+        "capacity gap report",
+        "electrical study scope"
+      ],
+      "source_ids": [
+        "doe2024",
+        "uptime"
+      ],
+      "metric_keys": [
+        "facility_peak_mw",
+        "grid_headroom_mw",
+        "ups_firm_mw",
+        "ups_headroom_mw"
+      ]
+    },
+    {
+      "id": "controls_engineer",
+      "title": "Controls and Power Monitoring Engineer",
+      "source_group": "Electrical & Controls",
+      "origin": "derived_from_post_group",
+      "mandate": "Define observable BMS/EPMS interfaces and failure-aware control review requirements.",
+      "required_documents": [
+        "points_list",
+        "sequence_of_operations",
+        "ot_network_diagram"
+      ],
+      "review_checks": [
+        "Map meters, alarms and timestamps to equipment IDs",
+        "Specify sensor failure and communications-loss responses",
+        "Review OT segmentation and change ownership"
+      ],
+      "deliverables": [
+        "metering and alarm matrix",
+        "sequence review",
+        "OT interface register"
+      ],
+      "source_ids": [
+        "nist",
+        "doe2024"
+      ],
+      "metric_keys": [
+        "facility_peak_mw"
+      ]
+    },
+    {
+      "id": "mechanical_engineer",
+      "title": "Mechanical and Air Cooling Engineer",
+      "source_group": "Mechanical & Cooling",
+      "origin": "derived_from_post_group",
+      "mandate": "Assess residual air-side heat removal and coordinate environmental limits with IT equipment.",
+      "required_documents": [
+        "thermal_envelope",
+        "airflow_model",
+        "cooling_topology"
+      ],
+      "review_checks": [
+        "Check inlet rather than room-average conditions",
+        "Review containment and recirculation assumptions",
+        "Request design-weather and maintenance-mode thermal studies"
+      ],
+      "deliverables": [
+        "air heat balance",
+        "thermal study brief",
+        "cooling interface review"
+      ],
+      "source_ids": [
+        "ashrae2023",
+        "doe2024"
+      ],
+      "metric_keys": [
+        "air_heat_mw",
+        "air_firm_mw",
+        "air_headroom_mw"
+      ]
+    },
+    {
+      "id": "liquid_cooling_engineer",
+      "title": "Liquid Cooling Engineer",
+      "source_group": "Mechanical & Cooling",
+      "origin": "derived_from_post_group",
+      "mandate": "Scope direct-to-chip loops, CDU capacity and fluid interfaces for high-density racks.",
+      "required_documents": [
+        "cdu_datasheet",
+        "fluid_specification",
+        "leak_response_plan"
+      ],
+      "review_checks": [
+        "Verify TCS/FWS temperatures and pressure interfaces",
+        "Check fluid material compatibility and water quality",
+        "Request leak isolation, flushing and serviceability evidence"
+      ],
+      "deliverables": [
+        "liquid heat balance",
+        "flow estimate",
+        "CDU interface register"
+      ],
+      "source_ids": [
+        "ocp",
+        "ashrae2023",
+        "mscooling"
+      ],
+      "metric_keys": [
+        "liquid_heat_mw",
+        "liquid_flow_kg_s",
+        "liquid_firm_mw",
+        "liquid_headroom_mw"
+      ]
+    },
+    {
+      "id": "civil_engineer",
+      "title": "Civil and Site Infrastructure Engineer",
+      "source_group": "Structure, Civil & Architecture",
+      "origin": "derived_from_post_group",
+      "mandate": "Identify site constraints and due-diligence gaps affecting utility corridors, grading and access.",
+      "required_documents": [
+        "topographic_survey",
+        "geotechnical_report",
+        "flood_assessment"
+      ],
+      "review_checks": [
+        "Coordinate drainage, access and underground services",
+        "Identify local permitting and environmental constraints",
+        "Request survey and hazard evidence before site suitability conclusions"
+      ],
+      "deliverables": [
+        "site constraints register",
+        "due-diligence requests",
+        "utility corridor brief"
+      ],
+      "source_ids": [
+        "asce",
+        "tia"
+      ],
+      "metric_keys": []
+    },
+    {
+      "id": "structural_engineer",
+      "title": "Structural Engineer",
+      "source_group": "Structure, Civil & Architecture",
+      "origin": "derived_from_post_group",
+      "mandate": "Frame structural verification for heavy racks, plant loads, anchors and equipment replacement routes.",
+      "required_documents": [
+        "structural_load_schedule",
+        "structural_calculations",
+        "equipment_weights"
+      ],
+      "review_checks": [
+        "Check concentrated, dynamic and distributed loads separately",
+        "Include anchorage and site hazards under applicable codes",
+        "Request signed calculations; never infer slab adequacy from rack count"
+      ],
+      "deliverables": [
+        "load interface schedule",
+        "structural verification requests"
+      ],
+      "source_ids": [
+        "asce",
+        "ifc"
+      ],
+      "metric_keys": [
+        "rack_count"
+      ]
+    },
+    {
+      "id": "architect",
+      "title": "Data Center Architect and BIM Coordinator",
+      "source_group": "Structure, Civil & Architecture",
+      "origin": "derived_from_post_group",
+      "mandate": "Coordinate space, maintainability, life safety and model exchange requirements.",
+      "required_documents": [
+        "site_layout",
+        "life_safety_strategy",
+        "bim_execution_plan"
+      ],
+      "review_checks": [
+        "Review equipment replacement routes and service clearances",
+        "Coordinate fire compartments and egress with local specialists",
+        "Set IFC versions, units and model ownership before exchanging geometry"
+      ],
+      "deliverables": [
+        "space and adjacency brief",
+        "BIM coordination register",
+        "life-safety review requests"
+      ],
+      "source_ids": [
+        "ifc",
+        "tia",
+        "cx"
+      ],
+      "metric_keys": [
+        "rack_count"
+      ]
+    },
+    {
+      "id": "telecom_engineer",
+      "title": "Telecommunications Infrastructure Engineer",
+      "source_group": "Added: comment-identified omission",
+      "origin": "extension",
+      "mandate": "Define physical network pathways independently of electrical and controls design.",
+      "required_documents": [
+        "fiber_route_survey",
+        "network_topology",
+        "cabling_schedule"
+      ],
+      "review_checks": [
+        "Check carrier entrances for shared physical failure points",
+        "Coordinate meet-me rooms, pathways and rack interfaces",
+        "Request optical budgets and cabling acceptance tests"
+      ],
+      "deliverables": [
+        "telecom pathway brief",
+        "network diversity review"
+      ],
+      "source_ids": [
+        "tia",
+        "ashrae2023"
+      ],
+      "metric_keys": [
+        "rack_count"
+      ]
+    },
+    {
+      "id": "sustainability_engineer",
+      "title": "Energy and Water Performance Engineer",
+      "source_group": "Added: supporting specialization",
+      "origin": "extension",
+      "mandate": "Compare energy and water scenarios with explicit boundaries and site-specific evidence.",
+      "required_documents": [
+        "weather_series",
+        "water_balance",
+        "energy_model"
+      ],
+      "review_checks": [
+        "Keep annual PUE separate from peak sizing",
+        "Declare WUE denominator and cooling-versus-site water boundary",
+        "Request hourly tariffs, emissions, climate and source provenance before optimization"
+      ],
+      "deliverables": [
+        "annual energy screen",
+        "water boundary review",
+        "scenario requirements"
+      ],
+      "source_ids": [
+        "doe2024",
+        "mscooling"
+      ],
+      "metric_keys": [
+        "annual_it_mwh",
+        "annual_facility_mwh",
+        "annual_electricity_cost_eur",
+        "annual_site_water_m3"
+      ]
+    },
+    {
+      "id": "commissioning_engineer",
+      "title": "Commissioning and Handover Engineer",
+      "source_group": "E2E Delivery",
+      "origin": "derived_from_post_group",
+      "mandate": "Plan verifiable acceptance from owner requirements through integrated systems testing.",
+      "required_documents": [
+        "commissioning_plan",
+        "integrated_test_scripts",
+        "operations_manual"
+      ],
+      "review_checks": [
+        "Trace test acceptance criteria to owner requirements",
+        "Plan loss-of-utility, failed-component and recovery scenarios with authorized teams",
+        "Track defects, retests, training and handover evidence"
+      ],
+      "deliverables": [
+        "commissioning matrix",
+        "test evidence requests",
+        "handover checklist"
+      ],
+      "source_ids": [
+        "cx",
+        "msroles",
+        "uptime"
+      ],
+      "metric_keys": []
+    },
+    {
+      "id": "design_manager",
+      "title": "Data Center Design Manager",
+      "source_group": "Design Management",
+      "origin": "derived_from_post_group",
+      "mandate": "Coordinate design packages, dependencies, review gates and unresolved interfaces.",
+      "required_documents": [
+        "design_schedule",
+        "interface_register",
+        "cost_plan"
+      ],
+      "review_checks": [
+        "Reconcile specialist scope and assumptions",
+        "Assign owners and dates to unresolved interfaces",
+        "Preserve missing evidence and design changes in gate reports"
+      ],
+      "deliverables": [
+        "design coordination report",
+        "review gate register"
+      ],
+      "source_ids": [
+        "cx",
+        "ifc",
+        "msroles"
+      ],
+      "metric_keys": []
+    },
+    {
+      "id": "technical_governance",
+      "title": "Technical Governance Lead",
+      "source_group": "Design Leaders",
+      "origin": "derived_from_post_group",
+      "mandate": "Independently review evidence completeness, exceptions and resilience claims before escalation.",
+      "required_documents": [
+        "standards_register",
+        "deviation_register"
+      ],
+      "review_checks": [
+        "Identify adopted standards and editions by jurisdiction",
+        "Distinguish calculations from verified compliance",
+        "Reject certification claims based only on redundancy arithmetic"
+      ],
+      "deliverables": [
+        "assurance review",
+        "exception register"
+      ],
+      "source_ids": [
+        "uptime",
+        "tia",
+        "cx"
+      ],
+      "metric_keys": []
+    },
+    {
+      "id": "delivery_manager",
+      "title": "End-to-End Delivery Manager",
+      "source_group": "E2E Delivery",
+      "origin": "derived_from_post_group",
+      "mandate": "Turn coordinated design into a staged procurement, construction and handover proposal.",
+      "required_documents": [
+        "procurement_schedule",
+        "construction_plan",
+        "handover_acceptance"
+      ],
+      "review_checks": [
+        "Track long-lead equipment and energization dependencies",
+        "Carry design gaps into procurement and construction risks",
+        "Keep ready-for-service acceptance separate from completed agent execution"
+      ],
+      "deliverables": [
+        "delivery roadmap",
+        "readiness gaps",
+        "owner handoff"
+      ],
+      "source_ids": [
+        "msroles",
+        "cx"
+      ],
+      "metric_keys": []
+    }
+  ]
+}
