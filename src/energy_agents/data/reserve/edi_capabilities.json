@@ -1,0 +1,65 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "dbd83f047b8d86f7940446c39b9ffe7fd78e7723",
+  "scope": "Focused five-file source catalogue, not full inventory",
+  "entries": [
+    {
+      "path": "methods/src/energy_methods/storage_peak_shift.py",
+      "sha256": "e5123562643fc71005c7c1e84ed4e51b20e224fd3f17679324e600a6fa58ed45",
+      "symbols": [
+        {
+          "name": "StorageStep",
+          "line": 15,
+          "signature": ""
+        },
+        {
+          "name": "StorageShiftResult",
+          "line": 26,
+          "signature": ""
+        },
+        {
+          "name": "simulate_storage_peak_shift",
+          "line": 37,
+          "signature": "surplus_mw: Sequence[float], peak_shortfall_mw: Sequence[float], *, battery_power_mw: float, battery_energy_mwh: float, round_trip_efficiency: float=0.9, timestep_hours: float=1.0, initial_soc_mwh: float=0.0"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/dbd83f047b8d86f7940446c39b9ffe7fd78e7723/methods/src/energy_methods/storage_peak_shift.py"
+    },
+    {
+      "path": "methods/src/energy_methods/hybrid_dispatch.py",
+      "sha256": "e404a6724ea9f3a332fb50e307e048edde610e8569a230b5177ca1350d536a39",
+      "symbols": [
+        {
+          "name": "DispatchResult",
+          "line": 13,
+          "signature": ""
+        },
+        {
+          "name": "simulate_hybrid",
+          "line": 23,
+          "signature": "wind_mw: Sequence[float], solar_mw: Sequence[float], demand_mw: Sequence[float], *, battery_mwh: float, battery_mw: float, efficiency: float=0.9, initial_soc_mwh: float=0.0, timestep_hours: float=1.0"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/dbd83f047b8d86f7940446c39b9ffe7fd78e7723/methods/src/energy_methods/hybrid_dispatch.py"
+    },
+    {
+      "path": "examples/analysis/plot_india_storage_mandate.py",
+      "sha256": "c8d09c85c6cf6111cc1ccbd3617bb0d1c5e8a573871912a47b7d3706d137fa2a",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/dbd83f047b8d86f7940446c39b9ffe7fd78e7723/examples/analysis/plot_india_storage_mandate.py"
+    },
+    {
+      "path": "methods/pyproject.toml",
+      "sha256": "e9279c073497bca42e0fde637cfca37e7817a99eb6788068c2bd741a319720e2",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/dbd83f047b8d86f7940446c39b9ffe7fd78e7723/methods/pyproject.toml"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e659d14a7d13d27d5ba5fcb7b72fd3109aa4b53362a790295b6eec8028ff6b8c",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/dbd83f047b8d86f7940446c39b9ffe7fd78e7723/LICENSE"
+    }
+  ],
+  "discovery_is_execution": false
+}

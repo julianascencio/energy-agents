@@ -1,0 +1,18 @@
+{
+  "version": "1.0", "classification": "synthetic", "currency": "USD",
+  "source": {
+    "url": "https://www.nationalgrid.com/news/national-grid-launches-fall-river-area-home-battery-pilot",
+    "publication_date": "2026-11-06", "event_date": "2026-11-06",
+    "classification": "utility_announcement",
+    "fact_scope": "Pilot announcement, up to 125 homes, systems up to 45 kWh; backup and grid services; initial installations targeted spring 2027. No observed dispatch or tariff data."
+  },
+  "physical": {
+    "event_hours": 3, "round_trip_efficiency": 0.9025, "reserve_hours": [4, 8, 12],
+    "cohorts": [
+      {"id": "A", "count": 50, "capacity_kwh": 30, "soc_kwh": 24, "power_kw": 5, "critical_load_kw": 1, "consent": true, "telemetry_fresh": true, "available": true},
+      {"id": "B", "count": 50, "capacity_kwh": 20, "soc_kwh": 12, "power_kw": 3, "critical_load_kw": 0.8, "consent": true, "telemetry_fresh": true, "available": true},
+      {"id": "C", "count": 25, "capacity_kwh": 45, "soc_kwh": 36, "power_kw": 6, "critical_load_kw": 1.2, "consent": true, "telemetry_fresh": true, "available": true}
+    ]
+  },
+  "economics": {"payment_usd_per_kwh": 0.6, "recharge_usd_per_kwh": 0.15, "wear_usd_per_kwh": 0.04, "participant_usd_per_kwh": 0.1, "shortfall_usd_per_kwh": 3, "fixed_event_usd": 50}
+}

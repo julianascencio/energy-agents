@@ -1,0 +1,104 @@
+{
+  "edi_commit": "dbd83f047b8d86f7940446c39b9ffe7fd78e7723",
+  "method": "simulate_storage_peak_shift",
+  "classification": "modelled_synthetic",
+  "physical_sha256": "d4350e4fa0a3980b6aff604a6c41b307c9715d284700a47e73ed7d644cdb11b4",
+  "scenarios": [
+    {
+      "reserve_hours": 4,
+      "cohorts": [
+        {
+          "id": "A",
+          "count": 50,
+          "eligible": true,
+          "reserve_dc_kwh": 4.2105263157894735,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 15.0,
+          "final_soc_kwh_each": 8.210526315789473
+        },
+        {
+          "id": "B",
+          "count": 50,
+          "eligible": true,
+          "reserve_dc_kwh": 3.368421052631579,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 8.2,
+          "final_soc_kwh_each": 3.3684210526315788
+        },
+        {
+          "id": "C",
+          "count": 25,
+          "eligible": true,
+          "reserve_dc_kwh": 5.052631578947368,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 18.000000000000004,
+          "final_soc_kwh_each": 17.052631578947363
+        }
+      ]
+    },
+    {
+      "reserve_hours": 8,
+      "cohorts": [
+        {
+          "id": "A",
+          "count": 50,
+          "eligible": true,
+          "reserve_dc_kwh": 8.421052631578947,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 14.8,
+          "final_soc_kwh_each": 8.421052631578945
+        },
+        {
+          "id": "B",
+          "count": 50,
+          "eligible": true,
+          "reserve_dc_kwh": 6.736842105263158,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 4.999999999999999,
+          "final_soc_kwh_each": 6.736842105263158
+        },
+        {
+          "id": "C",
+          "count": 25,
+          "eligible": true,
+          "reserve_dc_kwh": 10.105263157894736,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 18.000000000000004,
+          "final_soc_kwh_each": 17.052631578947363
+        }
+      ]
+    },
+    {
+      "reserve_hours": 12,
+      "cohorts": [
+        {
+          "id": "A",
+          "count": 50,
+          "eligible": true,
+          "reserve_dc_kwh": 12.631578947368421,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 10.799999999999999,
+          "final_soc_kwh_each": 12.631578947368421
+        },
+        {
+          "id": "B",
+          "count": 50,
+          "eligible": true,
+          "reserve_dc_kwh": 10.105263157894738,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 1.799999999999999,
+          "final_soc_kwh_each": 10.105263157894738
+        },
+        {
+          "id": "C",
+          "count": 25,
+          "eligible": true,
+          "reserve_dc_kwh": 15.157894736842104,
+          "initial_reserve_deficit_kwh": 0,
+          "delivered_ac_kwh_each": 18.000000000000004,
+          "final_soc_kwh_each": 17.052631578947363
+        }
+      ]
+    }
+  ]
+}
