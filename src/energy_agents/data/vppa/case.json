@@ -1,0 +1,12 @@
+{
+  "version": "1.0", "classification": "synthetic", "currency": "EUR",
+  "source": {"url": "https://newsroom.aholddelhaize.com/ahold-delhaize-signs-new-power-purchase-agreement-further-supporting-renewable-energy-development-in-romania/", "publication_date": "2026-11-05", "event_date": "2026-11-05", "classification": "issuer_announcement", "scope": "Announcement of wind/solar VPPA and planned 2029 operations; signing date not separately established. No actual prices or settlement clauses imported."},
+  "strike_eur_mwh": 65, "fee_eur_mwh": 2, "budget_eur": 40000,
+  "mixes": {"solar": 1, "hybrid": 0.5, "wind": 0},
+  "intervals": [
+    {"start_utc": "2026-11-05T00:00:00Z", "hours": 6, "load_mwh": 100, "solar_mwh": 0, "wind_mwh": 100, "load_price_eur_mwh": 100, "reference_price_eur_mwh": 95},
+    {"start_utc": "2026-11-05T06:00:00Z", "hours": 6, "load_mwh": 100, "solar_mwh": 160, "wind_mwh": 100, "load_price_eur_mwh": 60, "reference_price_eur_mwh": 25},
+    {"start_utc": "2026-11-05T12:00:00Z", "hours": 6, "load_mwh": 100, "solar_mwh": 200, "wind_mwh": 100, "load_price_eur_mwh": 40, "reference_price_eur_mwh": -10},
+    {"start_utc": "2026-11-05T18:00:00Z", "hours": 6, "load_mwh": 100, "solar_mwh": 40, "wind_mwh": 100, "load_price_eur_mwh": 120, "reference_price_eur_mwh": 100}
+  ]
+}

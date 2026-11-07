@@ -254,3 +254,7 @@ The synthetic 20 MW IT example identifies a 2 MW utility shortfall and missing
 design evidence. Includes optional live LLM planners, without claiming live LLM
 validation or automated engineering approval. See the
 [role catalogue, literature and usage](docs/sphinx/source/data_center_design.rst).
+
+### VPPA buyer basis risk
+
+Run `energy-agents-vppa --output outputs/vppa` for an offline synthetic buyer settlement screen with equal-energy solar/wind alternatives, an unhedged baseline and basis sensitivities. See [methodology](docs/sphinx/source/vppa_basis.rst) and [case history](docs/cases/2026-11-07-vppa-basis-risk.md).

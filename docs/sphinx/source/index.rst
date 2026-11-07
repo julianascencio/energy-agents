@@ -27,6 +27,7 @@ scripted tool counts with clearly separated published observations.
 
    reserve_screen
    data_center_design
+   vppa_basis
    bridge_power
    bess_business
    gallery/index
