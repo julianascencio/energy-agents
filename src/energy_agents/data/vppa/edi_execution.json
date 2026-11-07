@@ -1,0 +1,9 @@
+{
+  "country_code": "ROU",
+  "records": 3,
+  "input_sha256": "ad6baceb6922a382b991b9d414768abe2a0eae86e199196c02858b6a589483ed",
+  "use": "inventory_only_not_cash_flow_calibration",
+  "commit": "15da19b4a0631dd3ef4e9523fb655388f4c98107",
+  "package": "energy-data-retrieval 0.1.0",
+  "execution": "actual loader and validator; no market connector or price model executed"
+}
