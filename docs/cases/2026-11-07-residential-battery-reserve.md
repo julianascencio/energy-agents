@@ -93,4 +93,10 @@ annual ROI, capex recovery or dispatch authorization. Ineligible cohorts exclude
 initial reserve deficits visible. Fixed tasks enforce evidence before finance.
 No trades, contracts, controls, purchases or third-party messages.
 
-PR and completed validation recorded after publication.
+PR: https://github.com/julianascencio/energy-agents/pull/11 — non-draft, left open.
+
+Local validation: 194 tests pass (including two optional EDI integration tests),
+Ruff and diff checks pass, wheel/sdist and installed-wheel smoke pass, strict
+Sphinx/gallery build passes and charts visually inspected. CI's default key-free
+installation omits EDI and skips those two integration tests. Consult the PR's
+current-head checks for live GitHub status; no stale result is frozen here.
