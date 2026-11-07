@@ -237,3 +237,20 @@ Run `energy-agents-bridge --output outputs/bridge_power` for the synthetic NTT/B
 ### Residential battery reserve screen
 
 Run `energy-agents-reserve --output outputs/reserve` to compare a reserve-limited grid-service offer against nameplate overcommitment. Uses recorded EDI physics, synthetic USD/event economics and the existing finance role. See [methodology](docs/sphinx/source/reserve_screen.rst) and [case history](docs/cases/2026-11-07-residential-battery-reserve.md).
+
+## Data center design agents
+
+Fourteen specialists cover all six design-team groups in Brian Bakerman's
+LinkedIn post, with telecoms and sustainability explicitly added. Each includes
+a role contract, research context, evidence checklist and bounded advisory runner.
+The existing orchestrator coordinates discipline reviews and handover.
+
+```bash
+energy-agents-design --output outputs/data_center_design
+python examples/data_centers/plot_design_team.py
+```
+
+The synthetic 20 MW IT example identifies a 2 MW utility shortfall and missing
+design evidence. Includes optional live LLM planners, without claiming live LLM
+validation or automated engineering approval. See the
+[role catalogue, literature and usage](docs/sphinx/source/data_center_design.rst).
