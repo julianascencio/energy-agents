@@ -80,4 +80,9 @@ Default path offline/key-free; optional EDI commands in `vppa_basis.rst`.
 Direct deterministic baseline equals scripted handoff output. LLM cost, latency
 and tokens unknown; no provider run or superiority asserted.
 
-PR and completed validation recorded after publication.
+PR: https://github.com/julianascencio/energy-agents/pull/13 — non-draft, left open.
+
+Local validation: 224 tests pass, Ruff/diff checks pass, wheel/sdist and installed-
+wheel smoke pass, strict Sphinx/gallery build passes; generated charts inspected.
+Two pre-existing optional EDI integration tests run locally and skip in default CI.
+See current PR head checks for live GitHub status rather than a frozen result.
