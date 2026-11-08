@@ -62,8 +62,34 @@ causal diagnosis, field validation or execution authority is claimed.
 - [PV workflow, evidence schema and optional LLM planner](docs/sphinx/source/pv_operations.rst)
 - [Runnable gallery source](examples/operations/plot_pv_role_team.py)
 
-Only the five PV roles are executable in this workflow; the wider renewable
-lifecycle, other technologies and additional agent families are documented plans.
+This PV workflow executes these five roles. Public-career and data center
+specialists have separate advisory runners; the wider renewable lifecycle
+catalogue also includes roles still at the design stage.
+
+## Public-career role agents
+
+**52 reusable agents cover all 56 openings** observed in the public careers feed
+on 8 November 2026. They span AI engineering and delivery, data and IoT platforms,
+energy operations, sales, finance, IT, governance, marketing, strategy, HR and legal
+support. Repeated procurement, FDE and translated support listings share agents.
+
+Each role has its own mandate, responsibilities, required inputs, deliverables,
+review checks, KPIs and handoffs. The packaged catalogue maps every source listing
+to its agent. Generic role identities are separate from source attribution.
+
+```bash
+energy-agents-roles --list
+energy-agents-roles --output outputs/career_roles
+python examples/enterprise/plot_career_role_agents.py
+```
+
+The default run produces **scripted work plans**. An optional LLM adapter can
+propose deliverables through the same bounded evidence-linked protocol. Structural
+acceptance is not factual validation or completion of professional work.
+
+- [Role guide, complete source mapping and contracts](docs/sphinx/source/career_roles.rst)
+- [Runnable gallery example](examples/enterprise/plot_career_role_agents.py)
+- [Packaged role catalogue](src/energy_agents/data/career_roles/catalogue.json)
 
 ## Python, data science and ML engineering agent
 

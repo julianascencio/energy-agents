@@ -18,6 +18,7 @@ scripted tool counts with clearly separated published observations.
    user_guide
    orchestrator
    professional_roles
+   career_roles
    pv_operations
    industrial_flexibility
 
