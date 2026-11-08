@@ -258,3 +258,13 @@ validation or automated engineering approval. See the
 ### VPPA buyer basis risk
 
 Run `energy-agents-vppa --output outputs/vppa` for an offline synthetic buyer settlement screen with equal-energy solar/wind alternatives, an unhedged baseline and basis sensitivities. See [methodology](docs/sphinx/source/vppa_basis.rst) and [case history](docs/cases/2026-11-07-vppa-basis-risk.md).
+
+### Transformer manufacturing-slot reservation
+
+Run `energy-agents-procurement --output outputs/procurement` to compare reservation
+against waiting for project approval under joint delivery, site-readiness and
+cancellation scenarios. Reuses Project Controls Engineer, Project Finance Analyst
+and the orchestrator. Includes synthetic NPV, downside and fee-ceiling results,
+versioned prompts and a runnable procurement gallery. See
+[method and reproduction](docs/sphinx/source/transformer_procurement.rst) and
+[case history](docs/cases/2026-11-08-transformer-procurement.md).

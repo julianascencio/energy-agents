@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0", "currency": "EUR", "classification": "synthetic_scenario",
+  "as_of": "2026-11-08",
+  "source": {
+    "title": "ENTSO-E Transmission Grid Investment and Supply Chain Assessment Report 2026",
+    "url": "https://www.entsoe.eu/news/2026/11/03/entso-e-report-sets-out-europe-s-transmission-investment-needs-to-2035/",
+    "report_url": "https://eepublicdownloads.blob.core.windows.net/public-cdn-container/clean-documents/Publications/Position%20papers%20and%20reports/2026/entso-e_report_investment_supply_chain_assessment_2026_261030.pdf",
+    "publication_date": "2026-11-03", "event_date": "2026-11-03",
+    "event_kind": "report_release", "classification": "operator_report",
+    "locator": "Report pp. 11, 15-16, 33; press release dated 3 November",
+    "observations": {"planned_transformer_additions_2026_2035": 2820, "reporting_tsos": 27,
+      "reported_typical_minimum_lead_months_245_420_kv": 36},
+    "boundary": "Reported plans and generic lead time, not orders, project delivery promises or observed profits. No cancellation probabilities, fees or commercial quotes supplied."
+  },
+  "assumptions": {
+    "classification": "synthetic_assumptions", "decision_month": 12, "horizon_months": 72,
+    "installation_months": 3, "monthly_contribution_eur": 400000,
+    "reservation_fee_eur": 600000, "exercise_premium_eur": 200000,
+    "cancel_refund_fraction": 0, "annual_discount_rate": 0.08, "downside_limit_eur": 900000,
+    "cost_boundary": "Synthetic wind developer connection: reservation fee paid now, not credited against equipment; exercise premium at approval if proceeding; cancellation refund at decision month. Common transformer price and payment schedule assumed identical at approval in both options and cancel out. Contribution is net of generation OPEX and electricity/route-to-market costs. No tax, debt, inflation, equipment capex timing differences, storage, residual value or terminal cash beyond month 72. Additional holding or engineering costs must be included in fee/premium or model extended. No claim that suppliers offer these terms."
+  },
+  "scenarios": [
+    {"id": "proceed_site_ready", "probability": 0.5, "proceed": true,
+     "site_ready_month": 36, "wait_arrival_month": 48, "reserved_arrival_month": 36},
+    {"id": "proceed_site_delayed", "probability": 0.3, "proceed": true,
+     "site_ready_month": 54, "wait_arrival_month": 48, "reserved_arrival_month": 36},
+    {"id": "cancel_at_approval", "probability": 0.2, "proceed": false}
+  ]
+}
