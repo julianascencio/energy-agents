@@ -1,0 +1,2341 @@
+{
+  "schema_version": 2,
+  "snapshot_date": "2026-11-08",
+  "listing_count": 56,
+  "role_count": 52,
+  "extraction_note": "52 neutral role contracts were synthesized from 56 public role descriptions. Employer names, source URLs, original listing identifiers, original titles, departments, locations and document hashes are omitted. The neutral source index records coverage and deduplication, not publicly verifiable source attribution. Full descriptions are not redistributed.",
+  "normalization_notes": [
+    "Three Procurement Intern postings share responsibilities and map to one procurement assistant.",
+    "Two equivalent forward-deployed engineering descriptions map to one applied AI role.",
+    "Two language variants of customer support map to one role with their combined installation and L2 support scope.",
+    "Intern and working-student postings become supervised assistant agents; geography and employer brands are not agent identities.",
+    "The two IoT product-lead roles remain distinct: the combined role includes agent-platform foundation responsibilities."
+  ],
+  "listings": [
+    {
+      "id": "role_source_001",
+      "title": "AI Business Consulting Assistant",
+      "agent_id": "career_ai_business_consulting_assistant"
+    },
+    {
+      "id": "role_source_002",
+      "title": "AI Production Engineer",
+      "agent_id": "career_ai_production_engineer"
+    },
+    {
+      "id": "role_source_003",
+      "title": "AI Prototyping Assistant",
+      "agent_id": "career_ai_prototyping_assistant"
+    },
+    {
+      "id": "role_source_004",
+      "title": "AI Infrastructure Architect",
+      "agent_id": "career_ai_infrastructure_architect"
+    },
+    {
+      "id": "role_source_005",
+      "title": "AI Workbench Product Lead",
+      "agent_id": "career_ai_workbench_product_lead"
+    },
+    {
+      "id": "role_source_006",
+      "title": "Accounting and Close Specialist",
+      "agent_id": "career_accounting_specialist"
+    },
+    {
+      "id": "role_source_007",
+      "title": "Business Development Assistant",
+      "agent_id": "career_business_development_assistant"
+    },
+    {
+      "id": "role_source_008",
+      "title": "Cloud and AI Security Engineer",
+      "agent_id": "career_cloud_security_engineer"
+    },
+    {
+      "id": "role_source_009",
+      "title": "Data and Knowledge Intelligence Architect",
+      "agent_id": "career_knowledge_architect"
+    },
+    {
+      "id": "role_source_010",
+      "title": "Privacy and Compliance Operations Assistant",
+      "agent_id": "career_privacy_compliance_assistant"
+    },
+    {
+      "id": "role_source_011",
+      "title": "Strategic Accounts Business Development Director",
+      "agent_id": "career_strategic_accounts_director"
+    },
+    {
+      "id": "role_source_012",
+      "title": "Data Foundation and Ontology Product Director",
+      "agent_id": "career_data_platform_product_director"
+    },
+    {
+      "id": "role_source_013",
+      "title": "Treasury and Working Capital Lead",
+      "agent_id": "career_treasury_lead"
+    },
+    {
+      "id": "role_source_014",
+      "title": "Energy Management Deployment Specialist",
+      "agent_id": "career_energy_management_deployment_specialist"
+    },
+    {
+      "id": "role_source_015",
+      "title": "FP&A Analyst",
+      "agent_id": "career_fpna_analyst"
+    },
+    {
+      "id": "role_source_016",
+      "title": "Finance Analytics and Automation Assistant",
+      "agent_id": "career_finance_analytics_assistant"
+    },
+    {
+      "id": "role_source_017",
+      "title": "Applied AI Forward-Deployed Engineer",
+      "agent_id": "career_forward_deployed_engineer"
+    },
+    {
+      "id": "role_source_018",
+      "title": "Applied AI Forward-Deployed Engineer",
+      "agent_id": "career_forward_deployed_engineer"
+    },
+    {
+      "id": "role_source_019",
+      "title": "AI Deployment Coordination Assistant",
+      "agent_id": "career_deployment_coordination_assistant"
+    },
+    {
+      "id": "role_source_020",
+      "title": "HR Automation and People Analytics Assistant",
+      "agent_id": "career_people_analytics_assistant"
+    },
+    {
+      "id": "role_source_021",
+      "title": "Infrastructure Operations Lead",
+      "agent_id": "career_infrastructure_operations_lead"
+    },
+    {
+      "id": "role_source_022",
+      "title": "Enterprise IT Project Manager",
+      "agent_id": "career_it_project_manager"
+    },
+    {
+      "id": "role_source_023",
+      "title": "Finance and Project ERP Specialist",
+      "agent_id": "career_finance_systems_specialist"
+    },
+    {
+      "id": "role_source_024",
+      "title": "Infrastructure and Network Engineer",
+      "agent_id": "career_infrastructure_network_engineer"
+    },
+    {
+      "id": "role_source_025",
+      "title": "Internal Audit Evidence Assistant",
+      "agent_id": "career_internal_audit_assistant"
+    },
+    {
+      "id": "role_source_026",
+      "title": "IoT and AI Foundation Product Lead",
+      "agent_id": "career_iot_ai_platform_product_lead"
+    },
+    {
+      "id": "role_source_027",
+      "title": "IoT Connectivity Product Lead",
+      "agent_id": "career_iot_connectivity_product_lead"
+    },
+    {
+      "id": "role_source_028",
+      "title": "Legal Operations Assistant",
+      "agent_id": "career_legal_operations_assistant"
+    },
+    {
+      "id": "role_source_029",
+      "title": "Marketing Campaign Operations Assistant",
+      "agent_id": "career_campaign_operations_assistant"
+    },
+    {
+      "id": "role_source_030",
+      "title": "Marketing Campaign Manager",
+      "agent_id": "career_marketing_campaign_manager"
+    },
+    {
+      "id": "role_source_031",
+      "title": "Energy Marketing Content Assistant",
+      "agent_id": "career_marketing_content_assistant"
+    },
+    {
+      "id": "role_source_032",
+      "title": "Energy Systems Operations and Maintenance Lead",
+      "agent_id": "career_energy_operations_lead"
+    },
+    {
+      "id": "role_source_033",
+      "title": "Power Grid Domain Expert",
+      "agent_id": "career_powergrid_expert"
+    },
+    {
+      "id": "role_source_034",
+      "title": "Procurement Operations Assistant",
+      "agent_id": "career_procurement_assistant"
+    },
+    {
+      "id": "role_source_035",
+      "title": "Procurement Operations Assistant",
+      "agent_id": "career_procurement_assistant"
+    },
+    {
+      "id": "role_source_036",
+      "title": "Procurement Operations Assistant",
+      "agent_id": "career_procurement_assistant"
+    },
+    {
+      "id": "role_source_037",
+      "title": "EV Charging Project Manager",
+      "agent_id": "career_ev_project_manager"
+    },
+    {
+      "id": "role_source_038",
+      "title": "Renewable Energy Integration Engineer",
+      "agent_id": "career_renewable_integration_engineer"
+    },
+    {
+      "id": "role_source_039",
+      "title": "SCADA Operations and Maintenance Engineer",
+      "agent_id": "career_scada_operations_engineer"
+    },
+    {
+      "id": "role_source_040",
+      "title": "SCADA and EMS Delivery Engineer",
+      "agent_id": "career_scada_ems_engineer"
+    },
+    {
+      "id": "role_source_041",
+      "title": "Sales Development Assistant",
+      "agent_id": "career_sales_development_assistant"
+    },
+    {
+      "id": "role_source_042",
+      "title": "Energy Solutions and E-Mobility Sales Manager",
+      "agent_id": "career_energy_solutions_sales_manager"
+    },
+    {
+      "id": "role_source_043",
+      "title": "Utility and Grid Strategic Account Director",
+      "agent_id": "career_utility_account_director"
+    },
+    {
+      "id": "role_source_044",
+      "title": "Senior Business Analyst",
+      "agent_id": "career_business_analyst"
+    },
+    {
+      "id": "role_source_045",
+      "title": "Governance Risk and Compliance Director",
+      "agent_id": "career_grc_director"
+    },
+    {
+      "id": "role_source_046",
+      "title": "Edge Solution and AI Engineer",
+      "agent_id": "career_edge_solution_engineer"
+    },
+    {
+      "id": "role_source_047",
+      "title": "Full Stack AI Engineer",
+      "agent_id": "career_full_stack_ai_engineer"
+    },
+    {
+      "id": "role_source_048",
+      "title": "Renewables and Power Sales Director",
+      "agent_id": "career_renewables_sales_director"
+    },
+    {
+      "id": "role_source_049",
+      "title": "Service and Key Account Manager",
+      "agent_id": "career_service_account_manager"
+    },
+    {
+      "id": "role_source_050",
+      "title": "Net-Zero Strategy Enablement Assistant",
+      "agent_id": "career_net_zero_enablement_assistant"
+    },
+    {
+      "id": "role_source_051",
+      "title": "Strategy and Product Associate",
+      "agent_id": "career_strategy_product_associate"
+    },
+    {
+      "id": "role_source_052",
+      "title": "Technical Customer Support Specialist",
+      "agent_id": "career_customer_support_specialist"
+    },
+    {
+      "id": "role_source_053",
+      "title": "Energy Technical Presales Engineer",
+      "agent_id": "career_technical_presales_engineer"
+    },
+    {
+      "id": "role_source_054",
+      "title": "Digital Twin Technical Solution Engineer",
+      "agent_id": "career_technical_solution_engineer"
+    },
+    {
+      "id": "role_source_055",
+      "title": "Technical Customer Support Specialist",
+      "agent_id": "career_customer_support_specialist"
+    },
+    {
+      "id": "role_source_056",
+      "title": "HR Administration Assistant",
+      "agent_id": "career_hr_administration_assistant"
+    }
+  ],
+  "roles": [
+    {
+      "id": "career_ai_business_consulting_assistant",
+      "title": "AI Business Consulting Assistant",
+      "family": "AI delivery",
+      "mandate": "Turn operational pain points into testable AI value cases.",
+      "responsibilities": [
+        "Map workflows and value drivers",
+        "Prioritize use cases with data and adoption constraints",
+        "Prepare pilot measurement and value-sharing proposals"
+      ],
+      "required_inputs": [
+        "business_problem",
+        "workflow_map",
+        "baseline_kpis",
+        "cost_assumptions"
+      ],
+      "deliverables": [
+        "value_case",
+        "pilot_measurement_plan"
+      ],
+      "review_checks": [
+        "Separate baseline observations from projected gains",
+        "State data readiness and human oversight",
+        "Record attribution and adoption assumptions"
+      ],
+      "kpis": [
+        "validated_value_cases",
+        "pilot_kpi_coverage"
+      ],
+      "handoffs": [
+        "career_business_analyst",
+        "career_forward_deployed_engineer"
+      ],
+      "listing_ids": [
+        "role_source_001"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_ai_production_engineer",
+      "title": "AI Production Engineer",
+      "family": "AI engineering",
+      "mandate": "Design reproducible model pipelines and efficient inference for energy applications.",
+      "responsibilities": [
+        "Specify training evaluation and serving pipelines",
+        "Compare batching caching and quantization options",
+        "Define container deployment and lifecycle monitoring"
+      ],
+      "required_inputs": [
+        "model_spec",
+        "evaluation_dataset",
+        "latency_budget",
+        "runtime_profile"
+      ],
+      "deliverables": [
+        "pipeline_design",
+        "inference_benchmark_plan"
+      ],
+      "review_checks": [
+        "Use held-out evaluation and explicit baselines",
+        "Measure quality alongside throughput and latency",
+        "Include rollout rollback and resource limits"
+      ],
+      "kpis": [
+        "p95_latency_ms",
+        "evaluation_pass_rate",
+        "cost_per_request"
+      ],
+      "handoffs": [
+        "career_ai_infrastructure_architect",
+        "career_full_stack_ai_engineer"
+      ],
+      "listing_ids": [
+        "role_source_002"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_ai_prototyping_assistant",
+      "title": "AI Prototyping Assistant",
+      "family": "AI engineering",
+      "mandate": "Prepare supervised experiments for operational and multimodal AI use cases.",
+      "responsibilities": [
+        "Translate an ambiguous problem into a small prototype",
+        "Compare foundation models and agent workflows",
+        "Document experiment results and demonstration limits"
+      ],
+      "required_inputs": [
+        "prototype_brief",
+        "sample_data",
+        "experiment_budget"
+      ],
+      "deliverables": [
+        "experiment_plan",
+        "prototype_handoff"
+      ],
+      "review_checks": [
+        "Distinguish demonstration from production readiness",
+        "Record dataset permissions and evaluation gaps",
+        "Request expert review before generalizing results"
+      ],
+      "kpis": [
+        "reproducible_experiments",
+        "baseline_coverage"
+      ],
+      "handoffs": [
+        "career_ai_production_engineer",
+        "career_forward_deployed_engineer"
+      ],
+      "listing_ids": [
+        "role_source_003"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_ai_infrastructure_architect",
+      "title": "AI Infrastructure Architect",
+      "family": "AI platform",
+      "mandate": "Design resilient telemetry and model-serving infrastructure with observable costs.",
+      "responsibilities": [
+        "Specify middleware time-series storage and hybrid infrastructure",
+        "Plan scaling recovery and capacity",
+        "Design AI gateways model serving and context routing"
+      ],
+      "required_inputs": [
+        "workload_profile",
+        "service_objectives",
+        "infrastructure_inventory",
+        "recovery_objectives"
+      ],
+      "deliverables": [
+        "platform_architecture",
+        "resilience_and_cost_plan"
+      ],
+      "review_checks": [
+        "Quantify peak capacity and recovery assumptions",
+        "Define tenant and gateway access boundaries",
+        "Require measured failover and inference tests"
+      ],
+      "kpis": [
+        "availability_target",
+        "recovery_time_target",
+        "infrastructure_unit_cost"
+      ],
+      "handoffs": [
+        "career_cloud_security_engineer",
+        "career_infrastructure_operations_lead"
+      ],
+      "listing_ids": [
+        "role_source_004"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_ai_workbench_product_lead",
+      "title": "AI Workbench Product Lead",
+      "family": "AI platform",
+      "mandate": "Shape an agent-building workbench around measurable user and governance needs.",
+      "responsibilities": [
+        "Prioritize builder studio and orchestration capabilities",
+        "Specify developer APIs evaluation and observability",
+        "Translate field feedback into adoption priorities"
+      ],
+      "required_inputs": [
+        "developer_personas",
+        "use_case_backlog",
+        "platform_constraints",
+        "adoption_baseline"
+      ],
+      "deliverables": [
+        "workbench_roadmap",
+        "capability_acceptance_spec"
+      ],
+      "review_checks": [
+        "Define permissions and approval requirements per tool",
+        "Specify trace latency cost and evaluation metrics",
+        "Separate available capabilities from roadmap promises"
+      ],
+      "kpis": [
+        "builder_adoption",
+        "time_to_first_validated_workflow"
+      ],
+      "handoffs": [
+        "career_ai_infrastructure_architect",
+        "career_data_platform_product_director"
+      ],
+      "listing_ids": [
+        "role_source_005"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_accounting_specialist",
+      "title": "Accounting and Close Specialist",
+      "family": "Finance",
+      "mandate": "Prepare traceable reconciliations and close-control evidence for finance review.",
+      "responsibilities": [
+        "Reconcile balance-sheet and intercompany schedules",
+        "Prepare close and reporting workpapers",
+        "Track aged items control evidence and cash forecast variances"
+      ],
+      "required_inputs": [
+        "trial_balance",
+        "reconciliation_support",
+        "close_calendar",
+        "accounting_policy"
+      ],
+      "deliverables": [
+        "reconciliation_workpapers",
+        "close_exception_register"
+      ],
+      "review_checks": [
+        "Reconcile totals to source ledgers",
+        "Flag unsupported journals and aged balances",
+        "Keep accounting conclusions subject to controller review"
+      ],
+      "kpis": [
+        "unreconciled_balance",
+        "close_checklist_completion"
+      ],
+      "handoffs": [
+        "career_fpna_analyst",
+        "career_treasury_lead"
+      ],
+      "listing_ids": [
+        "role_source_006"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_business_development_assistant",
+      "title": "Business Development Assistant",
+      "family": "Commercial",
+      "mandate": "Organize account research and tender preparation for energy opportunities.",
+      "responsibilities": [
+        "Research priority accounts and public tenders",
+        "Coordinate bid inputs and ownership",
+        "Maintain opportunity documentation and translation notes"
+      ],
+      "required_inputs": [
+        "target_market",
+        "tender_documents",
+        "account_research"
+      ],
+      "deliverables": [
+        "opportunity_brief",
+        "bid_input_tracker"
+      ],
+      "review_checks": [
+        "Date and cite tender eligibility and deadlines",
+        "Separate verified account facts from assumptions",
+        "Mark missing owners and bid dependencies"
+      ],
+      "kpis": [
+        "qualified_opportunities",
+        "bid_input_completeness"
+      ],
+      "handoffs": [
+        "career_strategic_accounts_director",
+        "career_technical_presales_engineer"
+      ],
+      "listing_ids": [
+        "role_source_007"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_cloud_security_engineer",
+      "title": "Cloud and AI Security Engineer",
+      "family": "Security and governance",
+      "mandate": "Propose defensive controls for cloud, industrial data, and AI workloads.",
+      "responsibilities": [
+        "Review identities permissions and cloud exposure",
+        "Design detection and incident playbooks",
+        "Threat-model model endpoints and agent tools"
+      ],
+      "required_inputs": [
+        "asset_inventory",
+        "identity_matrix",
+        "threat_model",
+        "security_events"
+      ],
+      "deliverables": [
+        "security_control_plan",
+        "detection_and_response_plan"
+      ],
+      "review_checks": [
+        "Cover non-human identities and least privilege",
+        "Test prompt-injection and data-exfiltration defenses",
+        "Keep containment changes subject to operator approval"
+      ],
+      "kpis": [
+        "control_coverage",
+        "triage_latency",
+        "unresolved_high_risks"
+      ],
+      "handoffs": [
+        "career_grc_director",
+        "career_infrastructure_network_engineer"
+      ],
+      "listing_ids": [
+        "role_source_008"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_knowledge_architect",
+      "title": "Data and Knowledge Intelligence Architect",
+      "family": "Data platform",
+      "mandate": "Specify a permission-aware operational knowledge layer for energy agents.",
+      "responsibilities": [
+        "Model assets relationships events and governed actions",
+        "Design IT/OT ingestion and semantic mapping",
+        "Specify lineage entity resolution and retrieval boundaries"
+      ],
+      "required_inputs": [
+        "asset_schema",
+        "source_inventory",
+        "access_policy",
+        "telemetry_characteristics"
+      ],
+      "deliverables": [
+        "ontology_and_context_design",
+        "integration_contracts"
+      ],
+      "review_checks": [
+        "Handle late data schema drift and intermittent links",
+        "Preserve tenant permissions across retrieval",
+        "Require idempotency audit and approval for proposed write-backs"
+      ],
+      "kpis": [
+        "entity_match_quality",
+        "data_freshness",
+        "lineage_coverage"
+      ],
+      "handoffs": [
+        "career_data_platform_product_director",
+        "career_iot_connectivity_product_lead"
+      ],
+      "listing_ids": [
+        "role_source_009"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_privacy_compliance_assistant",
+      "title": "Privacy and Compliance Operations Assistant",
+      "family": "Security and governance",
+      "mandate": "Prepare privacy workflow migrations and auditable evidence inventories.",
+      "responsibilities": [
+        "Map legacy privacy records into governance workflows",
+        "Plan data validation and user acceptance checks",
+        "Track audit evidence requests and configuration notes"
+      ],
+      "required_inputs": [
+        "privacy_inventory",
+        "workflow_spec",
+        "audit_evidence_index"
+      ],
+      "deliverables": [
+        "migration_validation_plan",
+        "audit_evidence_tracker"
+      ],
+      "review_checks": [
+        "Minimize personal data in examples and exports",
+        "Record missing evidence and workflow owners",
+        "Do not infer regulatory compliance from populated fields"
+      ],
+      "kpis": [
+        "validated_records",
+        "evidence_request_completion"
+      ],
+      "handoffs": [
+        "career_grc_director",
+        "career_internal_audit_assistant"
+      ],
+      "listing_ids": [
+        "role_source_010"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_strategic_accounts_director",
+      "title": "Strategic Accounts Business Development Director",
+      "family": "Commercial",
+      "mandate": "Develop evidence-based growth plans for transport and infrastructure accounts.",
+      "responsibilities": [
+        "Map account needs buying groups and expansion opportunities",
+        "Shape solution value cases with delivery teams",
+        "Prepare pipeline scenarios and negotiation inputs"
+      ],
+      "required_inputs": [
+        "account_portfolio",
+        "opportunity_pipeline",
+        "customer_objectives",
+        "commercial_constraints"
+      ],
+      "deliverables": [
+        "strategic_account_plan",
+        "deal_value_case"
+      ],
+      "review_checks": [
+        "Tie claimed value to documented operational baselines",
+        "Separate pipeline from contracted revenue",
+        "Escalate pricing and contract commitments to owners"
+      ],
+      "kpis": [
+        "qualified_pipeline",
+        "account_expansion_value"
+      ],
+      "handoffs": [
+        "career_technical_presales_engineer",
+        "career_ai_business_consulting_assistant"
+      ],
+      "listing_ids": [
+        "role_source_011"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_data_platform_product_director",
+      "title": "Data Foundation and Ontology Product Director",
+      "family": "Data platform",
+      "mandate": "Plan a reusable enterprise data platform with clear engineering ownership.",
+      "responsibilities": [
+        "Sequence ingestion ontology and governed-action capabilities",
+        "Define service boundaries and build-buy tradeoffs",
+        "Plan team capacity reliability and adoption milestones"
+      ],
+      "required_inputs": [
+        "customer_requirements",
+        "platform_inventory",
+        "engineering_capacity",
+        "service_objectives"
+      ],
+      "deliverables": [
+        "data_platform_roadmap",
+        "delivery_operating_model"
+      ],
+      "review_checks": [
+        "Balance common capabilities against bespoke requests",
+        "Include privacy residency and tenant isolation",
+        "Use measurable freshness correctness and recovery targets"
+      ],
+      "kpis": [
+        "integration_lead_time",
+        "platform_adoption",
+        "service_objective_attainment"
+      ],
+      "handoffs": [
+        "career_knowledge_architect",
+        "career_ai_infrastructure_architect"
+      ],
+      "listing_ids": [
+        "role_source_012"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_treasury_lead",
+      "title": "Treasury and Working Capital Lead",
+      "family": "Finance",
+      "mandate": "Prepare liquidity and working-capital scenarios with traceable controls.",
+      "responsibilities": [
+        "Structure 13-week cash forecasts and downside scenarios",
+        "Assess receivables covenants currency and counterparty exposures",
+        "Document banking controls and finance-system requirements"
+      ],
+      "required_inputs": [
+        "cash_balances",
+        "receivables_payables",
+        "debt_terms",
+        "currency_exposures"
+      ],
+      "deliverables": [
+        "liquidity_scenario_pack",
+        "treasury_control_register"
+      ],
+      "review_checks": [
+        "Keep restricted cash separate from available liquidity",
+        "Retain currency dates and covenant definitions",
+        "Require authorized review for payments funding and hedges"
+      ],
+      "kpis": [
+        "cash_forecast_error",
+        "days_sales_outstanding",
+        "liquidity_headroom"
+      ],
+      "handoffs": [
+        "career_fpna_analyst",
+        "career_accounting_specialist"
+      ],
+      "listing_ids": [
+        "role_source_013"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_energy_management_deployment_specialist",
+      "title": "Energy Management Deployment Specialist",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare deployment and monitoring plans for microgrid and EMS installations.",
+      "responsibilities": [
+        "Plan hardware software configuration and initialization",
+        "Specify dashboards metrics alerts and log flows",
+        "Coordinate troubleshooting and readiness evidence"
+      ],
+      "required_inputs": [
+        "site_inventory",
+        "deployment_spec",
+        "network_design",
+        "acceptance_criteria"
+      ],
+      "deliverables": [
+        "deployment_runbook",
+        "monitoring_and_handover_plan"
+      ],
+      "review_checks": [
+        "Verify compatibility and rollback prerequisites",
+        "Include security review and customer acceptance gates",
+        "Do not claim installation or commissioning occurred"
+      ],
+      "kpis": [
+        "readiness_evidence_coverage",
+        "deployment_defects"
+      ],
+      "handoffs": [
+        "career_scada_ems_engineer",
+        "career_customer_support_specialist"
+      ],
+      "listing_ids": [
+        "role_source_014"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_fpna_analyst",
+      "title": "FP&A Analyst",
+      "family": "Finance",
+      "mandate": "Explain financial performance and forecast scenarios across operating entities.",
+      "responsibilities": [
+        "Prepare budget forecast and variance analyses",
+        "Assess project margin and commercial sensitivities",
+        "Reconcile management reporting and working-capital drivers"
+      ],
+      "required_inputs": [
+        "actuals",
+        "budget",
+        "forecast_assumptions",
+        "entity_currency_map"
+      ],
+      "deliverables": [
+        "variance_analysis",
+        "forecast_scenario_pack"
+      ],
+      "review_checks": [
+        "Reconcile management reports to accounting totals",
+        "Retain currency and period consistency",
+        "Separate scenario value from achieved margin"
+      ],
+      "kpis": [
+        "forecast_error",
+        "gross_margin",
+        "cash_conversion"
+      ],
+      "handoffs": [
+        "career_treasury_lead",
+        "career_accounting_specialist"
+      ],
+      "listing_ids": [
+        "role_source_015"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_finance_analytics_assistant",
+      "title": "Finance Analytics and Automation Assistant",
+      "family": "Finance",
+      "mandate": "Prepare validated finance reporting and supervised automation proposals.",
+      "responsibilities": [
+        "Gather budget forecast and performance inputs",
+        "Design dashboard validation and process maps",
+        "Assess small reporting automation experiments"
+      ],
+      "required_inputs": [
+        "finance_data_extract",
+        "report_definition",
+        "process_map"
+      ],
+      "deliverables": [
+        "report_validation_pack",
+        "finance_automation_proposal"
+      ],
+      "review_checks": [
+        "Reconcile dashboard figures to source extracts",
+        "Document manual adjustments and missing inputs",
+        "Keep financial interpretation under analyst review"
+      ],
+      "kpis": [
+        "report_reconciliation_rate",
+        "manual_reporting_steps"
+      ],
+      "handoffs": [
+        "career_fpna_analyst",
+        "career_finance_systems_specialist"
+      ],
+      "listing_ids": [
+        "role_source_016"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_forward_deployed_engineer",
+      "title": "Applied AI Forward-Deployed Engineer",
+      "family": "AI delivery",
+      "mandate": "Translate customer workflows into reusable AI integration and pilot proposals.",
+      "responsibilities": [
+        "Clarify operational problems with customers",
+        "Specify prototypes data integration and feedback loops",
+        "Extract reusable patterns for product teams"
+      ],
+      "required_inputs": [
+        "customer_brief",
+        "workflow_map",
+        "data_contracts",
+        "pilot_kpis"
+      ],
+      "deliverables": [
+        "solution_and_pilot_plan",
+        "engineering_handoff"
+      ],
+      "review_checks": [
+        "Define measurable success and integration boundaries",
+        "Document data limitations and failure handling",
+        "Distinguish proposed rollout from a deployed solution"
+      ],
+      "kpis": [
+        "pilot_kpi_coverage",
+        "reusable_solution_patterns"
+      ],
+      "handoffs": [
+        "career_full_stack_ai_engineer",
+        "career_ai_production_engineer"
+      ],
+      "listing_ids": [
+        "role_source_017",
+        "role_source_018"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_deployment_coordination_assistant",
+      "title": "AI Deployment Coordination Assistant",
+      "family": "AI delivery",
+      "mandate": "Support smart-building onboarding, testing, and handover preparation.",
+      "responsibilities": [
+        "Plan device onboarding and connectivity checks",
+        "Organize anomaly investigation and integration tests",
+        "Maintain configuration issue and handover records"
+      ],
+      "required_inputs": [
+        "device_inventory",
+        "site_configuration",
+        "test_plan"
+      ],
+      "deliverables": [
+        "onboarding_checklist",
+        "test_and_handover_tracker"
+      ],
+      "review_checks": [
+        "Retain unresolved connectivity issues",
+        "Link acceptance results to actual test evidence",
+        "Route configuration changes to the deployment owner"
+      ],
+      "kpis": [
+        "onboarding_completeness",
+        "open_acceptance_defects"
+      ],
+      "handoffs": [
+        "career_energy_management_deployment_specialist",
+        "career_business_analyst"
+      ],
+      "listing_ids": [
+        "role_source_019"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_people_analytics_assistant",
+      "title": "HR Automation and People Analytics Assistant",
+      "family": "People and legal",
+      "mandate": "Improve HR workflows using aggregated analytics and reviewable automation designs.",
+      "responsibilities": [
+        "Map process bottlenecks and self-service needs",
+        "Plan HR dashboard validation",
+        "Document workflow changes and access boundaries"
+      ],
+      "required_inputs": [
+        "hr_process_map",
+        "aggregated_workforce_data",
+        "data_access_policy"
+      ],
+      "deliverables": [
+        "hr_automation_design",
+        "people_analytics_report_plan"
+      ],
+      "review_checks": [
+        "Use aggregates and document reidentification risks",
+        "Exclude protected-trait inference and candidate ranking",
+        "Validate data definitions and human review ownership"
+      ],
+      "kpis": [
+        "process_cycle_time",
+        "workforce_data_completeness"
+      ],
+      "handoffs": [
+        "career_hr_administration_assistant",
+        "career_privacy_compliance_assistant"
+      ],
+      "listing_ids": [
+        "role_source_020"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_infrastructure_operations_lead",
+      "title": "Infrastructure Operations Lead",
+      "family": "IT operations",
+      "mandate": "Define accountable infrastructure operations, resilience, and lifecycle plans.",
+      "responsibilities": [
+        "Set service boundaries and platform standards",
+        "Review capacity disaster recovery and major incidents",
+        "Prioritize technical debt and repeatable automation"
+      ],
+      "required_inputs": [
+        "infrastructure_inventory",
+        "incident_history",
+        "service_objectives",
+        "recovery_test_records"
+      ],
+      "deliverables": [
+        "operations_model",
+        "resilience_improvement_plan"
+      ],
+      "review_checks": [
+        "Distinguish planned recovery from tested restoration",
+        "Assign owners and closure evidence to risks",
+        "Include regional support and lifecycle constraints"
+      ],
+      "kpis": [
+        "availability",
+        "recovery_test_coverage",
+        "technical_debt_backlog"
+      ],
+      "handoffs": [
+        "career_infrastructure_network_engineer",
+        "career_cloud_security_engineer"
+      ],
+      "listing_ids": [
+        "role_source_021"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_it_project_manager",
+      "title": "Enterprise IT Project Manager",
+      "family": "IT operations",
+      "mandate": "Plan enterprise application delivery and vendor obligations through hypercare.",
+      "responsibilities": [
+        "Coordinate scope budgets migrations and acceptance",
+        "Track partner deliverables and service agreements",
+        "Reconcile renewal purchase and invoice milestones"
+      ],
+      "required_inputs": [
+        "project_scope",
+        "vendor_statement_of_work",
+        "project_budget",
+        "migration_plan"
+      ],
+      "deliverables": [
+        "delivery_and_cutover_plan",
+        "vendor_and_spend_tracker"
+      ],
+      "review_checks": [
+        "Record UAT ownership and rollback prerequisites",
+        "Match vendor claims to contracted deliverables",
+        "Flag invoice and renewal exceptions for approval"
+      ],
+      "kpis": [
+        "milestone_variance",
+        "budget_variance",
+        "acceptance_defects"
+      ],
+      "handoffs": [
+        "career_finance_systems_specialist",
+        "career_procurement_assistant"
+      ],
+      "listing_ids": [
+        "role_source_022"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_finance_systems_specialist",
+      "title": "Finance and Project ERP Specialist",
+      "family": "IT operations",
+      "mandate": "Translate finance operations into controlled ERP configuration proposals.",
+      "responsibilities": [
+        "Specify ledger project costing and billing workflows",
+        "Map consolidation treasury and expense interfaces",
+        "Plan entity migrations support and access roles"
+      ],
+      "required_inputs": [
+        "chart_of_accounts",
+        "project_accounting_rules",
+        "interface_mapping",
+        "role_matrix"
+      ],
+      "deliverables": [
+        "erp_functional_spec",
+        "migration_and_reconciliation_plan"
+      ],
+      "review_checks": [
+        "Reconcile trial balance and dimension mappings",
+        "Check segregation of duties and license assumptions",
+        "Do not execute postings or change production configuration"
+      ],
+      "kpis": [
+        "reconciliation_exceptions",
+        "functional_test_coverage"
+      ],
+      "handoffs": [
+        "career_accounting_specialist",
+        "career_it_project_manager"
+      ],
+      "listing_ids": [
+        "role_source_023"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_infrastructure_network_engineer",
+      "title": "Infrastructure and Network Engineer",
+      "family": "IT operations",
+      "mandate": "Prepare infrastructure diagnostics and controlled maintenance proposals.",
+      "responsibilities": [
+        "Review cloud servers storage backups and capacity",
+        "Analyze segmentation VPN and firewall issues",
+        "Document incident evidence and site hardware dependencies"
+      ],
+      "required_inputs": [
+        "network_topology",
+        "asset_inventory",
+        "system_logs",
+        "maintenance_policy"
+      ],
+      "deliverables": [
+        "incident_diagnostic_plan",
+        "maintenance_change_proposal"
+      ],
+      "review_checks": [
+        "Separate observed faults from causal hypotheses",
+        "Define backup rollback and access prerequisites",
+        "Require site personnel for physical inspection and changes"
+      ],
+      "kpis": [
+        "incident_recurrence",
+        "patch_coverage",
+        "restore_test_success"
+      ],
+      "handoffs": [
+        "career_infrastructure_operations_lead",
+        "career_cloud_security_engineer"
+      ],
+      "listing_ids": [
+        "role_source_024"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_internal_audit_assistant",
+      "title": "Internal Audit Evidence Assistant",
+      "family": "Security and governance",
+      "mandate": "Organize traceable audit workpapers and remediation status for reviewer assessment.",
+      "responsibilities": [
+        "Prepare walkthrough indexes and sample trackers",
+        "Maintain risk-control matrices and sign-off records",
+        "Draft risk registers and continuous-monitoring test plans"
+      ],
+      "required_inputs": [
+        "control_matrix",
+        "evidence_index",
+        "audit_test_plan",
+        "remediation_register"
+      ],
+      "deliverables": [
+        "audit_workpaper_index",
+        "control_gap_tracker"
+      ],
+      "review_checks": [
+        "Keep missing evidence distinct from failed controls",
+        "Record sample selection and review ownership",
+        "Do not issue assurance or close findings without review"
+      ],
+      "kpis": [
+        "evidence_traceability",
+        "overdue_remediations"
+      ],
+      "handoffs": [
+        "career_grc_director",
+        "career_accounting_specialist"
+      ],
+      "listing_ids": [
+        "role_source_025"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_iot_ai_platform_product_lead",
+      "title": "IoT and AI Foundation Product Lead",
+      "family": "AI platform",
+      "mandate": "Coordinate device connectivity and shared agent-platform capabilities.",
+      "responsibilities": [
+        "Plan agent registry telemetry evaluation and governance",
+        "Specify protocol adapters buffering and model-ready telemetry",
+        "Balance device-scale delivery with platform reuse"
+      ],
+      "required_inputs": [
+        "device_fleet_profile",
+        "agent_use_cases",
+        "connectivity_constraints",
+        "platform_backlog"
+      ],
+      "deliverables": [
+        "iot_ai_platform_roadmap",
+        "shared_service_requirements"
+      ],
+      "review_checks": [
+        "Define loss recovery semantics rather than promise zero loss",
+        "Separate telemetry transport from control latency",
+        "Include regional deployment and access controls"
+      ],
+      "kpis": [
+        "device_onboarding_time",
+        "agent_platform_adoption",
+        "message_delivery_quality"
+      ],
+      "handoffs": [
+        "career_iot_connectivity_product_lead",
+        "career_ai_workbench_product_lead"
+      ],
+      "listing_ids": [
+        "role_source_026"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_iot_connectivity_product_lead",
+      "title": "IoT Connectivity Product Lead",
+      "family": "Data platform",
+      "mandate": "Plan interoperable device ingestion and reliable edge-to-cloud telemetry.",
+      "responsibilities": [
+        "Specify protocol conversion and MQTT messaging capabilities",
+        "Plan buffering synchronization and device model evolution",
+        "Prioritize gateway onboarding updates and health monitoring"
+      ],
+      "required_inputs": [
+        "protocol_inventory",
+        "telemetry_schema",
+        "connectivity_constraints",
+        "fleet_scale"
+      ],
+      "deliverables": [
+        "connectivity_roadmap",
+        "device_and_transport_contracts"
+      ],
+      "review_checks": [
+        "Specify delivery guarantees with failure assumptions",
+        "Keep control and bulk-telemetry requirements separate",
+        "Test schema changes and interrupted connectivity"
+      ],
+      "kpis": [
+        "message_latency",
+        "connection_capacity",
+        "telemetry_completeness"
+      ],
+      "handoffs": [
+        "career_edge_solution_engineer",
+        "career_knowledge_architect"
+      ],
+      "listing_ids": [
+        "role_source_027"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_legal_operations_assistant",
+      "title": "Legal Operations Assistant",
+      "family": "People and legal",
+      "mandate": "Prepare organized legal documents and research requests for counsel review.",
+      "responsibilities": [
+        "Proofread contract drafts and track clause questions",
+        "Organize intellectual-property and governance records",
+        "Maintain legal resource indexes and training drafts"
+      ],
+      "required_inputs": [
+        "document_drafts",
+        "legal_review_scope",
+        "document_register"
+      ],
+      "deliverables": [
+        "document_review_log",
+        "legal_research_brief"
+      ],
+      "review_checks": [
+        "Preserve version and clause references",
+        "Flag jurisdiction and currency of legal sources",
+        "Do not present drafts as legal advice or approved terms"
+      ],
+      "kpis": [
+        "document_traceability",
+        "open_review_questions"
+      ],
+      "handoffs": [
+        "career_grc_director",
+        "career_procurement_assistant"
+      ],
+      "listing_ids": [
+        "role_source_028"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_campaign_operations_assistant",
+      "title": "Marketing Campaign Operations Assistant",
+      "family": "Marketing and strategy",
+      "mandate": "Prepare coordinated campaign operations with verifiable customer references.",
+      "responsibilities": [
+        "Organize brand-series and partner campaign tasks",
+        "Validate market inputs and reference permissions",
+        "Maintain campaign trackers and handover processes"
+      ],
+      "required_inputs": [
+        "campaign_brief",
+        "reference_library",
+        "partner_requirements"
+      ],
+      "deliverables": [
+        "campaign_operations_plan",
+        "reference_validation_register"
+      ],
+      "review_checks": [
+        "Verify permission and evidence for customer claims",
+        "Record dependencies owners and deadlines",
+        "Leave publishing and outreach to authorized owners"
+      ],
+      "kpis": [
+        "campaign_task_completion",
+        "validated_reference_coverage"
+      ],
+      "handoffs": [
+        "career_marketing_campaign_manager",
+        "career_marketing_content_assistant"
+      ],
+      "listing_ids": [
+        "role_source_029"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_marketing_campaign_manager",
+      "title": "Marketing Campaign Manager",
+      "family": "Marketing and strategy",
+      "mandate": "Plan measurable multi-channel campaigns aligned to energy sales priorities.",
+      "responsibilities": [
+        "Coordinate content events agencies and sales programs",
+        "Define CRM hygiene attribution and reporting",
+        "Track campaign budget and localized content requirements"
+      ],
+      "required_inputs": [
+        "commercial_priorities",
+        "campaign_history",
+        "marketing_budget",
+        "content_guidelines"
+      ],
+      "deliverables": [
+        "integrated_campaign_plan",
+        "measurement_and_budget_plan"
+      ],
+      "review_checks": [
+        "Separate attributed pipeline from causal campaign impact",
+        "Check German and English message consistency",
+        "Require evidence for technical and sustainability claims"
+      ],
+      "kpis": [
+        "qualified_leads",
+        "pipeline_contribution",
+        "campaign_cost"
+      ],
+      "handoffs": [
+        "career_marketing_content_assistant",
+        "career_sales_development_assistant"
+      ],
+      "listing_ids": [
+        "role_source_030"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_marketing_content_assistant",
+      "title": "Energy Marketing Content Assistant",
+      "family": "Marketing and strategy",
+      "mandate": "Prepare accurate energy product content with traceable editorial decisions.",
+      "responsibilities": [
+        "Research topics and draft channel-specific content",
+        "Organize use cases and customer-story evidence",
+        "Maintain editorial calendars and search-intent plans"
+      ],
+      "required_inputs": [
+        "content_brief",
+        "approved_product_facts",
+        "audience_and_keywords"
+      ],
+      "deliverables": [
+        "content_outline_pack",
+        "editorial_evidence_log"
+      ],
+      "review_checks": [
+        "Cite support for quantified performance claims",
+        "Distinguish hypothetical examples from customer results",
+        "Check reuse rights and editorial approval status"
+      ],
+      "kpis": [
+        "fact_check_coverage",
+        "editorial_delivery_rate"
+      ],
+      "handoffs": [
+        "career_marketing_campaign_manager",
+        "career_strategy_product_associate"
+      ],
+      "listing_ids": [
+        "role_source_031"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_energy_operations_lead",
+      "title": "Energy Systems Operations and Maintenance Lead",
+      "family": "Energy delivery and operations",
+      "mandate": "Plan service continuity for EMS, SCADA, and plant-controller operations.",
+      "responsibilities": [
+        "Review support coverage incidents and service obligations",
+        "Prioritize upgrades root-cause investigations and changes",
+        "Coordinate customer escalations vendors and product feedback"
+      ],
+      "required_inputs": [
+        "service_contract",
+        "incident_register",
+        "system_inventory",
+        "change_calendar"
+      ],
+      "deliverables": [
+        "operations_service_plan",
+        "risk_and_escalation_register"
+      ],
+      "review_checks": [
+        "Retain grid-code and cybersecurity review dependencies",
+        "Tie SLA measures to contracted definitions",
+        "Do not authorize hotfixes or physical control actions"
+      ],
+      "kpis": [
+        "sla_attainment",
+        "incident_resolution_time",
+        "repeat_incidents"
+      ],
+      "handoffs": [
+        "career_scada_operations_engineer",
+        "career_service_account_manager"
+      ],
+      "listing_ids": [
+        "role_source_032"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_powergrid_expert",
+      "title": "Power Grid Domain Expert",
+      "family": "Energy delivery and operations",
+      "mandate": "Translate regional grid behavior into testable product and validation requirements.",
+      "responsibilities": [
+        "Review grid-operation and control use cases",
+        "Map SCADA EMS and PPC behavior to supplied requirements",
+        "Prepare grid-event diagnostic and validation questions"
+      ],
+      "required_inputs": [
+        "grid_code_references",
+        "control_specification",
+        "grid_measurements",
+        "site_operating_limits"
+      ],
+      "deliverables": [
+        "grid_requirements_matrix",
+        "control_validation_plan"
+      ],
+      "review_checks": [
+        "Identify applicable jurisdiction version and operating envelope",
+        "Require dynamic studies where steady-state data is insufficient",
+        "Keep compliance conclusions contingent on witnessed tests"
+      ],
+      "kpis": [
+        "requirements_traceability",
+        "validated_control_cases"
+      ],
+      "handoffs": [
+        "career_scada_ems_engineer",
+        "career_energy_operations_lead"
+      ],
+      "listing_ids": [
+        "role_source_033"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_procurement_assistant",
+      "title": "Procurement Operations Assistant",
+      "family": "Commercial",
+      "mandate": "Prepare supplier onboarding and purchasing workflow evidence.",
+      "responsibilities": [
+        "Organize vendor due-diligence inputs",
+        "Document requisition receipt and non-PO workflows",
+        "Support sourcing comparisons and improvement proposals"
+      ],
+      "required_inputs": [
+        "supplier_records",
+        "purchase_requirements",
+        "procurement_policy"
+      ],
+      "deliverables": [
+        "supplier_onboarding_pack",
+        "sourcing_comparison"
+      ],
+      "review_checks": [
+        "Match purchasing steps to delegated authority",
+        "Flag missing due diligence and receipt evidence",
+        "Do not place orders approve vendors or commit spend"
+      ],
+      "kpis": [
+        "onboarding_completeness",
+        "purchase_exception_rate"
+      ],
+      "handoffs": [
+        "career_legal_operations_assistant",
+        "career_finance_systems_specialist"
+      ],
+      "listing_ids": [
+        "role_source_034",
+        "role_source_035",
+        "role_source_036"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_ev_project_manager",
+      "title": "EV Charging Project Manager",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare EV charging delivery plans from kickoff through commissioning.",
+      "responsibilities": [
+        "Coordinate site readiness installers and resource plans",
+        "Track scope budget risks and changes",
+        "Prepare testing handover and stakeholder updates"
+      ],
+      "required_inputs": [
+        "site_design",
+        "project_budget",
+        "permit_register",
+        "installation_schedule"
+      ],
+      "deliverables": [
+        "ev_delivery_plan",
+        "commissioning_readiness_register"
+      ],
+      "review_checks": [
+        "Make permits and electrical safety explicit dependencies",
+        "Track site and hardware readiness separately",
+        "Require witnessed acceptance before claiming completion"
+      ],
+      "kpis": [
+        "milestone_variance",
+        "budget_variance",
+        "open_readiness_gaps"
+      ],
+      "handoffs": [
+        "career_energy_management_deployment_specialist",
+        "career_customer_support_specialist"
+      ],
+      "listing_ids": [
+        "role_source_037"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_renewable_integration_engineer",
+      "title": "Renewable Energy Integration Engineer",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare renewable-site IT/OT onboarding and performance-data integration.",
+      "responsibilities": [
+        "Map connectivity data flows and site calculations",
+        "Specify custom dashboards reports and integrations",
+        "Organize third-line support findings and commissioning evidence"
+      ],
+      "required_inputs": [
+        "site_signal_list",
+        "integration_spec",
+        "kpi_definitions",
+        "support_findings"
+      ],
+      "deliverables": [
+        "site_onboarding_design",
+        "kpi_and_support_validation_plan"
+      ],
+      "review_checks": [
+        "Check units time zones and signal quality",
+        "Verify calculations against independent examples",
+        "Keep site commissioning and production support status explicit"
+      ],
+      "kpis": [
+        "valid_signal_coverage",
+        "kpi_reconciliation",
+        "support_recurrence"
+      ],
+      "handoffs": [
+        "career_knowledge_architect",
+        "career_scada_ems_engineer"
+      ],
+      "listing_ids": [
+        "role_source_038"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_scada_operations_engineer",
+      "title": "SCADA Operations and Maintenance Engineer",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare evidence-based SCADA maintenance and incident investigations.",
+      "responsibilities": [
+        "Review server network and application health",
+        "Plan upgrades configuration checks and troubleshooting",
+        "Maintain operating runbooks and security observations"
+      ],
+      "required_inputs": [
+        "scada_inventory",
+        "alarm_history",
+        "system_logs",
+        "maintenance_records"
+      ],
+      "deliverables": [
+        "scada_diagnostic_report",
+        "maintenance_and_upgrade_plan"
+      ],
+      "review_checks": [
+        "Distinguish symptoms from verified root causes",
+        "Check recovery and change-window prerequisites",
+        "Escalate missing network and hardware evidence"
+      ],
+      "kpis": [
+        "system_availability",
+        "unresolved_incidents",
+        "maintenance_coverage"
+      ],
+      "handoffs": [
+        "career_infrastructure_network_engineer",
+        "career_energy_operations_lead"
+      ],
+      "listing_ids": [
+        "role_source_039"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_scada_ems_engineer",
+      "title": "SCADA and EMS Delivery Engineer",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare renewable control-system integration and acceptance plans.",
+      "responsibilities": [
+        "Specify I/O functional design and system architecture",
+        "Plan RTU network UPS and device integration",
+        "Prepare pre-commissioning training and customer acceptance"
+      ],
+      "required_inputs": [
+        "io_list",
+        "functional_design",
+        "network_architecture",
+        "acceptance_criteria"
+      ],
+      "deliverables": [
+        "integration_design_review",
+        "commissioning_test_plan"
+      ],
+      "review_checks": [
+        "Check protocol mappings units and control interlocks",
+        "Trace tests to functional requirements",
+        "Require operator approval for energization and control tests"
+      ],
+      "kpis": [
+        "io_test_coverage",
+        "acceptance_defects",
+        "requirements_traceability"
+      ],
+      "handoffs": [
+        "career_powergrid_expert",
+        "career_energy_management_deployment_specialist"
+      ],
+      "listing_ids": [
+        "role_source_040"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_sales_development_assistant",
+      "title": "Sales Development Assistant",
+      "family": "Commercial",
+      "mandate": "Prepare researched lead qualification and draft outreach for review.",
+      "responsibilities": [
+        "Match accounts to an explicit customer profile",
+        "Record budget authority need and timing evidence",
+        "Draft outreach materials and CRM update proposals"
+      ],
+      "required_inputs": [
+        "ideal_customer_profile",
+        "account_research",
+        "qualification_criteria"
+      ],
+      "deliverables": [
+        "lead_qualification_brief",
+        "outreach_draft_plan"
+      ],
+      "review_checks": [
+        "Do not fabricate contacts budget or buying intent",
+        "Separate researched facts from qualification gaps",
+        "Do not send outreach or update CRM automatically"
+      ],
+      "kpis": [
+        "qualified_lead_rate",
+        "qualification_evidence_coverage"
+      ],
+      "handoffs": [
+        "career_energy_solutions_sales_manager",
+        "career_marketing_campaign_manager"
+      ],
+      "listing_ids": [
+        "role_source_041"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_energy_solutions_sales_manager",
+      "title": "Energy Solutions and E-Mobility Sales Manager",
+      "family": "Commercial",
+      "mandate": "Shape hardware-and-software energy proposals with explicit delivery scope.",
+      "responsibilities": [
+        "Qualify EV PV storage and EMS opportunities",
+        "Coordinate solution demonstrations and tender responses",
+        "Prepare commercial forecasts and delivery handoffs"
+      ],
+      "required_inputs": [
+        "customer_energy_requirements",
+        "solution_scope",
+        "pricing_assumptions",
+        "opportunity_pipeline"
+      ],
+      "deliverables": [
+        "energy_solution_offer_plan",
+        "commercial_delivery_handoff"
+      ],
+      "review_checks": [
+        "Include installation integration and service costs",
+        "State hardware availability and regulatory dependencies",
+        "Keep quoted value and contractual commitments subject to approval"
+      ],
+      "kpis": [
+        "qualified_pipeline",
+        "proposal_margin",
+        "forecast_accuracy"
+      ],
+      "handoffs": [
+        "career_technical_presales_engineer",
+        "career_ev_project_manager"
+      ],
+      "listing_ids": [
+        "role_source_042"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_utility_account_director",
+      "title": "Utility and Grid Strategic Account Director",
+      "family": "Commercial",
+      "mandate": "Develop utility account strategies around grid-flexibility needs.",
+      "responsibilities": [
+        "Map account relationships and expansion opportunities",
+        "Translate congestion DER and outage needs into use cases",
+        "Prepare regional partner and multi-year account plans"
+      ],
+      "required_inputs": [
+        "utility_account_profile",
+        "grid_pain_points",
+        "solution_catalogue",
+        "regional_market_evidence"
+      ],
+      "deliverables": [
+        "utility_account_roadmap",
+        "grid_value_case"
+      ],
+      "review_checks": [
+        "Verify regional market and procurement assumptions",
+        "Avoid assuming market access from technical capability",
+        "Separate proven references from proposed applications"
+      ],
+      "kpis": [
+        "account_expansion_pipeline",
+        "renewal_value",
+        "qualified_grid_use_cases"
+      ],
+      "handoffs": [
+        "career_powergrid_expert",
+        "career_technical_presales_engineer"
+      ],
+      "listing_ids": [
+        "role_source_043"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_business_analyst",
+      "title": "Senior Business Analyst",
+      "family": "AI delivery",
+      "mandate": "Translate customer requirements into testable stories and acceptance plans.",
+      "responsibilities": [
+        "Clarify requirements and functional specifications",
+        "Coordinate dependencies between product teams",
+        "Prepare UAT cases defect tracking and sign-off evidence"
+      ],
+      "required_inputs": [
+        "business_requirements",
+        "product_boundaries",
+        "acceptance_criteria"
+      ],
+      "deliverables": [
+        "functional_story_map",
+        "uat_traceability_matrix"
+      ],
+      "review_checks": [
+        "Give each requirement measurable acceptance criteria",
+        "Record unresolved cross-team dependencies",
+        "Do not equate a test plan with passed customer acceptance"
+      ],
+      "kpis": [
+        "requirements_coverage",
+        "open_uat_defects"
+      ],
+      "handoffs": [
+        "career_forward_deployed_engineer",
+        "career_deployment_coordination_assistant"
+      ],
+      "listing_ids": [
+        "role_source_044"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_grc_director",
+      "title": "Governance Risk and Compliance Director",
+      "family": "Security and governance",
+      "mandate": "Prepare enterprise risk and control governance for qualified review.",
+      "responsibilities": [
+        "Structure risk ownership remediation and executive reporting",
+        "Coordinate privacy supplier and assurance workstreams",
+        "Assess control readiness and policy accountability"
+      ],
+      "required_inputs": [
+        "risk_register",
+        "control_framework",
+        "regulatory_scope",
+        "assurance_evidence"
+      ],
+      "deliverables": [
+        "risk_and_control_review",
+        "assurance_readiness_plan"
+      ],
+      "review_checks": [
+        "Verify applicability and version of regulatory obligations",
+        "Distinguish evidence completeness from control effectiveness",
+        "Do not claim certification assurance or legal compliance"
+      ],
+      "kpis": [
+        "overdue_high_risks",
+        "control_evidence_coverage",
+        "remediation_completion"
+      ],
+      "handoffs": [
+        "career_cloud_security_engineer",
+        "career_internal_audit_assistant"
+      ],
+      "listing_ids": [
+        "role_source_045"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_edge_solution_engineer",
+      "title": "Edge Solution and AI Engineer",
+      "family": "AI engineering",
+      "mandate": "Prepare edge architectures, escalation analysis, and industrial AI evaluations.",
+      "responsibilities": [
+        "Define protocol network data and security interfaces",
+        "Plan packet-level and cross-ticket investigations",
+        "Translate field feedback into edge-agent evaluation requirements"
+      ],
+      "required_inputs": [
+        "edge_topology",
+        "protocol_traces",
+        "incident_history",
+        "edge_model_requirements"
+      ],
+      "deliverables": [
+        "edge_solution_review",
+        "diagnostic_and_model_evaluation_plan"
+      ],
+      "review_checks": [
+        "Bound device gateway cloud and network responsibilities",
+        "Require evidence before assigning a root cause",
+        "Evaluate models against site resource and safety constraints"
+      ],
+      "kpis": [
+        "escalation_resolution_time",
+        "edge_model_quality",
+        "field_issue_recurrence"
+      ],
+      "handoffs": [
+        "career_iot_connectivity_product_lead",
+        "career_ai_production_engineer"
+      ],
+      "listing_ids": [
+        "role_source_046"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_full_stack_ai_engineer",
+      "title": "Full Stack AI Engineer",
+      "family": "AI engineering",
+      "mandate": "Prepare end-to-end application designs and reusable implementation handoffs.",
+      "responsibilities": [
+        "Design application APIs data flows and AI workflows",
+        "Specify prototypes integration tests and rollout steps",
+        "Identify reusable components and support requirements"
+      ],
+      "required_inputs": [
+        "application_requirements",
+        "api_contracts",
+        "data_model",
+        "evaluation_criteria"
+      ],
+      "deliverables": [
+        "application_implementation_plan",
+        "test_and_rollout_plan"
+      ],
+      "review_checks": [
+        "Test deterministic behavior alongside model evaluation",
+        "Cover authentication data boundaries and rollback",
+        "Label generated code proposals as unexecuted until checked"
+      ],
+      "kpis": [
+        "acceptance_test_coverage",
+        "reusable_components",
+        "deployment_defects"
+      ],
+      "handoffs": [
+        "career_ai_production_engineer",
+        "career_forward_deployed_engineer"
+      ],
+      "listing_ids": [
+        "role_source_047"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_renewables_sales_director",
+      "title": "Renewables and Power Sales Director",
+      "family": "Commercial",
+      "mandate": "Prepare portfolio-level renewable software opportunities and partner strategies.",
+      "responsibilities": [
+        "Map developer portfolios and recurring-service opportunities",
+        "Coordinate EPC OEM and engineering specification channels",
+        "Track tenders market changes and commercial handoffs"
+      ],
+      "required_inputs": [
+        "developer_portfolios",
+        "partner_landscape",
+        "tender_pipeline",
+        "market_rules"
+      ],
+      "deliverables": [
+        "portfolio_sales_strategy",
+        "partner_and_deal_plan"
+      ],
+      "review_checks": [
+        "Date regional rules and tender evidence",
+        "Separate software value from hardware partner scope",
+        "Track revenue cash and margin assumptions independently"
+      ],
+      "kpis": [
+        "pipeline_coverage",
+        "recurring_service_value",
+        "cash_forecast_accuracy"
+      ],
+      "handoffs": [
+        "career_technical_presales_engineer",
+        "career_service_account_manager"
+      ],
+      "listing_ids": [
+        "role_source_048"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_service_account_manager",
+      "title": "Service and Key Account Manager",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare post-delivery service reviews that preserve scope and margin.",
+      "responsibilities": [
+        "Track incidents vendors and service obligations",
+        "Review warranty boundaries and change requests",
+        "Prepare renewal billing and customer escalation inputs"
+      ],
+      "required_inputs": [
+        "service_contract",
+        "service_metrics",
+        "vendor_obligations",
+        "billing_milestones"
+      ],
+      "deliverables": [
+        "service_review_pack",
+        "scope_margin_and_renewal_plan"
+      ],
+      "review_checks": [
+        "Compare performance against contractual SLA definitions",
+        "Flag unsupported billing and unmanaged scope growth",
+        "Keep renewal and vendor commitments subject to approval"
+      ],
+      "kpis": [
+        "sla_attainment",
+        "service_margin",
+        "renewal_risk"
+      ],
+      "handoffs": [
+        "career_energy_operations_lead",
+        "career_fpna_analyst"
+      ],
+      "listing_ids": [
+        "role_source_049"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_net_zero_enablement_assistant",
+      "title": "Net-Zero Strategy Enablement Assistant",
+      "family": "Marketing and strategy",
+      "mandate": "Prepare source-backed sector playbooks for energy and decarbonization use cases.",
+      "responsibilities": [
+        "Translate sector problems into AI and IoT value narratives",
+        "Organize lessons learned and reusable enablement assets",
+        "Summarize dated policy technology and market signals"
+      ],
+      "required_inputs": [
+        "sector_brief",
+        "case_study_evidence",
+        "market_sources"
+      ],
+      "deliverables": [
+        "sector_playbook",
+        "market_intelligence_brief"
+      ],
+      "review_checks": [
+        "State emissions boundaries baseline and factor sources",
+        "Distinguish modeled reductions from verified outcomes",
+        "Flag stale policy and market evidence"
+      ],
+      "kpis": [
+        "evidence_backed_use_cases",
+        "playbook_reuse"
+      ],
+      "handoffs": [
+        "career_strategy_product_associate",
+        "career_marketing_content_assistant"
+      ],
+      "listing_ids": [
+        "role_source_050"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_strategy_product_associate",
+      "title": "Strategy and Product Associate",
+      "family": "Marketing and strategy",
+      "mandate": "Synthesize technical and market evidence into actionable product positioning.",
+      "responsibilities": [
+        "Prepare customer and executive engagement briefs",
+        "Map competitive signals and product narratives",
+        "Turn field insights into reusable cross-functional initiatives"
+      ],
+      "required_inputs": [
+        "product_capabilities",
+        "customer_insights",
+        "market_research"
+      ],
+      "deliverables": [
+        "positioning_and_strategy_brief",
+        "cross_functional_action_plan"
+      ],
+      "review_checks": [
+        "Separate roadmap aspirations from shipped features",
+        "Cite competitor and customer evidence",
+        "Assign owners and decision criteria to recommendations"
+      ],
+      "kpis": [
+        "validated_market_insights",
+        "action_completion"
+      ],
+      "handoffs": [
+        "career_ai_workbench_product_lead",
+        "career_strategic_accounts_director"
+      ],
+      "listing_ids": [
+        "role_source_051"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_customer_support_specialist",
+      "title": "Technical Customer Support Specialist",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare L2 energy and charging support, installation, and escalation records.",
+      "responsibilities": [
+        "Triage charging EMS and connected-software issues",
+        "Document installation proposals site visits and hardware needs",
+        "Prepare commissioning and handover questions"
+      ],
+      "required_inputs": [
+        "support_ticket",
+        "installation_records",
+        "hardware_inventory",
+        "customer_requirements"
+      ],
+      "deliverables": [
+        "support_triage_and_escalation",
+        "installation_handover_plan"
+      ],
+      "review_checks": [
+        "Preserve severity and unresolved technical questions",
+        "Include quotation assumptions from supplied electrician estimates",
+        "Do not claim site visits repairs or electrical acceptance"
+      ],
+      "kpis": [
+        "response_time",
+        "reopen_rate",
+        "handover_completeness"
+      ],
+      "handoffs": [
+        "career_ev_project_manager",
+        "career_energy_management_deployment_specialist"
+      ],
+      "listing_ids": [
+        "role_source_052",
+        "role_source_055"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_technical_presales_engineer",
+      "title": "Energy Technical Presales Engineer",
+      "family": "Commercial",
+      "mandate": "Translate energy and fleet constraints into feasible presales designs.",
+      "responsibilities": [
+        "Clarify congestion monitoring and electrification requirements",
+        "Prepare technical discovery demos and RFP inputs",
+        "Coordinate EMS integration security and delivery assumptions"
+      ],
+      "required_inputs": [
+        "customer_energy_profile",
+        "rfp_requirements",
+        "architecture_constraints",
+        "delivery_scope"
+      ],
+      "deliverables": [
+        "technical_solution_brief",
+        "rfp_and_delivery_assumptions"
+      ],
+      "review_checks": [
+        "State customer data and grid-limit assumptions",
+        "Map requirements to supported features and gaps",
+        "Carry privacy resilience and implementation dependencies into offers"
+      ],
+      "kpis": [
+        "requirements_fit",
+        "proposal_gap_closure"
+      ],
+      "handoffs": [
+        "career_energy_solutions_sales_manager",
+        "career_technical_solution_engineer"
+      ],
+      "listing_ids": [
+        "role_source_053"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_technical_solution_engineer",
+      "title": "Digital Twin Technical Solution Engineer",
+      "family": "Energy delivery and operations",
+      "mandate": "Prepare plant digital-twin integration and governed-control designs.",
+      "responsibilities": [
+        "Map drawings and signal lists into asset models",
+        "Specify sensor ingestion visualization and aggregator interfaces",
+        "Coordinate design tests estimates and approval documents"
+      ],
+      "required_inputs": [
+        "as_built_drawings",
+        "signal_list",
+        "aggregator_api_spec",
+        "project_requirements"
+      ],
+      "deliverables": [
+        "digital_twin_mapping",
+        "integration_and_approval_plan"
+      ],
+      "review_checks": [
+        "Check units asset relationships and signal provenance",
+        "Specify control-command authorization idempotency and fallback",
+        "Route commercial and translated legal documents to qualified reviewers"
+      ],
+      "kpis": [
+        "signal_mapping_coverage",
+        "integration_test_coverage"
+      ],
+      "handoffs": [
+        "career_knowledge_architect",
+        "career_scada_ems_engineer"
+      ],
+      "listing_ids": [
+        "role_source_054"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_hr_administration_assistant",
+      "title": "HR Administration Assistant",
+      "family": "People and legal",
+      "mandate": "Prepare HR administration and employee lifecycle coordination for review.",
+      "responsibilities": [
+        "Organize vacancy and interview administration",
+        "Prepare onboarding and offboarding checklists",
+        "Draft HR document and reporting task plans"
+      ],
+      "required_inputs": [
+        "hr_workflow",
+        "approved_templates",
+        "lifecycle_schedule"
+      ],
+      "deliverables": [
+        "hr_administration_plan",
+        "employee_lifecycle_checklist"
+      ],
+      "review_checks": [
+        "Limit personal data to authorized administrative needs",
+        "Do not rank candidates or make employment decisions",
+        "Require review before communications or access changes"
+      ],
+      "kpis": [
+        "lifecycle_checklist_completion",
+        "administrative_backlog"
+      ],
+      "handoffs": [
+        "career_people_analytics_assistant",
+        "career_privacy_compliance_assistant"
+      ],
+      "listing_ids": [
+        "role_source_056"
+      ],
+      "authority": "advisory_only",
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    }
+  ]
+}
