@@ -1,15 +1,15 @@
 Public-career role agents
 ====================================================================================================
 
-The 8 November 2026 public-careers snapshot contains **56 openings**, represented
-by **52 reusable agent contracts** across AI, data, energy operations, commercial,
+Research on 8 November 2026 covered **56 public role descriptions**, represented
+by **52 generic agent contracts** across AI, data, energy operations, commercial,
 finance, IT, security, marketing, strategy, HR and legal support.
 
-All job descriptions were read from the public JSON feed linked by the careers
-page. Source URLs, listing identifiers, departments, locations, observation date,
-description hashes and the full listing-to-agent mapping are packaged in
-``data/career_roles/catalogue.json``. Full job descriptions are not redistributed.
-Listing availability is a dated observation; this package does not monitor hiring.
+The packaged catalogue contains generic responsibilities and a neutral source
+index. Employer names, source URLs, original posting identifiers and titles,
+departments, locations and document hashes are omitted. The index preserves
+coverage and deduplication; it is not publicly verifiable source attribution.
+Full job descriptions are not redistributed. This package does not monitor hiring.
 
 Agent titles and instructions are neutral original syntheses. They do not imply
 employer endorsement, reproduce internal procedures, or confer professional
@@ -19,8 +19,8 @@ Coverage and normalization
 ----------------------------------------------------------------------------------------------------
 
 Three procurement listings map to one procurement agent; two equivalent
-forward-deployed engineering listings map to one applied AI agent; English and
-German customer-support listings map to one agent covering their combined scope.
+forward-deployed engineering listings map to one applied AI agent; two language
+variants of customer support map to one agent covering their combined scope.
 The two IoT product-lead roles remain separate because one also owns shared agent
 platform capabilities. No listed opening is omitted.
 
@@ -57,7 +57,7 @@ A case has exactly ``id``, ``objective``, ``inputs`` and ``evidence``. Each name
 input has ``text`` and ``evidence_ids``. Each evidence entry has a ``kind``
 (``synthetic``, ``user_supplied`` or ``reference_only``) and a ``summary``.
 No evidence kind implies independent verification. A URL in a summary is not
-automatically fetched. Job-listing IDs establish role provenance and cannot serve
+automatically fetched. Neutral source labels record role coverage and cannot serve
 as evidence for a customer's project.
 
 .. code-block:: python
@@ -80,7 +80,7 @@ Live model proposals
 ----------------------------------------------------------------------------------------------------
 
 ``CareerRolePlanner`` uses the existing explicit HTTPS Chat Completions adapter.
-The endpoint receives public role metadata, the objective, the role's required
+The endpoint receives generic role metadata, the objective, the role's required
 inputs and their referenced evidence, and any caller-supplied upstream handoffs.
 Unrelated case inputs are excluded. Upstream text is caller-controlled and should
 contain only information permitted for that endpoint. The offline example makes

@@ -23,11 +23,20 @@ ROLE = "career_forward_deployed_engineer"
 
 def test_complete_dated_listing_mapping_and_deliberate_deduplication():
     cat = career_catalogue()
+    assert set(cat) == {
+        "schema_version", "snapshot_date", "listing_count", "role_count",
+        "extraction_note", "normalization_notes", "listings", "roles",
+    }
+    assert cat["schema_version"] == 2
     assert cat["snapshot_date"] == "2026-11-08"
     assert len(cat["roles"]) == cat["role_count"] == 52
     assert len(cat["listings"]) == cat["listing_count"] == 56
     roles = {r["id"]: r for r in cat["roles"]}
     listings = {s["id"]: s for s in cat["listings"]}
+    assert set(listings) == {f"role_source_{i:03d}" for i in range(1, 57)}
+    assert all(set(s) == {"id", "title", "agent_id"} for s in listings.values())
+    assert all(s["title"] == roles[s["agent_id"]]["title"] for s in listings.values())
+    assert "https://" not in json.dumps(cat) and "http://" not in json.dumps(cat)
     assert len(roles) == 52 and len(listings) == 56
     assert len({r["mandate"] for r in roles.values()}) == 52
     mapped = [sid for r in roles.values() for sid in r["listing_ids"]]
@@ -40,11 +49,11 @@ def test_complete_dated_listing_mapping_and_deliberate_deduplication():
         assert role["authority"] == "advisory_only"
         assert all(listings[s]["agent_id"] == role["id"] for s in role["listing_ids"])
     assert roles["career_procurement_assistant"]["listing_ids"] == [
-        "2e48f1e6e73401", "642a47f24a3501", "b855874fde5301"
+        "role_source_034", "role_source_035", "role_source_036"
     ]
-    assert roles[ROLE]["listing_ids"] == ["efa58c39933301", "f123e9e8e1a701"]
+    assert roles[ROLE]["listing_ids"] == ["role_source_017", "role_source_018"]
     assert roles["career_customer_support_specialist"]["listing_ids"] == [
-        "c41a17d6875001", "ae3d54e7337f01"
+        "role_source_052", "role_source_055"
     ]
 
 
@@ -105,7 +114,7 @@ class InvalidPlanner:
     lambda a: a["arguments"]["deliverables"][1].update(
         name=a["arguments"]["deliverables"][0]["name"]),
     lambda a: a["arguments"]["deliverables"][0].update(evidence_ids=["invented_evidence"]),
-    lambda a: a["arguments"]["deliverables"][0].update(evidence_ids=["efa58c39933301"]),
+    lambda a: a["arguments"]["deliverables"][0].update(evidence_ids=["role_source_017"]),
     lambda a: a["arguments"]["deliverables"][0].update(content=" "),
     lambda a: a["arguments"]["deliverables"][0].update(evidence_ids=[], assumptions=[]),
     lambda a: a["arguments"].update(open_questions="none"),

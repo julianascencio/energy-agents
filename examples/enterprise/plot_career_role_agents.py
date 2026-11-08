@@ -2,9 +2,10 @@
 From 56 public openings to 52 reusable role agents
 ====================================================================================================
 
-Every listing in the 8 November 2026 public-careers snapshot maps to an agent.
+Every role description reviewed on 8 November 2026 maps to a generic agent.
 Duplicate procurement, forward-deployed engineering and translated support
-listings share contracts. Job descriptions inform scope; they are not evidence
+listings share contracts. Identifying source metadata is omitted. Job descriptions
+inform scope; they are not evidence
 that an AI agent is qualified to perform a profession.
 
 This offline example runs all roles on an intentionally incomplete **synthetic**

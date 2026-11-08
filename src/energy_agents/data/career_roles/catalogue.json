@@ -1,579 +1,296 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "snapshot_date": "2026-11-08",
-  "careers_url": "https://univers.com/careers/",
-  "feed_url": "https://univers.breezy.hr/json?verbose=true",
-  "feed_sha256": "0fa882889e835887726ec957ba12b11633c28b778a297becb6827ef2ffa6183f",
   "listing_count": 56,
   "role_count": 52,
-  "extraction_note": "The careers page embeds the linked public JSON feed. All 56 entries were read. Status is a dated observation, not a continuing claim of vacancy availability. Full job descriptions are not redistributed.",
+  "extraction_note": "52 neutral role contracts were synthesized from 56 public role descriptions. Employer names, source URLs, original listing identifiers, original titles, departments, locations and document hashes are omitted. The neutral source index records coverage and deduplication, not publicly verifiable source attribution. Full descriptions are not redistributed.",
   "normalization_notes": [
     "Three Procurement Intern postings share responsibilities and map to one procurement assistant.",
-    "Madrid and Singapore Forward Deployed Engineer postings share responsibilities and map to one applied AI role.",
-    "English and German technical customer-support postings map to one role with their combined installation and L2 support scope.",
+    "Two equivalent forward-deployed engineering descriptions map to one applied AI role.",
+    "Two language variants of customer support map to one role with their combined installation and L2 support scope.",
     "Intern and working-student postings become supervised assistant agents; geography and employer brands are not agent identities.",
     "The two IoT product-lead roles remain distinct: the combined role includes agent-platform foundation responsibilities."
   ],
   "listings": [
     {
-      "id": "6299ce691d5b01",
-      "title": "AI Business Consultant Intern",
-      "url": "https://univers.breezy.hr/p/6299ce691d5b01-ai-business-consultant-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_ai_business_consulting_assistant",
-      "description_sha256": "4c05b2c2ff30b76e77a273a7a32e331913f364402ababa93210754631c69e806"
+      "id": "role_source_001",
+      "title": "AI Business Consulting Assistant",
+      "agent_id": "career_ai_business_consulting_assistant"
     },
     {
-      "id": "5e3cd0dda3ac01",
-      "title": "AI Engineer",
-      "url": "https://univers.breezy.hr/p/5e3cd0dda3ac01-ai-engineer",
-      "department": "Impact AI Lab",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_ai_production_engineer",
-      "description_sha256": "59d7b64d4b416913dbbfc559df0bd56109c116355e8e0352b38312b34179fa40"
+      "id": "role_source_002",
+      "title": "AI Production Engineer",
+      "agent_id": "career_ai_production_engineer"
     },
     {
-      "id": "14c6a4c5d8d501",
-      "title": "AI Forward Deployed Engineering (AI FDE) Intern",
-      "url": "https://univers.breezy.hr/p/14c6a4c5d8d501-ai-forward-deployed-engineering-ai-fde-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_ai_prototyping_assistant",
-      "description_sha256": "ba26182a04fdfa51509533e5c2895d8e2f5ca903f47131b01b3f486f1c0eb7d2"
+      "id": "role_source_003",
+      "title": "AI Prototyping Assistant",
+      "agent_id": "career_ai_prototyping_assistant"
     },
     {
-      "id": "1386ad40a54901",
-      "title": "AI Foundation Architect Lead",
-      "url": "https://univers.breezy.hr/p/1386ad40a54901-ai-foundation-architect-lead",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_ai_infrastructure_architect",
-      "description_sha256": "947fcc36510910693b1d66969117673b629ce0f555f9fb652d5ce8f05b4f71d0"
+      "id": "role_source_004",
+      "title": "AI Infrastructure Architect",
+      "agent_id": "career_ai_infrastructure_architect"
     },
     {
-      "id": "8d4162bcbd4401",
+      "id": "role_source_005",
       "title": "AI Workbench Product Lead",
-      "url": "https://univers.breezy.hr/p/8d4162bcbd4401-ai-workbench-product-lead",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_ai_workbench_product_lead",
-      "description_sha256": "eedea1cedc287791f90208e8b06eda57a3e306d04625f24bcd2984e2589353a0"
+      "agent_id": "career_ai_workbench_product_lead"
     },
     {
-      "id": "33f24ede59fb01",
-      "title": "Accounting COE Specialist",
-      "url": "https://univers.breezy.hr/p/33f24ede59fb01-accounting-coe-specialist",
-      "department": "Finance & Accounting",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_accounting_specialist",
-      "description_sha256": "10cdd019efab574373dc77963cc8ed6d2ad48ed9c96a028a56d1d5d1842e765c"
+      "id": "role_source_006",
+      "title": "Accounting and Close Specialist",
+      "agent_id": "career_accounting_specialist"
     },
     {
-      "id": "a2eea3c59f6601",
-      "title": "Business Development Intern",
-      "url": "https://univers.breezy.hr/p/a2eea3c59f6601-business-development-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_business_development_assistant",
-      "description_sha256": "56452acebc91ceb2a8e0c0a1796219df3d6a968df037714eeabc677a60977687"
+      "id": "role_source_007",
+      "title": "Business Development Assistant",
+      "agent_id": "career_business_development_assistant"
     },
     {
-      "id": "0dd0f80faa4a01",
-      "title": "Cloud Security Engineer",
-      "url": "https://univers.breezy.hr/p/0dd0f80faa4a01-cloud-security-engineer",
-      "department": "Cyber Security and Architecture",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_cloud_security_engineer",
-      "description_sha256": "308a8ab465b39282512841387bf8e75df66c7ccfb630e70575c98aaae4dc7238"
+      "id": "role_source_008",
+      "title": "Cloud and AI Security Engineer",
+      "agent_id": "career_cloud_security_engineer"
     },
     {
-      "id": "a0a5492ba63e01",
-      "title": "Data & Knowledge Intelligence – Architect Lead",
-      "url": "https://univers.breezy.hr/p/a0a5492ba63e01-data-knowledge-intelligence-architect-lead",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_knowledge_architect",
-      "description_sha256": "d35e247af18e6c0587d3968fcab6586021174111de2895610fa6a61e37307b74"
+      "id": "role_source_009",
+      "title": "Data and Knowledge Intelligence Architect",
+      "agent_id": "career_knowledge_architect"
     },
     {
-      "id": "42b25d0e28b401",
-      "title": "Data & Security Compliance Intern",
-      "url": "https://univers.breezy.hr/p/42b25d0e28b401-data-security-compliance-intern",
-      "department": "Data Privacy & Compliance",
-      "location": "Singapore",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_privacy_compliance_assistant",
-      "description_sha256": "19d5bb39279ea5b42a156a0c341eba3ef237aa653b0f1c23dc455154036adeba"
+      "id": "role_source_010",
+      "title": "Privacy and Compliance Operations Assistant",
+      "agent_id": "career_privacy_compliance_assistant"
     },
     {
-      "id": "981d0ec5ee0c01",
-      "title": "Director, Business Development (Strategic Accounts)",
-      "url": "https://univers.breezy.hr/p/981d0ec5ee0c01-director-business-development-strategic-accounts",
-      "department": "GTM - Aviation, Transportation & Logistics",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_strategic_accounts_director",
-      "description_sha256": "87ef7ed9a215d9007c95206493070114343923555d159ee88e13c1918bd6a4d9"
+      "id": "role_source_011",
+      "title": "Strategic Accounts Business Development Director",
+      "agent_id": "career_strategic_accounts_director"
     },
     {
-      "id": "c2eb9c4257fc01",
-      "title": "Director, Product Management, Data Foundation and Ontology",
-      "url": "https://univers.breezy.hr/p/c2eb9c4257fc01-director-product-management-data-foundation-and-ontology",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_data_platform_product_director",
-      "description_sha256": "420e8150b870f6fe0959a229e15d0d79420e11d43aebafaf5b25fe13682a5821"
+      "id": "role_source_012",
+      "title": "Data Foundation and Ontology Product Director",
+      "agent_id": "career_data_platform_product_director"
     },
     {
-      "id": "f3b8e89e5ee601",
-      "title": "Director, Treasury & Working Capital",
-      "url": "https://univers.breezy.hr/p/f3b8e89e5ee601-director-treasury-working-capital",
-      "department": "Finance & Accounting",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_treasury_lead",
-      "description_sha256": "2a33d044965d6f7c6b441db01c5bba38089b9ac49490fc1e1ecb0647287c9d3d"
+      "id": "role_source_013",
+      "title": "Treasury and Working Capital Lead",
+      "agent_id": "career_treasury_lead"
     },
     {
-      "id": "3618e9002f8901",
+      "id": "role_source_014",
       "title": "Energy Management Deployment Specialist",
-      "url": "https://univers.breezy.hr/p/3618e9002f8901-energy-management-deployment-specialist",
-      "department": "Delivery",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_energy_management_deployment_specialist",
-      "description_sha256": "d2820e7d31c3c81a621d561a762c3726aa0d03e2b2954b6b73496ce915c6818f"
+      "agent_id": "career_energy_management_deployment_specialist"
     },
     {
-      "id": "338efff39dd101",
-      "title": "FP&A Analyst, Europe",
-      "url": "https://univers.breezy.hr/p/338efff39dd101-fp-a-analyst-europe",
-      "department": "Finance",
-      "location": "London, England",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_fpna_analyst",
-      "description_sha256": "837e79ceb91d9927cfd09da20da89c486d4b79b154c0e25c173291022a6bd586"
+      "id": "role_source_015",
+      "title": "FP&A Analyst",
+      "agent_id": "career_fpna_analyst"
     },
     {
-      "id": "f420aec0949501",
-      "title": "Finance (FP&A) Intern",
-      "url": "https://univers.breezy.hr/p/f420aec0949501-finance-fp-a-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_finance_analytics_assistant",
-      "description_sha256": "bed4e36bcee7af55ef309afe02f35c6201fd2f1fcafa270d46652d2d6c78ed85"
+      "id": "role_source_016",
+      "title": "Finance Analytics and Automation Assistant",
+      "agent_id": "career_finance_analytics_assistant"
     },
     {
-      "id": "efa58c39933301",
-      "title": "Forward Deployed Engineer",
-      "url": "https://univers.breezy.hr/p/efa58c39933301-forward-deployed-engineer",
-      "department": "Solution Architect & Solutioning",
-      "location": "Madrid, ES",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_forward_deployed_engineer",
-      "description_sha256": "5b13bc89425da380811d493bf797412f3f853782768339832d9068d833223e97"
+      "id": "role_source_017",
+      "title": "Applied AI Forward-Deployed Engineer",
+      "agent_id": "career_forward_deployed_engineer"
     },
     {
-      "id": "f123e9e8e1a701",
-      "title": "Forward Deployed Engineer (FDE)",
-      "url": "https://univers.breezy.hr/p/f123e9e8e1a701-forward-deployed-engineer-fde",
-      "department": "Impact AI Lab",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_forward_deployed_engineer",
-      "description_sha256": "0939b1dfb801bec39614320edda0012fb1ee6d10e8258370e03faede80de799f"
+      "id": "role_source_018",
+      "title": "Applied AI Forward-Deployed Engineer",
+      "agent_id": "career_forward_deployed_engineer"
     },
     {
-      "id": "c1706965e33101",
-      "title": "Forward Deployed Engineer (Project Management) Intern",
-      "url": "https://univers.breezy.hr/p/c1706965e33101-forward-deployed-engineer-project-management-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_deployment_coordination_assistant",
-      "description_sha256": "21cee52e4ac19dc68acc711f23ba1abbd84a1130b1cb98029846806e7fefa540"
+      "id": "role_source_019",
+      "title": "AI Deployment Coordination Assistant",
+      "agent_id": "career_deployment_coordination_assistant"
     },
     {
-      "id": "5cd57b6b955001",
-      "title": "Human Resource (HR) Process Automation & People Analytics Intern",
-      "url": "https://univers.breezy.hr/p/5cd57b6b955001-human-resource-hr-process-automation-people-analytics-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_people_analytics_assistant",
-      "description_sha256": "8cf0ba423eb282b8c614fcd94c082b85a24d4c72fecda66335c6ba5cc3973ba1"
+      "id": "role_source_020",
+      "title": "HR Automation and People Analytics Assistant",
+      "agent_id": "career_people_analytics_assistant"
     },
     {
-      "id": "768c8384195f01",
-      "title": "IT Infrastructure Ops Head",
-      "url": "https://univers.breezy.hr/p/768c8384195f01-it-infrastructure-ops-head",
-      "department": "International O&M",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_infrastructure_operations_lead",
-      "description_sha256": "0c0c721c7162c186e491464a57dfd861b1295d57cdc5ea9a36ed131e3f760357"
+      "id": "role_source_021",
+      "title": "Infrastructure Operations Lead",
+      "agent_id": "career_infrastructure_operations_lead"
     },
     {
-      "id": "aca89f85d8b801",
-      "title": "IT Project Manager",
-      "url": "https://univers.breezy.hr/p/aca89f85d8b801-it-project-manager",
-      "department": "IT Infrastructure",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_it_project_manager",
-      "description_sha256": "6bcd43ce698a8182e7e082c1be2dccab3abb0ce9a9857bfba24accce7d8df7d0"
+      "id": "role_source_022",
+      "title": "Enterprise IT Project Manager",
+      "agent_id": "career_it_project_manager"
     },
     {
-      "id": "8b1d0fa7f89a01",
-      "title": "IT Specialist",
-      "url": "https://univers.breezy.hr/p/8b1d0fa7f89a01-it-specialist",
-      "department": "IT Infrastructure",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_finance_systems_specialist",
-      "description_sha256": "9a0c103a8eef343fbfdb903aad9a693ec369add35ce9c6abd24194410d4ef87e"
+      "id": "role_source_023",
+      "title": "Finance and Project ERP Specialist",
+      "agent_id": "career_finance_systems_specialist"
     },
     {
-      "id": "74f5c49f288601",
-      "title": "Infrastructure & Network Engineer",
-      "url": "https://univers.breezy.hr/p/74f5c49f288601-infrastructure-network-engineer",
-      "department": "IT and Security",
-      "location": "Noida, IN",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_infrastructure_network_engineer",
-      "description_sha256": "e2d1955473d2df13b6ae295d60b727a183c34569b453be8fa6f886b37dc7117b"
+      "id": "role_source_024",
+      "title": "Infrastructure and Network Engineer",
+      "agent_id": "career_infrastructure_network_engineer"
     },
     {
-      "id": "add17664c1b501",
-      "title": "Internal Audit Intern",
-      "url": "https://univers.breezy.hr/p/add17664c1b501-internal-audit-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_internal_audit_assistant",
-      "description_sha256": "f91ef1789e6ef8b2d6a383f624dc5b62900fd7e048b3254a2cb595c3e214a0d4"
+      "id": "role_source_025",
+      "title": "Internal Audit Evidence Assistant",
+      "agent_id": "career_internal_audit_assistant"
     },
     {
-      "id": "951f00a4fd0e01",
-      "title": "IoT Connectivity & AI Foundation Product Lead",
-      "url": "https://univers.breezy.hr/p/951f00a4fd0e01-iot-connectivity-ai-foundation-product-lead",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_iot_ai_platform_product_lead",
-      "description_sha256": "7806f544c5f9b3d6925b9d1b1d88126777c0dd7b506c99872e623c2b912ac9b1"
+      "id": "role_source_026",
+      "title": "IoT and AI Foundation Product Lead",
+      "agent_id": "career_iot_ai_platform_product_lead"
     },
     {
-      "id": "dff10327b4e201",
+      "id": "role_source_027",
       "title": "IoT Connectivity Product Lead",
-      "url": "https://univers.breezy.hr/p/dff10327b4e201-iot-connectivity-product-lead",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_iot_connectivity_product_lead",
-      "description_sha256": "58099396aececcdc19689b0be154ceec19ebbadc06c405f548d6467396c8f9b6"
+      "agent_id": "career_iot_connectivity_product_lead"
     },
     {
-      "id": "cf462a34e71001",
-      "title": "Legal Admin Intern",
-      "url": "https://univers.breezy.hr/p/cf462a34e71001-legal-admin-intern",
-      "department": "Internship",
-      "location": "Singapore",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_legal_operations_assistant",
-      "description_sha256": "436a9a1fbe12cc186b6e10e0a2f69735a233caded9c10e174a32cadeb818303c"
+      "id": "role_source_028",
+      "title": "Legal Operations Assistant",
+      "agent_id": "career_legal_operations_assistant"
     },
     {
-      "id": "1bb3c6b3c00f01",
-      "title": "Marketing Campaign Intern",
-      "url": "https://univers.breezy.hr/p/1bb3c6b3c00f01-marketing-campaign-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_campaign_operations_assistant",
-      "description_sha256": "6a84d44991e90752c6805d4c06479cc410965234fbd23ca97c4e94a665d274e6"
+      "id": "role_source_029",
+      "title": "Marketing Campaign Operations Assistant",
+      "agent_id": "career_campaign_operations_assistant"
     },
     {
-      "id": "a14d27b3b72801",
-      "title": "Marketing Campaigns Manager (m/w/d) - Deutsch (C2) & English (C1)",
-      "url": "https://univers.breezy.hr/p/a14d27b3b72801-marketing-campaigns-manager-m-w-d-deutsch-c2-english-c1",
-      "department": "Marketing",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_marketing_campaign_manager",
-      "description_sha256": "63f2bfc45629773dba5f658a5f2fba6592537c30c58364fac32aed9716bb431e"
+      "id": "role_source_030",
+      "title": "Marketing Campaign Manager",
+      "agent_id": "career_marketing_campaign_manager"
     },
     {
-      "id": "91945493defb01",
-      "title": "Marketing Content Intern",
-      "url": "https://univers.breezy.hr/p/91945493defb01-marketing-content-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_marketing_content_assistant",
-      "description_sha256": "905aaaff80ede011c1a5917f0b9aed07065376ded837b396bed86c05c0b258b4"
+      "id": "role_source_031",
+      "title": "Energy Marketing Content Assistant",
+      "agent_id": "career_marketing_content_assistant"
     },
     {
-      "id": "250fbb51bdc001",
-      "title": "Operations & Maintenance Head India",
-      "url": "https://univers.breezy.hr/p/250fbb51bdc001-operations-maintenance-head-india",
-      "department": "Energy & Utilties - Onboarding/ Delivery",
-      "location": "India, IN",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_energy_operations_lead",
-      "description_sha256": "367a7f229f9737ff6fb1dfde223df995e6f182cca030db184b7e31f512207bac"
+      "id": "role_source_032",
+      "title": "Energy Systems Operations and Maintenance Lead",
+      "agent_id": "career_energy_operations_lead"
     },
     {
-      "id": "7b3ce8c98dc901",
-      "title": "Powergrid Expert",
-      "url": "https://univers.breezy.hr/p/7b3ce8c98dc901-powergrid-expert",
-      "department": "Energy & Utilties - Onboarding/ Delivery",
-      "location": "India, IN",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_powergrid_expert",
-      "description_sha256": "7a7bf4a35beaca5caff56e27d60fa3b9c39babb40a8a907486b907bbb95a6e0c"
+      "id": "role_source_033",
+      "title": "Power Grid Domain Expert",
+      "agent_id": "career_powergrid_expert"
     },
     {
-      "id": "2e48f1e6e73401",
-      "title": "Procurement Intern",
-      "url": "https://univers.breezy.hr/p/2e48f1e6e73401-procurement-intern",
-      "department": "Procurement",
-      "location": "Singapore",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_procurement_assistant",
-      "description_sha256": "a8c57c29759009261bd67a616cfabc322f04d8da1ba9e1b79fa95ed33177c366"
+      "id": "role_source_034",
+      "title": "Procurement Operations Assistant",
+      "agent_id": "career_procurement_assistant"
     },
     {
-      "id": "642a47f24a3501",
-      "title": "Procurement Intern",
-      "url": "https://univers.breezy.hr/p/642a47f24a3501-procurement-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_procurement_assistant",
-      "description_sha256": "3cb103da8686c4941f1e482bb9322e92b65132c814fb4be6ae514586ebbae8c2"
+      "id": "role_source_035",
+      "title": "Procurement Operations Assistant",
+      "agent_id": "career_procurement_assistant"
     },
     {
-      "id": "b855874fde5301",
-      "title": "Procurement Intern",
-      "url": "https://univers.breezy.hr/p/b855874fde5301-procurement-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_procurement_assistant",
-      "description_sha256": "9745bc534dc45883ff8c5492f6a4ec3fb1e456361cfeb26afa7e3fa6a21574af"
+      "id": "role_source_036",
+      "title": "Procurement Operations Assistant",
+      "agent_id": "career_procurement_assistant"
     },
     {
-      "id": "51b846806b7301",
-      "title": "Projectmanager - Munich (m/w/d)",
-      "url": "https://univers.breezy.hr/p/51b846806b7301-projectmanager-munich-m-w-d",
-      "department": "Delivery",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_ev_project_manager",
-      "description_sha256": "943f93b9e8074412a171fcaea1029637e72742683895dd6985ed8e5c0c495153"
+      "id": "role_source_037",
+      "title": "EV Charging Project Manager",
+      "agent_id": "career_ev_project_manager"
     },
     {
-      "id": "2dcf7aedb58901",
-      "title": "Renewable Energy Technical Engineers (Noida)",
-      "url": "https://univers.breezy.hr/p/2dcf7aedb58901-renewable-energy-technical-engineers-noida",
-      "department": "Renewables CoE",
-      "location": "Noida, IN",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_renewable_integration_engineer",
-      "description_sha256": "d6c618db8e94d279e0fd79970e7eabc307b82aa348efb8cc4d4f0a752c2edc15"
+      "id": "role_source_038",
+      "title": "Renewable Energy Integration Engineer",
+      "agent_id": "career_renewable_integration_engineer"
     },
     {
-      "id": "1a2d2cf355a901",
-      "title": "SCADA Operations & Maintenance Engineer",
-      "url": "https://univers.breezy.hr/p/1a2d2cf355a901-scada-operations-maintenance-engineer",
-      "department": "Operations & Maintenance",
-      "location": "London, GB",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_scada_operations_engineer",
-      "description_sha256": "8293094c73c93fb1e2a57aa0d79a3a7b4ebf9c6d3c578f52ad612e926811333c"
+      "id": "role_source_039",
+      "title": "SCADA Operations and Maintenance Engineer",
+      "agent_id": "career_scada_operations_engineer"
     },
     {
-      "id": "e824831c486f01",
-      "title": "SCADA/EMS Engineer",
-      "url": "https://univers.breezy.hr/p/e824831c486f01-scada-ems-engineer",
-      "department": "Delivery",
-      "location": "London, GB",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_scada_ems_engineer",
-      "description_sha256": "ca411c6081d62fc5624f27212b746127c94a3661006746359eba14910d467b20"
+      "id": "role_source_040",
+      "title": "SCADA and EMS Delivery Engineer",
+      "agent_id": "career_scada_ems_engineer"
     },
     {
-      "id": "eabb1121a4c901",
-      "title": "Sales Development Intern (Munich) - German Speaker",
-      "url": "https://univers.breezy.hr/p/eabb1121a4c901-sales-development-intern-munich-german-speaker",
-      "department": "Sales",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_sales_development_assistant",
-      "description_sha256": "ff0cf5b9e06ea03ad1cc1b2e4d9024c96420db06167b03ac1dfa951a1a7414c3"
+      "id": "role_source_041",
+      "title": "Sales Development Assistant",
+      "agent_id": "career_sales_development_assistant"
     },
     {
-      "id": "a91903de7fae01",
-      "title": "Sales Manager/ Technical Sales - Energy Solutions, EMS & E-Mobility (m/w/d)",
-      "url": "https://univers.breezy.hr/p/a91903de7fae01-sales-manager-technical-sales-energy-solutions-ems-e-mobility-m-w-d",
-      "department": "GTM",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_energy_solutions_sales_manager",
-      "description_sha256": "18342b49e67647c25c6669e6cce360d2be883e6dd9c505e1ecc896921cc85e41"
+      "id": "role_source_042",
+      "title": "Energy Solutions and E-Mobility Sales Manager",
+      "agent_id": "career_energy_solutions_sales_manager"
     },
     {
-      "id": "aa1dd890224601",
-      "title": "Senior Account Manager/Director, Key Account & ASEAN Grid Operators",
-      "url": "https://univers.breezy.hr/p/aa1dd890224601-senior-account-manager-director-key-account-asean-grid-operators",
-      "department": "GTM - Energy & Utilities",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_utility_account_director",
-      "description_sha256": "c90f988d6f6d78cee478c09ea34ef2c6778737bbc1fb06c12847e883842a481a"
+      "id": "role_source_043",
+      "title": "Utility and Grid Strategic Account Director",
+      "agent_id": "career_utility_account_director"
     },
     {
-      "id": "01c3b9dd133401",
+      "id": "role_source_044",
       "title": "Senior Business Analyst",
-      "url": "https://univers.breezy.hr/p/01c3b9dd133401-senior-business-analyst",
-      "department": "AI Services",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_business_analyst",
-      "description_sha256": "3fd77d66333af6a3d00abb929ab4f4d1a95b4324af1c1025cecc73e6d217ec76"
+      "agent_id": "career_business_analyst"
     },
     {
-      "id": "fe10084691a601",
-      "title": "Senior Director, Governance, Risk & Compliance",
-      "url": "https://univers.breezy.hr/p/fe10084691a601-senior-director-governance-risk-compliance",
-      "department": "Data Privacy & Compliance",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_grc_director",
-      "description_sha256": "71c0dbe6a95a983f083ed1356bbe00c668036ef12fad02c09b71ca51ba70bda4"
+      "id": "role_source_045",
+      "title": "Governance Risk and Compliance Director",
+      "agent_id": "career_grc_director"
     },
     {
-      "id": "3acb69a9645c01",
-      "title": "Senior Edge Solution Engineer",
-      "url": "https://univers.breezy.hr/p/3acb69a9645c01-senior-edge-solution-engineer",
-      "department": "PU Edge",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_edge_solution_engineer",
-      "description_sha256": "4228e053546eb0cd0ba6ad2803070e7e1edaba1d083c8b958a1cf23f341af265"
+      "id": "role_source_046",
+      "title": "Edge Solution and AI Engineer",
+      "agent_id": "career_edge_solution_engineer"
     },
     {
-      "id": "9e9d41dbbb1901",
-      "title": "Senior Full Stack Engineer (AI)",
-      "url": "https://univers.breezy.hr/p/9e9d41dbbb1901-senior-full-stack-engineer-ai",
-      "department": "AI Services",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_full_stack_ai_engineer",
-      "description_sha256": "04369e42b1612520e20b0bdc642dc5d5ebf29e64159f0d7ebbb0663ed4810b33"
+      "id": "role_source_047",
+      "title": "Full Stack AI Engineer",
+      "agent_id": "career_full_stack_ai_engineer"
     },
     {
-      "id": "d31b6835026301",
-      "title": "Senior Sales Manager / Director — Renewables & Power, ASEAN",
-      "url": "https://univers.breezy.hr/p/d31b6835026301-senior-sales-manager-director-renewables-power-asean",
-      "department": "GTM - Energy & Utilities",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_renewables_sales_director",
-      "description_sha256": "5dd8d2d365871adff9bfee29eda228b898917accad2bfc12d498cd50ed5f3c6b"
+      "id": "role_source_048",
+      "title": "Renewables and Power Sales Director",
+      "agent_id": "career_renewables_sales_director"
     },
     {
-      "id": "73bd0a71c9d601",
-      "title": "Service  & Key Account Manager - International O&M",
-      "url": "https://univers.breezy.hr/p/73bd0a71c9d601-service-key-account-manager-international-o-m",
-      "department": "International O&M",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_service_account_manager",
-      "description_sha256": "5f12f2f788e396646c32f2b0c0c5e931d0f9df9ac530fec46cfd9a50b203b21c"
+      "id": "role_source_049",
+      "title": "Service and Key Account Manager",
+      "agent_id": "career_service_account_manager"
     },
     {
-      "id": "e381a5fbcae401",
-      "title": "Strategy & Enablement (Net-Zero) Intern",
-      "url": "https://univers.breezy.hr/p/e381a5fbcae401-strategy-enablement-net-zero-intern",
-      "department": "Internship",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_net_zero_enablement_assistant",
-      "description_sha256": "48c5a2842bf062ddc949d9681d718b43a69e0236b54b90fef96772e4c5ae8073"
+      "id": "role_source_050",
+      "title": "Net-Zero Strategy Enablement Assistant",
+      "agent_id": "career_net_zero_enablement_assistant"
     },
     {
-      "id": "c4fec8ad983101",
-      "title": "Strategy & Product Associate",
-      "url": "https://univers.breezy.hr/p/c4fec8ad983101-strategy-product-associate",
-      "department": "AI Platform",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_strategy_product_associate",
-      "description_sha256": "bc33ec098bdc73030cd848a32cb59a814a458b94ec17585b55fec1453db4532f"
+      "id": "role_source_051",
+      "title": "Strategy and Product Associate",
+      "agent_id": "career_strategy_product_associate"
     },
     {
-      "id": "c41a17d6875001",
+      "id": "role_source_052",
       "title": "Technical Customer Support Specialist",
-      "url": "https://univers.breezy.hr/p/c41a17d6875001-technical-customer-support-specialist",
-      "department": "Delivery",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_customer_support_specialist",
-      "description_sha256": "e448d50dfbaad8cb2a7a62b36447d6b7c1d40120bc87b6e0460843107e8521c1"
+      "agent_id": "career_customer_support_specialist"
     },
     {
-      "id": "e71c8f3a367201",
-      "title": "Technical Presales, Europe",
-      "url": "https://univers.breezy.hr/p/e71c8f3a367201-technical-presales-europe",
-      "department": "Presales",
-      "location": "Netherlands",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_technical_presales_engineer",
-      "description_sha256": "0c778d5e52ca1308208f22bc8a55dc1aecb36c147218b5b1d6de4d23d9569f45"
+      "id": "role_source_053",
+      "title": "Energy Technical Presales Engineer",
+      "agent_id": "career_technical_presales_engineer"
     },
     {
-      "id": "2fa5066217ef01",
-      "title": "Technical Solution Engineer",
-      "url": "https://univers.breezy.hr/p/2fa5066217ef01-technical-solution-engineer",
-      "department": "MU - Japan",
-      "location": "Singapore, SG",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_technical_solution_engineer",
-      "description_sha256": "38be7e7fa574f6d90f9586d2416b191f2de1d31ac615b8f0eb4a7eb9a1b1ddbb"
+      "id": "role_source_054",
+      "title": "Digital Twin Technical Solution Engineer",
+      "agent_id": "career_technical_solution_engineer"
     },
     {
-      "id": "ae3d54e7337f01",
-      "title": "Technischer Kundenbetreuer",
-      "url": "https://univers.breezy.hr/p/ae3d54e7337f01-technischer-kundenbetreuer",
-      "department": "Delivery",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_customer_support_specialist",
-      "description_sha256": "c973573d553dddecd44c1b05151ec92b955804a720f80142b8746407a09a4fbd"
+      "id": "role_source_055",
+      "title": "Technical Customer Support Specialist",
+      "agent_id": "career_customer_support_specialist"
     },
     {
-      "id": "c6d19366cb3b01",
-      "title": "Werkstudent (m/w/d) Admin und HR",
-      "url": "https://univers.breezy.hr/p/c6d19366cb3b01-werkstudent-m-w-d-admin-und-hr",
-      "department": "HR",
-      "location": "Munich, DE",
-      "observed_status": "listed_in_public_openings_feed",
-      "agent_id": "career_hr_administration_assistant",
-      "description_sha256": "16b70f52eb06de7fc38ce8900edd2731b3acebf3af8c2d988134f873d2463d2d"
+      "id": "role_source_056",
+      "title": "HR Administration Assistant",
+      "agent_id": "career_hr_administration_assistant"
     }
   ],
   "roles": [
@@ -611,10 +328,10 @@
         "career_forward_deployed_engineer"
       ],
       "listing_ids": [
-        "6299ce691d5b01"
+        "role_source_001"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_ai_production_engineer",
@@ -651,10 +368,10 @@
         "career_full_stack_ai_engineer"
       ],
       "listing_ids": [
-        "5e3cd0dda3ac01"
+        "role_source_002"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_ai_prototyping_assistant",
@@ -689,10 +406,10 @@
         "career_forward_deployed_engineer"
       ],
       "listing_ids": [
-        "14c6a4c5d8d501"
+        "role_source_003"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_ai_infrastructure_architect",
@@ -729,10 +446,10 @@
         "career_infrastructure_operations_lead"
       ],
       "listing_ids": [
-        "1386ad40a54901"
+        "role_source_004"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_ai_workbench_product_lead",
@@ -768,10 +485,10 @@
         "career_data_platform_product_director"
       ],
       "listing_ids": [
-        "8d4162bcbd4401"
+        "role_source_005"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_accounting_specialist",
@@ -807,10 +524,10 @@
         "career_treasury_lead"
       ],
       "listing_ids": [
-        "33f24ede59fb01"
+        "role_source_006"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_business_development_assistant",
@@ -845,10 +562,10 @@
         "career_technical_presales_engineer"
       ],
       "listing_ids": [
-        "a2eea3c59f6601"
+        "role_source_007"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_cloud_security_engineer",
@@ -885,10 +602,10 @@
         "career_infrastructure_network_engineer"
       ],
       "listing_ids": [
-        "0dd0f80faa4a01"
+        "role_source_008"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_knowledge_architect",
@@ -925,10 +642,10 @@
         "career_iot_connectivity_product_lead"
       ],
       "listing_ids": [
-        "a0a5492ba63e01"
+        "role_source_009"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_privacy_compliance_assistant",
@@ -963,10 +680,10 @@
         "career_internal_audit_assistant"
       ],
       "listing_ids": [
-        "42b25d0e28b401"
+        "role_source_010"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_strategic_accounts_director",
@@ -1002,10 +719,10 @@
         "career_ai_business_consulting_assistant"
       ],
       "listing_ids": [
-        "981d0ec5ee0c01"
+        "role_source_011"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_data_platform_product_director",
@@ -1042,10 +759,10 @@
         "career_ai_infrastructure_architect"
       ],
       "listing_ids": [
-        "c2eb9c4257fc01"
+        "role_source_012"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_treasury_lead",
@@ -1082,10 +799,10 @@
         "career_accounting_specialist"
       ],
       "listing_ids": [
-        "f3b8e89e5ee601"
+        "role_source_013"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_energy_management_deployment_specialist",
@@ -1121,10 +838,10 @@
         "career_customer_support_specialist"
       ],
       "listing_ids": [
-        "3618e9002f8901"
+        "role_source_014"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_fpna_analyst",
@@ -1161,10 +878,10 @@
         "career_accounting_specialist"
       ],
       "listing_ids": [
-        "338efff39dd101"
+        "role_source_015"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_finance_analytics_assistant",
@@ -1199,10 +916,10 @@
         "career_finance_systems_specialist"
       ],
       "listing_ids": [
-        "f420aec0949501"
+        "role_source_016"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_forward_deployed_engineer",
@@ -1238,11 +955,11 @@
         "career_ai_production_engineer"
       ],
       "listing_ids": [
-        "efa58c39933301",
-        "f123e9e8e1a701"
+        "role_source_017",
+        "role_source_018"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_deployment_coordination_assistant",
@@ -1277,10 +994,10 @@
         "career_business_analyst"
       ],
       "listing_ids": [
-        "c1706965e33101"
+        "role_source_019"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_people_analytics_assistant",
@@ -1315,10 +1032,10 @@
         "career_privacy_compliance_assistant"
       ],
       "listing_ids": [
-        "5cd57b6b955001"
+        "role_source_020"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_infrastructure_operations_lead",
@@ -1355,10 +1072,10 @@
         "career_cloud_security_engineer"
       ],
       "listing_ids": [
-        "768c8384195f01"
+        "role_source_021"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_it_project_manager",
@@ -1395,10 +1112,10 @@
         "career_procurement_assistant"
       ],
       "listing_ids": [
-        "aca89f85d8b801"
+        "role_source_022"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_finance_systems_specialist",
@@ -1434,10 +1151,10 @@
         "career_it_project_manager"
       ],
       "listing_ids": [
-        "8b1d0fa7f89a01"
+        "role_source_023"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_infrastructure_network_engineer",
@@ -1474,10 +1191,10 @@
         "career_cloud_security_engineer"
       ],
       "listing_ids": [
-        "74f5c49f288601"
+        "role_source_024"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_internal_audit_assistant",
@@ -1513,10 +1230,10 @@
         "career_accounting_specialist"
       ],
       "listing_ids": [
-        "add17664c1b501"
+        "role_source_025"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_iot_ai_platform_product_lead",
@@ -1553,10 +1270,10 @@
         "career_ai_workbench_product_lead"
       ],
       "listing_ids": [
-        "951f00a4fd0e01"
+        "role_source_026"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_iot_connectivity_product_lead",
@@ -1593,10 +1310,10 @@
         "career_knowledge_architect"
       ],
       "listing_ids": [
-        "dff10327b4e201"
+        "role_source_027"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_legal_operations_assistant",
@@ -1631,10 +1348,10 @@
         "career_procurement_assistant"
       ],
       "listing_ids": [
-        "cf462a34e71001"
+        "role_source_028"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_campaign_operations_assistant",
@@ -1669,10 +1386,10 @@
         "career_marketing_content_assistant"
       ],
       "listing_ids": [
-        "1bb3c6b3c00f01"
+        "role_source_029"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_marketing_campaign_manager",
@@ -1709,10 +1426,10 @@
         "career_sales_development_assistant"
       ],
       "listing_ids": [
-        "a14d27b3b72801"
+        "role_source_030"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_marketing_content_assistant",
@@ -1747,10 +1464,10 @@
         "career_strategy_product_associate"
       ],
       "listing_ids": [
-        "91945493defb01"
+        "role_source_031"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_energy_operations_lead",
@@ -1787,10 +1504,10 @@
         "career_service_account_manager"
       ],
       "listing_ids": [
-        "250fbb51bdc001"
+        "role_source_032"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_powergrid_expert",
@@ -1826,10 +1543,10 @@
         "career_energy_operations_lead"
       ],
       "listing_ids": [
-        "7b3ce8c98dc901"
+        "role_source_033"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_procurement_assistant",
@@ -1864,12 +1581,12 @@
         "career_finance_systems_specialist"
       ],
       "listing_ids": [
-        "2e48f1e6e73401",
-        "642a47f24a3501",
-        "b855874fde5301"
+        "role_source_034",
+        "role_source_035",
+        "role_source_036"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_ev_project_manager",
@@ -1906,10 +1623,10 @@
         "career_customer_support_specialist"
       ],
       "listing_ids": [
-        "51b846806b7301"
+        "role_source_037"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_renewable_integration_engineer",
@@ -1946,10 +1663,10 @@
         "career_scada_ems_engineer"
       ],
       "listing_ids": [
-        "2dcf7aedb58901"
+        "role_source_038"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_scada_operations_engineer",
@@ -1986,10 +1703,10 @@
         "career_energy_operations_lead"
       ],
       "listing_ids": [
-        "1a2d2cf355a901"
+        "role_source_039"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_scada_ems_engineer",
@@ -2026,10 +1743,10 @@
         "career_energy_management_deployment_specialist"
       ],
       "listing_ids": [
-        "e824831c486f01"
+        "role_source_040"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_sales_development_assistant",
@@ -2064,10 +1781,10 @@
         "career_marketing_campaign_manager"
       ],
       "listing_ids": [
-        "eabb1121a4c901"
+        "role_source_041"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_energy_solutions_sales_manager",
@@ -2104,10 +1821,10 @@
         "career_ev_project_manager"
       ],
       "listing_ids": [
-        "a91903de7fae01"
+        "role_source_042"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_utility_account_director",
@@ -2144,10 +1861,10 @@
         "career_technical_presales_engineer"
       ],
       "listing_ids": [
-        "aa1dd890224601"
+        "role_source_043"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_business_analyst",
@@ -2182,10 +1899,10 @@
         "career_deployment_coordination_assistant"
       ],
       "listing_ids": [
-        "01c3b9dd133401"
+        "role_source_044"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_grc_director",
@@ -2222,10 +1939,10 @@
         "career_internal_audit_assistant"
       ],
       "listing_ids": [
-        "fe10084691a601"
+        "role_source_045"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_edge_solution_engineer",
@@ -2262,10 +1979,10 @@
         "career_ai_production_engineer"
       ],
       "listing_ids": [
-        "3acb69a9645c01"
+        "role_source_046"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_full_stack_ai_engineer",
@@ -2302,10 +2019,10 @@
         "career_forward_deployed_engineer"
       ],
       "listing_ids": [
-        "9e9d41dbbb1901"
+        "role_source_047"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_renewables_sales_director",
@@ -2342,10 +2059,10 @@
         "career_service_account_manager"
       ],
       "listing_ids": [
-        "d31b6835026301"
+        "role_source_048"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_service_account_manager",
@@ -2382,10 +2099,10 @@
         "career_fpna_analyst"
       ],
       "listing_ids": [
-        "73bd0a71c9d601"
+        "role_source_049"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_net_zero_enablement_assistant",
@@ -2420,10 +2137,10 @@
         "career_marketing_content_assistant"
       ],
       "listing_ids": [
-        "e381a5fbcae401"
+        "role_source_050"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_strategy_product_associate",
@@ -2458,10 +2175,10 @@
         "career_strategic_accounts_director"
       ],
       "listing_ids": [
-        "c4fec8ad983101"
+        "role_source_051"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_customer_support_specialist",
@@ -2498,11 +2215,11 @@
         "career_energy_management_deployment_specialist"
       ],
       "listing_ids": [
-        "c41a17d6875001",
-        "ae3d54e7337f01"
+        "role_source_052",
+        "role_source_055"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_technical_presales_engineer",
@@ -2538,10 +2255,10 @@
         "career_technical_solution_engineer"
       ],
       "listing_ids": [
-        "e71c8f3a367201"
+        "role_source_053"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_technical_solution_engineer",
@@ -2577,10 +2294,10 @@
         "career_scada_ems_engineer"
       ],
       "listing_ids": [
-        "2fa5066217ef01"
+        "role_source_054"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     },
     {
       "id": "career_hr_administration_assistant",
@@ -2615,10 +2332,10 @@
         "career_privacy_compliance_assistant"
       ],
       "listing_ids": [
-        "c6d19366cb3b01"
+        "role_source_056"
       ],
       "authority": "advisory_only",
-      "source_basis": "Original synthesis of the linked public job responsibilities; agent design is an interpretation."
+      "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
     }
   ]
 }

@@ -68,14 +68,14 @@ catalogue also includes roles still at the design stage.
 
 ## Public-career role agents
 
-**52 reusable agents cover all 56 openings** observed in the public careers feed
-on 8 November 2026. They span AI engineering and delivery, data and IoT platforms,
+**52 generic agents cover 56 public role descriptions** reviewed on 8 November
+2026. They span AI engineering and delivery, data and IoT platforms,
 energy operations, sales, finance, IT, governance, marketing, strategy, HR and legal
 support. Repeated procurement, FDE and translated support listings share agents.
 
 Each role has its own mandate, responsibilities, required inputs, deliverables,
-review checks, KPIs and handoffs. The packaged catalogue maps every source listing
-to its agent. Generic role identities are separate from source attribution.
+review checks, KPIs and handoffs. A neutral source index records coverage without
+employer names, links, original posting IDs, or other identifying source metadata.
 
 ```bash
 energy-agents-roles --list
@@ -87,7 +87,7 @@ The default run produces **scripted work plans**. An optional LLM adapter can
 propose deliverables through the same bounded evidence-linked protocol. Structural
 acceptance is not factual validation or completion of professional work.
 
-- [Role guide, complete source mapping and contracts](docs/sphinx/source/career_roles.rst)
+- [Role guide, neutral source index and contracts](docs/sphinx/source/career_roles.rst)
 - [Runnable gallery example](examples/enterprise/plot_career_role_agents.py)
 - [Packaged role catalogue](src/energy_agents/data/career_roles/catalogue.json)
 

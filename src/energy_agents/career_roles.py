@@ -15,13 +15,13 @@ from .roles import RoleSpec
 
 
 def career_catalogue() -> dict:
-    """Load independent role contracts and the dated 56-listing source mapping."""
+    """Load generic role contracts and a dated, employer-neutral source index."""
     return json.loads(files("energy_agents").joinpath(
         "data/career_roles/catalogue.json").read_text(encoding="utf-8"))
 
 
 def career_role_context(role_id: str) -> dict:
-    """Return one neutral role card and its public source metadata, not job text."""
+    """Return one generic role card and neutral source labels, without employer metadata."""
     catalogue = career_catalogue()
     for card in catalogue["roles"]:
         if card["id"] == role_id:
@@ -57,7 +57,7 @@ def career_instruction(role_id: str) -> str:
         'deliverables and open_questions. deliverables is a list with one object per '
         'required name: {"name": string, "content": string, "evidence_ids": [string], '
         '"assumptions": [string]}. open_questions is a list of strings. '
-        'Use only supplied case evidence IDs; job-listing IDs are role provenance, not '
+        'Use only supplied case evidence IDs; neutral source labels record role coverage, not '
         'evidence for customer claims. Unsupported items need explicit assumptions. '
         'Missing inputs and reference-only evidence are not verified facts. Address '
         'the review checks and explain which evidence is still needed. KPIs are '
@@ -75,7 +75,7 @@ def career_instruction(role_id: str) -> str:
 class CareerRolePlanner(ChatCompletionsPlanner):
     """Optional live LLM; sends the role's case inputs to the configured endpoint.
 
-    Upstream handoffs and public source metadata are also sent. Use only data that
+    Upstream handoffs and neutral source labels are also sent. Use only data that
     may be shared with that endpoint. No provider is selected or called by default.
     """
 
