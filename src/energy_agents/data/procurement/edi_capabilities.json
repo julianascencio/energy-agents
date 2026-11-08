@@ -1,0 +1,101 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "f08cc14998ec291b28e7132d4cd0a826825bd9e0",
+  "scope": "Focused five-file source catalogue, not full inventory",
+  "entries": [
+    {
+      "path": "data-retrieval/src/energy_data_retrieval/wind_catalogue/catalogue.py",
+      "sha256": "d7dddc3070bdd758228491dd78d1e3f3d61008ce19f015476fe4f356460f2f41",
+      "symbols": [
+        {
+          "name": "stable_id",
+          "line": 30,
+          "signature": "entity_type: str, *identity: str"
+        },
+        {
+          "name": "validate_record",
+          "line": 40,
+          "signature": "row: dict[str, Any], sources: dict[str, Any]"
+        },
+        {
+          "name": "_validate_curve",
+          "line": 151,
+          "signature": "row: dict[str, Any]"
+        },
+        {
+          "name": "validate_catalogue",
+          "line": 185,
+          "signature": "rows: list[dict[str, Any]], sources: dict[str, Any]"
+        },
+        {
+          "name": "capacity_summary",
+          "line": 261,
+          "signature": "rows: list[dict[str, Any]], field: str"
+        },
+        {
+          "name": "build_parquet",
+          "line": 288,
+          "signature": "root: Path, output: Path"
+        },
+        {
+          "name": "upsert_records",
+          "line": 298,
+          "signature": "existing: list[dict[str, Any]], incoming: list[dict[str, Any]], *, now: str"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/f08cc14998ec291b28e7132d4cd0a826825bd9e0/data-retrieval/src/energy_data_retrieval/wind_catalogue/catalogue.py"
+    },
+    {
+      "path": "data-retrieval/src/energy_data_retrieval/wind_catalogue/grid_connections.py",
+      "sha256": "5b7210ac10311e4e91617f6471313a5356121cd389ea020919aa0659c6811caa",
+      "symbols": [
+        {
+          "name": "enrich_grid_connections",
+          "line": 14,
+          "signature": "document: dict[str, Any], original: bytes, existing: list[dict[str, Any]], *, now: str"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/f08cc14998ec291b28e7132d4cd0a826825bd9e0/data-retrieval/src/energy_data_retrieval/wind_catalogue/grid_connections.py"
+    },
+    {
+      "path": "methods/src/energy_methods/offshore_wind_economics.py",
+      "sha256": "529ad98b5651363fc9d310a0306fa16e978c45e4b37dca7e239e75acc6a141ba",
+      "symbols": [
+        {
+          "name": "OffshoreWindScenario",
+          "line": 15,
+          "signature": ""
+        },
+        {
+          "name": "OffshoreWindEconomics",
+          "line": 33,
+          "signature": ""
+        },
+        {
+          "name": "evaluate_offshore_wind",
+          "line": 44,
+          "signature": "scenario: OffshoreWindScenario"
+        },
+        {
+          "name": "tariff_npv_jpy",
+          "line": 102,
+          "signature": "scenario: OffshoreWindScenario, tariff_jpy_per_kwh: float"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/f08cc14998ec291b28e7132d4cd0a826825bd9e0/methods/src/energy_methods/offshore_wind_economics.py"
+    },
+    {
+      "path": "data-retrieval/pyproject.toml",
+      "sha256": "e263632187f3766a624fbe8ab1b530a1c0542d111a6742aa51935a787f5552c6",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/f08cc14998ec291b28e7132d4cd0a826825bd9e0/data-retrieval/pyproject.toml"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e659d14a7d13d27d5ba5fcb7b72fd3109aa4b53362a790295b6eec8028ff6b8c",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/f08cc14998ec291b28e7132d4cd0a826825bd9e0/LICENSE"
+    }
+  ],
+  "discovery_is_execution": false
+}

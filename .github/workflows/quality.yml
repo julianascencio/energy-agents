@@ -33,3 +33,4 @@ jobs:
       - run: energy-agents-reserve --output outputs/reserve
 
       - run: energy-agents-vppa --output outputs/vppa
+      - run: energy-agents-procurement --output outputs/procurement
