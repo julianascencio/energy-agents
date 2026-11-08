@@ -118,4 +118,6 @@ gallery build passed. Generated chart and economic table inspected. A title
 underline warning was fixed before the strict build passed. No scientific or
 live-provider benchmark claimed.
 
-PR publication pending; final head check status will be linked after creation.
+PR: https://github.com/julianascencio/energy-agents/pull/14 — non-draft, left open.
+Check status is tied to the current PR head; see its checks and PR description
+for verified final-commit results rather than assuming older runs apply.
