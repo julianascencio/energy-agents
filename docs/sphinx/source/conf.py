@@ -28,3 +28,14 @@ sphinx_gallery_conf = {
     "download_all_examples": False,
     "abort_on_example_error": True,
 }
+
+
+def _build_operations_demo(app):
+    from energy_agents.operations import synthetic_portfolio
+    from energy_agents.operations.__main__ import export_review
+
+    export_review(synthetic_portfolio(), Path(app.srcdir) / "_static" / "operations")
+
+
+def setup(app):
+    app.connect("builder-inited", _build_operations_demo)

@@ -13,10 +13,13 @@ license = "MIT"
 dependencies = []
 
 [project.optional-dependencies]
+mcp = ["mcp>=1.12,<2"]
 dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1,<2"]
 docs = ["sphinx>=8,<9", "pydata-sphinx-theme>=0.16,<0.17", "sphinx-gallery>=0.19,<0.20", "matplotlib>=3.9,<4"]
 
 [project.scripts]
+energy-agents-ops = "energy_agents.operations.__main__:main"
+energy-agents-ops-mcp = "energy_agents.operations.mcp_server:main"
 energy-agents-roles = "energy_agents.career_roles:main"
 energy-agents-procurement = "energy_agents.business.procurement:main"
 energy-agents-vppa = "energy_agents.business.vppa:main"
