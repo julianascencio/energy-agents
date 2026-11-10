@@ -1,0 +1,86 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "22ec18c382643e21395726dcd6f4fad0d77f068f",
+  "scope": "Focused five-file source catalogue, not full inventory",
+  "entries": [
+    {
+      "path": "methods/src/energy_methods/pv_repowering.py",
+      "sha256": "32b2f436138ef4115dd38d16ce74e4ca7929c8cf37a2f7c66999ce6207b0e86c",
+      "symbols": [
+        {
+          "name": "lifetime_intervention",
+          "line": 8,
+          "signature": "dc_profile_mw: ArrayLike, retention: ArrayLike, *, ac_limit_mw: float, availability: ArrayLike, price_per_mwh: float, annual_opex: float, upfront_cost: float, discount_rate: float"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/22ec18c382643e21395726dcd6f4fad0d77f068f/methods/src/energy_methods/pv_repowering.py"
+    },
+    {
+      "path": "methods/src/energy_methods/pv_lifetime.py",
+      "sha256": "d2fa98ebf4e0bdd169bd9f71a4b1d801e34e5285e139d5306d1bfff8196e0204",
+      "symbols": [
+        {
+          "name": "_finite",
+          "line": 16,
+          "signature": "values: ArrayLike, name: str"
+        },
+        {
+          "name": "sigmoid_power",
+          "line": 23,
+          "signature": "exposure: ArrayLike, *, shape: float"
+        },
+        {
+          "name": "sigmoid_exposure",
+          "line": 36,
+          "signature": "retained_power: float, *, shape: float"
+        },
+        {
+          "name": "equivalent_time_power",
+          "line": 46,
+          "signature": "step_years: ArrayLike, rate_per_year: ArrayLike, *, shape: ArrayLike"
+        },
+        {
+          "name": "independent_mode_power",
+          "line": 97,
+          "signature": "mode_power: ArrayLike"
+        },
+        {
+          "name": "threshold_crossing",
+          "line": 109,
+          "signature": "age_years: ArrayLike, power: ArrayLike, *, threshold: float=0.8"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/22ec18c382643e21395726dcd6f4fad0d77f068f/methods/src/energy_methods/pv_lifetime.py"
+    },
+    {
+      "path": "methods/src/energy_methods/pv_operation.py",
+      "sha256": "5f0cf3a8064952c9f8c4a579f07c9905a3fb007c52bd7bcce6affa1a211caf69",
+      "symbols": [
+        {
+          "name": "ComponentScenario",
+          "line": 17,
+          "signature": ""
+        },
+        {
+          "name": "simulate_operation",
+          "line": 40,
+          "signature": "*, curve: ReliabilityCurve, initial_annual_energy_mwh: float, components: tuple[ComponentScenario, ...], years: int=50, trials: int=1000, seed: int=0"
+        }
+      ],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/22ec18c382643e21395726dcd6f4fad0d77f068f/methods/src/energy_methods/pv_operation.py"
+    },
+    {
+      "path": "methods/pyproject.toml",
+      "sha256": "e9279c073497bca42e0fde637cfca37e7817a99eb6788068c2bd741a319720e2",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/22ec18c382643e21395726dcd6f4fad0d77f068f/methods/pyproject.toml"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e659d14a7d13d27d5ba5fcb7b72fd3109aa4b53362a790295b6eec8028ff6b8c",
+      "symbols": [],
+      "url": "https://github.com/julianascencio/energy-data-insights/blob/22ec18c382643e21395726dcd6f4fad0d77f068f/LICENSE"
+    }
+  ],
+  "discovery_is_execution": false
+}
