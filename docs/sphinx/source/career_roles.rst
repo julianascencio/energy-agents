@@ -1,8 +1,8 @@
 Public-career role agents
 ====================================================================================================
 
-Research on 8 November 2026 covered **56 public role descriptions**, represented
-by **52 generic agent contracts** across AI, data, energy operations, commercial,
+Research through 10 November 2026 covered **57 public role descriptions**, represented
+by **53 generic agent contracts** across AI, data, energy operations, commercial,
 finance, IT, security, marketing, strategy, HR and legal support.
 
 The packaged catalogue contains generic responsibilities and a neutral source
@@ -115,7 +115,7 @@ are cases and upstream reports are copied into the next role's context. The
 gallery chooses five roles for value discovery, requirements, solution planning,
 security and implementation handoff. Failed dependencies block downstream work.
 Choose an explicit DAG of at most 50 tasks, consistent with the existing runner;
-the CLI's 52 independent work plans are not one dependency graph.
+the CLI's 53 independent work plans are not one dependency graph.
 
 Suggested handoffs are routing hints, not automatically scheduled work. Existing
 :doc:`forward_deployed`, :doc:`python_engineer`, :doc:`pv_operations`, and

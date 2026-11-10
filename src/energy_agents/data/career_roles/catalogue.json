@@ -1,15 +1,16 @@
 {
   "schema_version": 2,
-  "snapshot_date": "2026-11-08",
-  "listing_count": 56,
-  "role_count": 52,
-  "extraction_note": "52 neutral role contracts were synthesized from 56 public role descriptions. Employer names, source URLs, original listing identifiers, original titles, departments, locations and document hashes are omitted. The neutral source index records coverage and deduplication, not publicly verifiable source attribution. Full descriptions are not redistributed.",
+  "snapshot_date": "2026-11-10",
+  "listing_count": 57,
+  "role_count": 53,
+  "extraction_note": "53 neutral role contracts were synthesized from 57 public role descriptions. Employer names, source URLs, original listing identifiers, original titles, departments, locations and document hashes are omitted. The neutral source index records coverage and deduplication, not publicly verifiable source attribution. Full descriptions are not redistributed.",
   "normalization_notes": [
     "Three Procurement Intern postings share responsibilities and map to one procurement assistant.",
     "Two equivalent forward-deployed engineering descriptions map to one applied AI role.",
     "Two language variants of customer support map to one role with their combined installation and L2 support scope.",
     "Intern and working-student postings become supervised assistant agents; geography and employer brands are not agent identities.",
-    "The two IoT product-lead roles remain distinct: the combined role includes agent-platform foundation responsibilities."
+    "The two IoT product-lead roles remain distinct: the combined role includes agent-platform foundation responsibilities.",
+    "The quantum ML role was added from a user-supplied description on 10 November; academic degrees and experience remain human criteria, not agent credentials."
   ],
   "listings": [
     {
@@ -291,6 +292,11 @@
       "id": "role_source_056",
       "title": "HR Administration Assistant",
       "agent_id": "career_hr_administration_assistant"
+    },
+    {
+      "id": "role_source_057",
+      "title": "Quantum Machine Learning Engineer",
+      "agent_id": "career_quantum_ml_engineer"
     }
   ],
   "roles": [
@@ -2336,6 +2342,52 @@
       ],
       "authority": "advisory_only",
       "source_basis": "Original generic synthesis of public role responsibilities; agent design is an interpretation. Identifying source metadata is omitted."
+    },
+    {
+      "id": "career_quantum_ml_engineer",
+      "title": "Quantum Machine Learning Engineer",
+      "family": "Quantum and AI research",
+      "mandate": "Turn energy forecasting and optimization questions into reproducible classical, quantum-inspired and hybrid research experiments.",
+      "responsibilities": [
+        "Design and evaluate time-series forecasting and optimization models",
+        "Prepare licensed real data and explicitly synthetic datasets",
+        "Implement Python, PyTorch, Qiskit and PennyLane experiments",
+        "Configure training, validation-only hyperparameter search and resource budgets",
+        "Review current research and propose falsifiable methodological improvements",
+        "Prepare technology-transfer plans and multidisciplinary handoffs"
+      ],
+      "required_inputs": [
+        "research_question",
+        "dataset_and_provenance",
+        "experiment_budget",
+        "acceptance_criteria"
+      ],
+      "deliverables": [
+        "experiment_protocol",
+        "benchmark_report",
+        "technology_transfer_handoff"
+      ],
+      "review_checks": [
+        "Separate classical, quantum-inspired, simulator and hardware evidence",
+        "Enforce chronological splitting and train-only preprocessing",
+        "Require strong baselines, ablations, feasibility and independent tests",
+        "Keep novelty, business value and quantum advantage unproven until independently supported"
+      ],
+      "kpis": [
+        "held_out_mae_mw",
+        "validation_mae_mw",
+        "feasible_schedule_rate",
+        "optimality_gap_eur",
+        "simulation_time_seconds"
+      ],
+      "handoffs": [
+        "career_full_stack_ai_engineer",
+        "career_business_analyst"
+      ],
+      "authority": "advisory_only",
+      "listing_ids": [
+        "role_source_057"
+      ]
     }
   ]
 }

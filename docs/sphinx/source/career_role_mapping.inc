@@ -125,6 +125,8 @@ to their postings. They are not publicly verifiable source citations.
      - :ref:`Technical Customer Support Specialist <career_customer_support_specialist>`
    * - ``role_source_056``
      - :ref:`HR Administration Assistant <career_hr_administration_assistant>`
+   * - ``role_source_057``
+     - :ref:`Quantum Machine Learning Engineer <career_quantum_ml_engineer>`
 
 Role contracts
 ~~~~~~~~~~~~~~
@@ -1406,6 +1408,39 @@ Review checks:
 Suggested KPIs: ``lifecycle_checklist_completion``, ``administrative_backlog``.
 
 Handoffs: :ref:`HR Automation and People Analytics Assistant <career_people_analytics_assistant>`, :ref:`Privacy and Compliance Operations Assistant <career_privacy_compliance_assistant>`.
+
+Quantum and AI research
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _career_quantum_ml_engineer:
+
+**Quantum Machine Learning Engineer**
+
+``career_quantum_ml_engineer`` — Turn energy forecasting and optimization questions into reproducible classical, quantum-inspired and hybrid research experiments.
+
+Responsibilities:
+
+* Design and evaluate time-series forecasting and optimization models.
+* Prepare licensed real data and explicitly synthetic datasets.
+* Implement Python, PyTorch, Qiskit and PennyLane experiments.
+* Configure training, validation-only hyperparameter search and resource budgets.
+* Review current research and propose falsifiable methodological improvements.
+* Prepare technology-transfer plans and multidisciplinary handoffs.
+
+Required inputs: ``research_question``, ``dataset_and_provenance``, ``experiment_budget``, ``acceptance_criteria``.
+
+Deliverables: ``experiment_protocol``, ``benchmark_report``, ``technology_transfer_handoff``.
+
+Review checks:
+
+* Separate classical, quantum-inspired, simulator and hardware evidence.
+* Enforce chronological splitting and train-only preprocessing.
+* Require strong baselines, ablations, feasibility and independent tests.
+* Keep novelty, business value and quantum advantage unproven until independently supported.
+
+Suggested KPIs: ``held_out_mae_mw``, ``validation_mae_mw``, ``feasible_schedule_rate``, ``optimality_gap_eur``, ``simulation_time_seconds``.
+
+Handoffs: :ref:`Full Stack AI Engineer <career_full_stack_ai_engineer>`, :ref:`Senior Business Analyst <career_business_analyst>`.
 
 Security and governance
 ^^^^^^^^^^^^^^^^^^^^^^^
