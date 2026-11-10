@@ -43,6 +43,26 @@ ranking; currencies and periods stay separate. Drafts do not dispatch work.
 - [Interactive portfolio demo](https://julianascencio.github.io/energy-agents/_static/operations/report.html) (after merge and Pages deployment)
 - [Runnable gallery example](examples/operations/plot_asset_management.py)
 
+### Real CEN Chile case
+
+Run the same operations interface with **downloaded CEN Chile observations**:
+
+```bash
+energy-agents-cen --output outputs/cen_chile
+energy-agents-ops-mcp --input outputs/cen_chile/input.json
+```
+
+The preserved 2–8 November 2026 case covers 84 source PV names and 583 comparable
+plant-days: 296.34 GWh actual against 322.69 GWh scheduled. It separates schedule
+investigations from CEN availability notices, flags Huatacondo's reported 0%
+availability despite zero scheduled generation, and holds incomplete records out
+of the full-window ranking. Schedule gaps are not assumed to be recoverable losses;
+financial values remain unknown. Replay needs no network or credentials.
+
+- [Sources, live retrieval, results and MCP usage](docs/sphinx/source/cen_chile_operations.rst)
+- [Runnable real-data gallery](examples/operations/plot_cen_chile_operations.py)
+- [Searchable CEN report](https://julianascencio.github.io/energy-agents/_static/cen_chile/report.html) (after merge and Pages deployment)
+
 ## AI Forward-Deployed Engineer
 
 Turn a customer energy problem into a staged **discovery, solution, evaluation

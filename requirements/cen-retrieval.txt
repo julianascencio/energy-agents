@@ -1,0 +1,2 @@
+# Optional public CEN acquisition; replay only needs operations.txt.
+energy-data-retrieval[cen-reports] @ git+https://github.com/julianascencio/energy-data-insights.git@a915e69eaabb723426864a64dc94ec34a7052178#subdirectory=data-retrieval

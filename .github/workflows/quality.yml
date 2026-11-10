@@ -45,9 +45,12 @@ jobs:
       - run: python -m pip install -e ".[dev,mcp]"
       # This EDI module is stdlib-only; other scientific EDI dependencies are unrelated.
       - run: python -m pip install --no-deps -r requirements/operations.txt
-      - run: python -m pytest tests/test_operations_service.py tests/test_operations_mcp.py
+      - run: python -m pytest tests/test_operations_service.py tests/test_operations_mcp.py tests/test_cen_operations.py
       - run: energy-agents-ops --output outputs/operations
+      - run: energy-agents-cen --output outputs/cen_chile
       - uses: actions/upload-artifact@v4
         with:
           name: operations-review-demo
-          path: outputs/operations
+          path: |
+            outputs/operations
+            outputs/cen_chile
