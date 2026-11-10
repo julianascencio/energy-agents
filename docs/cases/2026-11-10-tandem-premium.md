@@ -86,7 +86,8 @@ python -m pip install --no-deps -r requirements/operations.txt
 sphinx-build -W --keep-going -b html docs/sphinx/source docs/sphinx/build/html
 ```
 
-Validation and PR link are recorded below after publication.
+PR: https://github.com/julianascencio/energy-agents/pull/20 — non-draft, left open.
+GitHub status is verified against the final head in the PR; local results follow.
 
 Local validation: 414 tests passed, two optional backend tests skipped. Ruff,
 wheel/sdist, isolated installed-wheel offline CLI, optional EDI replay and strict
