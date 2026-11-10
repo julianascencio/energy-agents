@@ -17,6 +17,32 @@ Reusable inputs, connectors, domain methods, bounded agent workflows and runnabl
 Documentation links become live after merging and enabling GitHub Pages with the
 **GitHub Actions** source. PR documentation builds are available as workflow artifacts.
 
+## Operations and asset management
+
+Ask **where the portfolio is losing money, which evidence is missing and what
+the team should investigate first**. A shared Python/CLI/MCP service connects the
+five PV operations roles to executable methods in **Energy Data Insights**.
+It produces a filterable HTML portfolio report, economically ranked repair
+investigations, evidence-linked work-order drafts and reproducible JSON exports.
+
+```bash
+# Python 3.12+; install from this checkout
+python -m pip install -e ".[dev,docs,mcp]"
+python -m pip install -r requirements/operations.txt
+energy-agents-ops --output outputs/operations
+energy-agents-ops-mcp  # local stdio MCP server; default synthetic portfolio
+```
+
+Open `outputs/operations/report.html`, or run with `--input portfolio.json`.
+The four-site example is synthetic. Calculations execute in EDI; the default role
+workflow is scripted, while an MCP host can use the tools conversationally.
+Recovery values are conditional scenarios. Incomplete data blocks economic
+ranking; currencies and periods stay separate. Drafts do not dispatch work.
+
+- [Product architecture, setup, real-data contract and roadmap](docs/sphinx/source/asset_management.rst)
+- [Interactive portfolio demo](https://julianascencio.github.io/energy-agents/_static/operations/report.html) (after merge and Pages deployment)
+- [Runnable gallery example](examples/operations/plot_asset_management.py)
+
 ## AI Forward-Deployed Engineer
 
 Turn a customer energy problem into a staged **discovery, solution, evaluation
@@ -146,6 +172,7 @@ From this source checkout (not yet published to PyPI):
 
 ```bash
 python -m pip install -e ".[dev,docs]"
+python -m pip install -r requirements/operations.txt  # Python 3.12+ for operations/docs
 energy-agents --output outputs/building_edits
 python examples/buildings/plot_building_edits.py
 ```

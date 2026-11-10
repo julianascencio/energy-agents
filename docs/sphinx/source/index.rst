@@ -20,6 +20,7 @@ scripted tool counts with clearly separated published observations.
    professional_roles
    career_roles
    pv_operations
+   asset_management
    industrial_flexibility
 
    commissioning_business
