@@ -19,6 +19,7 @@ scripted tool counts with clearly separated published observations.
    orchestrator
    professional_roles
    career_roles
+   quantum_ml
    pv_operations
    asset_management
    cen_chile_operations

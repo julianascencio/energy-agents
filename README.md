@@ -114,7 +114,7 @@ catalogue also includes roles still at the design stage.
 
 ## Public-career role agents
 
-**52 generic agents cover 56 public role descriptions** reviewed on 8 November
+**53 generic agents cover 57 public role descriptions** reviewed through 10 November
 2026. They span AI engineering and delivery, data and IoT platforms,
 energy operations, sales, finance, IT, governance, marketing, strategy, HR and legal
 support. Repeated procurement, FDE and translated support listings share agents.
@@ -136,6 +136,34 @@ acceptance is not factual validation or completion of professional work.
 - [Role guide, neutral source index and contracts](docs/sphinx/source/career_roles.rst)
 - [Runnable gallery example](examples/enterprise/plot_career_role_agents.py)
 - [Packaged role catalogue](src/energy_agents/data/career_roles/catalogue.json)
+
+## Quantum Machine Learning Engineer
+
+The generic **Quantum Machine Learning Engineer** has 13 versioned skills covering
+classical, quantum-inspired and hybrid models, real/synthetic data, time-series
+validation, training, hyperparameter search, quantum optimization, literature review
+and technology-transfer handoffs.
+
+```bash
+python -m pip install -e ".[dev,quantum,docs]"
+energy-agents-qml --output outputs/quantum_ml
+python examples/quantum_ml/plot_quantum_ml_engineer.py
+
+# Optional PennyLane/PyTorch training and Qiskit circuit checks
+python -m pip install -e ".[quantum-hybrid]"
+energy-agents-qml --hybrid --output outputs/quantum_ml_hybrid
+```
+
+The agent executes a **demand-forecasting → production-scheduling** research case:
+six default forecasting models, two optional neural models, chronological model
+selection, an eight-variable QUBO, exact optimization, classical annealing and
+simulated QAOA. It exports input data, metrics, traces, research handoffs and hashes.
+The default data and business assumptions are synthetic; observed CSV input is
+supported. Quantum computation is simulated. No quantum advantage is claimed.
+
+- [Full coverage, methods, real-data contract and live planner](docs/sphinx/source/quantum_ml.rst)
+- [Runnable gallery source](examples/quantum_ml/plot_quantum_ml_engineer.py)
+- [Versioned skills and primary research context](src/energy_agents/data/quantum_ml/skills.json)
 
 ## Python, data science and ML engineering agent
 

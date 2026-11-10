@@ -28,19 +28,19 @@ def test_complete_dated_listing_mapping_and_deliberate_deduplication():
         "extraction_note", "normalization_notes", "listings", "roles",
     }
     assert cat["schema_version"] == 2
-    assert cat["snapshot_date"] == "2026-11-08"
-    assert len(cat["roles"]) == cat["role_count"] == 52
-    assert len(cat["listings"]) == cat["listing_count"] == 56
+    assert cat["snapshot_date"] == "2026-11-10"
+    assert len(cat["roles"]) == cat["role_count"] == 53
+    assert len(cat["listings"]) == cat["listing_count"] == 57
     roles = {r["id"]: r for r in cat["roles"]}
     listings = {s["id"]: s for s in cat["listings"]}
-    assert set(listings) == {f"role_source_{i:03d}" for i in range(1, 57)}
+    assert set(listings) == {f"role_source_{i:03d}" for i in range(1, 58)}
     assert all(set(s) == {"id", "title", "agent_id"} for s in listings.values())
     assert all(s["title"] == roles[s["agent_id"]]["title"] for s in listings.values())
     assert "https://" not in json.dumps(cat) and "http://" not in json.dumps(cat)
-    assert len(roles) == 52 and len(listings) == 56
-    assert len({r["mandate"] for r in roles.values()}) == 52
+    assert len(roles) == 53 and len(listings) == 57
+    assert len({r["mandate"] for r in roles.values()}) == 53
     mapped = [sid for r in roles.values() for sid in r["listing_ids"]]
-    assert len(mapped) == len(set(mapped)) == 56
+    assert len(mapped) == len(set(mapped)) == 57
     assert set(mapped) == set(listings)
     for role in roles.values():
         for key in ("required_inputs", "deliverables", "responsibilities", "review_checks", "kpis"):
@@ -76,7 +76,7 @@ def test_every_agent_runs_and_keeps_missing_inputs_visible(role):
 def test_catalogue_and_context_are_isolated():
     career_catalogue()["roles"].clear()
     career_role_context(ROLE)["role"]["deliverables"].clear()
-    assert len(career_roles()) == 52
+    assert len(career_roles()) == 53
     assert career_role_context(ROLE)["role"]["deliverables"]
     with pytest.raises(ValueError, match="Unknown career role"):
         career_role_context("invented_role")
@@ -249,8 +249,8 @@ def test_live_adapter_uses_role_instruction_with_mocked_transport(monkeypatch):
 def test_cli_exports_every_role_and_lists_ids(tmp_path, capsys):
     main(["--output", str(tmp_path)])
     export = json.loads((tmp_path / "work_plans.json").read_text())
-    assert len(export["results"]) == 52
-    assert export["snapshot_listing_count"] == export["selected_listing_count"] == 56
+    assert len(export["results"]) == 53
+    assert export["snapshot_listing_count"] == export["selected_listing_count"] == 57
     assert all(r["success"] for r in export["results"])
     main(["--role", ROLE, "--output", str(tmp_path)])
     selected = json.loads((tmp_path / "work_plans.json").read_text())
