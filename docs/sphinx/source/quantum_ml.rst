@@ -277,6 +277,30 @@ academic qualifications.
 API
 ----------------------------------------------------------------------
 
+External scientific studies
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``run_quantum_research_study`` uses this same role and its skills with four
+host-registered tools: ``inspect_evidence``, ``benchmark_methods``,
+``assess_sensitivity`` and ``prepare_handoff``. Numerical methods remain in the
+owning library, such as EnerQit. The final ``finish`` action is accepted only after
+all four tools return valid reports. A tool-reported failure stops the run.
+
+Callbacks receive isolated case and upstream-report copies. They are trusted
+host code, not sandboxed generated code. The optional planner receives the study
+objective, classification, role metadata and stage history, not raw measurements
+or numerical reports. Use a planner that follows the supplied ``allowed_tools``;
+the default ``QuantumMLReplayPlanner`` requires no credentials. The specialized
+``QuantumMLPlanner`` prompt is for the original load-forecasting workflow.
+
+EnerQit's duration-aware battery portfolio gallery is the first external study.
+Its methods, physics, solver comparisons and business assumptions live in
+``julianascencio/enerqit``. Protocol completion does not establish scientific
+validation or confer deployment authority.
+
+.. automodule:: energy_agents.quantum_ml.studies
+   :members:
+
 .. automodule:: energy_agents.quantum_ml.agent
    :members:
 
