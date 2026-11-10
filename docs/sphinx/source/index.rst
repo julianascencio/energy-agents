@@ -21,6 +21,7 @@ scripted tool counts with clearly separated published observations.
    career_roles
    pv_operations
    asset_management
+   cen_chile_operations
    industrial_flexibility
 
    commissioning_business

@@ -33,8 +33,10 @@ sphinx_gallery_conf = {
 def _build_operations_demo(app):
     from energy_agents.operations import synthetic_portfolio
     from energy_agents.operations.__main__ import export_review
+    from energy_agents.operations.cen import export_cen_review, load_cen_snapshot
 
     export_review(synthetic_portfolio(), Path(app.srcdir) / "_static" / "operations")
+    export_cen_review(load_cen_snapshot(), Path(app.srcdir) / "_static" / "cen_chile")
 
 
 def setup(app):
