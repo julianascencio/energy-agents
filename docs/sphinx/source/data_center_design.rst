@@ -6,6 +6,10 @@ structured evidence gaps and the existing dependency-aware orchestrator. They ar
 functional agents inspired by public roles, not Microsoft employees or internal
 Microsoft engineering standards.
 
+The :doc:`campus_team` extension reuses these fourteen agents and adds campus
+design, hall/site planning and facilities development for a six-function workflow.
+Use ``design_roles(include_campus=True)`` for the extended seventeen-role catalogue.
+
 Source extraction and boundaries
 --------------------------------
 

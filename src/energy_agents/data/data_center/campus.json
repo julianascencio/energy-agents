@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "input": "Two user-supplied screenshots of a third-party data center team infographic and accompanying post",
+    "received_on": "2026-11-11",
+    "extracted_scope": "Six visible functional groups only. No employee identities, headcount, current employment, company standards or internal organization verified.",
+    "source_brand": "Oracle",
+    "agent_design": "Generic functional roles; no affiliation or employee impersonation. Three additions reuse fourteen existing specialists."
+  },
+  "groups": [
+    {
+      "name": "Design Leaders",
+      "role_ids": [
+        "design_director",
+        "technical_governance"
+      ]
+    },
+    {
+      "name": "Electrical & Mechanical",
+      "role_ids": [
+        "electrical_engineer",
+        "controls_engineer",
+        "mechanical_engineer",
+        "liquid_cooling_engineer"
+      ]
+    },
+    {
+      "name": "Data Center Design",
+      "role_ids": [
+        "campus_design_engineer",
+        "civil_engineer",
+        "structural_engineer",
+        "architect",
+        "design_manager"
+      ]
+    },
+    {
+      "name": "Data Hall & Site Planning",
+      "role_ids": [
+        "data_hall_site_planner"
+      ]
+    },
+    {
+      "name": "Facilities Development",
+      "role_ids": [
+        "facilities_development_manager"
+      ]
+    },
+    {
+      "name": "E2E Delivery",
+      "role_ids": [
+        "commissioning_engineer",
+        "delivery_manager"
+      ]
+    }
+  ],
+  "supporting_role_ids": [
+    "telecom_engineer",
+    "sustainability_engineer"
+  ],
+  "roles": [
+    {
+      "id": "campus_design_engineer",
+      "title": "Data Center Campus Design Engineer",
+      "source_group": "Data Center Design",
+      "mandate": "Translate the owner brief into a coordinated campus basis of design; reconcile IT capacity, utility demand and discipline interfaces.",
+      "required_documents": [
+        "campus_basis_of_design",
+        "campus_masterplan",
+        "phasing_strategy"
+      ],
+      "review_checks": [
+        "Reconcile IT MW, facility peak MW and space constraints at each phase",
+        "Track interfaces between buildings, utilities, cooling and network paths",
+        "Record alternatives and unresolved assumptions before design freeze"
+      ],
+      "deliverables": [
+        "campus design decision register",
+        "cross-discipline capacity screen",
+        "basis-of-design evidence requests"
+      ],
+      "source_ids": [
+        "doe2024",
+        "cx",
+        "ifc"
+      ],
+      "metric_keys": [
+        "it_mw",
+        "facility_peak_mw",
+        "grid_headroom_mw",
+        "rack_count"
+      ],
+      "layout_metric_keys": [
+        "usable_rack_slots",
+        "layout_headroom_racks"
+      ],
+      "skills": [
+        "capacity_reconciliation",
+        "basis_of_design_review",
+        "interface_management"
+      ],
+      "handoffs": [
+        "data_hall_site_planner",
+        "design_manager"
+      ],
+      "origin": "functional_decomposition_of_user_supplied_team_groups",
+      "authority": "advisory_only",
+      "tools": [
+        "review_design",
+        "submit_review"
+      ],
+      "evaluation": [
+        "correct immutable screen values",
+        "preserved missing references and shortfalls",
+        "bounded tool protocol and valid source IDs"
+      ]
+    },
+    {
+      "id": "data_hall_site_planner",
+      "title": "Data Hall and Site Planner",
+      "source_group": "Data Hall & Site Planning",
+      "mandate": "Translate campus demand into hall-level rack and area budgets while requesting site, access and expansion constraints.",
+      "required_documents": [
+        "hall_layout",
+        "site_constraints_register",
+        "equipment_access_plan"
+      ],
+      "review_checks": [
+        "Round down area-limited rack capacity separately within each hall",
+        "Verify rack and aisle allowances against selected equipment and local requirements",
+        "Request maintainability, egress, flood and expansion evidence; area arithmetic is not a spatial design"
+      ],
+      "deliverables": [
+        "hall capacity and shortfall schedule",
+        "site planning evidence requests",
+        "layout review checklist"
+      ],
+      "source_ids": [
+        "doe2024",
+        "tia",
+        "ifc"
+      ],
+      "metric_keys": [
+        "rack_count"
+      ],
+      "layout_metric_keys": [
+        "required_racks_per_hall",
+        "area_limited_slots_per_hall",
+        "usable_slots_per_hall",
+        "usable_rack_slots",
+        "layout_headroom_racks"
+      ],
+      "skills": [
+        "hall_capacity_screen",
+        "space_budget_review",
+        "site_constraint_triage"
+      ],
+      "handoffs": [
+        "design_manager",
+        "facilities_development_manager"
+      ],
+      "origin": "functional_decomposition_of_user_supplied_team_groups",
+      "authority": "advisory_only",
+      "tools": [
+        "review_design",
+        "submit_review"
+      ],
+      "evaluation": [
+        "correct immutable screen values",
+        "preserved missing references and shortfalls",
+        "bounded tool protocol and valid source IDs"
+      ]
+    },
+    {
+      "id": "facilities_development_manager",
+      "title": "Facilities Development Manager",
+      "source_group": "Facilities Development",
+      "mandate": "Carry design-review issues through permitting, procurement, construction and startup readiness, assigning unresolved evidence to accountable specialists.",
+      "required_documents": [
+        "permit_register",
+        "utility_energization_plan",
+        "construction_readiness_plan",
+        "startup_readiness_register"
+      ],
+      "review_checks": [
+        "Carry every unresolved capacity and evidence gap into the delivery register",
+        "Distinguish supplied document references from verified permits or approvals",
+        "Coordinate utility availability, long-lead equipment, construction completion and commissioning dependencies"
+      ],
+      "deliverables": [
+        "development readiness register",
+        "permit and utility evidence requests",
+        "startup dependency handoff"
+      ],
+      "source_ids": [
+        "cx",
+        "doe2024"
+      ],
+      "metric_keys": [
+        "facility_peak_mw",
+        "grid_headroom_mw"
+      ],
+      "layout_metric_keys": [
+        "layout_headroom_racks"
+      ],
+      "skills": [
+        "development_readiness_review",
+        "evidence_gap_ownership",
+        "startup_dependency_coordination"
+      ],
+      "handoffs": [
+        "commissioning_engineer",
+        "technical_governance",
+        "delivery_manager"
+      ],
+      "origin": "functional_decomposition_of_user_supplied_team_groups",
+      "authority": "advisory_only",
+      "tools": [
+        "review_design",
+        "submit_review"
+      ],
+      "evaluation": [
+        "correct immutable screen values",
+        "preserved missing references and shortfalls",
+        "bounded tool protocol and valid source IDs"
+      ]
+    }
+  ],
+  "integration_boundaries": {
+    "energy_data_insights": "Existing sustainability and operations workflows provide discovery and separate execution paths. This example uses no EDI execution and no live repository inventory.",
+    "datacenter_simulator": "Detailed electrical, thermal, hydraulic and acoustic models belong in datacenter-simulator. This workflow only screens inputs and records requests for those analyses."
+  },
+  "reading_check": {
+    "reviewed_on": "2026-11-11",
+    "scope": "Public DOE design-guide summary and WBDG commissioning roles overview checked; no full normative standards or new clause-level verification.",
+    "urls": [
+      "https://www.energy.gov/cmei/femp/articles/best-practices-guide-energy-efficient-data-center-design",
+      "https://legacy.wbdg.org/building-commissioning/roles-and-responsibilities-commissioning-process"
+    ]
+  }
+}
