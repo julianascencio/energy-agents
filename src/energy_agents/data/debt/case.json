@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "GBP",
+  "cash_basis": "constant_real_year_end",
+  "source": {
+    "url": "https://www.rwe.com/en/press/rwe-ag/2026-11-11-rwe-and-kkr-join-forces-to-deliver-2-8-gw-of-new-offshore-wind-capacity-in-the-uk/",
+    "publication_date": "2026-11-11",
+    "event_date": "2026-11-11",
+    "classification": "issuer_announcement",
+    "cash_facilities_gbp": 11100000000.0,
+    "ancillary_facilities_gbp": 1700000000.0,
+    "drawn_debt_gbp": null
+  },
+  "assumptions": {
+    "capacity_mw": 2800,
+    "value_gbp_mwh": 91.2,
+    "annual_opex_gbp": 250000000.0,
+    "years": 20,
+    "real_interest_rate": 0.05,
+    "minimum_dscr": 1.3,
+    "proposed_debt_gbp": 6500000000.0,
+    "capacity_factors": {
+      "base": 0.5,
+      "downside": 0.4
+    }
+  },
+  "limitations": [
+    "Synthetic CF, OPEX, drawn debt, interest and coverage threshold; no borrower forecast.",
+    "Constant-real tariff proxy is not a full CfD settlement model.",
+    "Operating-period level real debt service only; no construction interest, tax, fees, reserves, inflation mismatch, transmission disposal or merchant tail.",
+    "Facility commitments are not drawn debt; no inferred project leverage."
+  ]
+}

@@ -32,6 +32,7 @@ scripted tool counts with clearly separated published observations.
    reserve_screen
    data_center_design
    vppa_basis
+   wind_debt
    tandem_premium
    transformer_procurement
    bridge_power
