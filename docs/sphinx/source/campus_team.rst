@@ -1,5 +1,5 @@
 Campus design-to-delivery team
-=============================
+=================================
 
 This team maps the six functions visible in the user-supplied Oracle team
 screenshots to **17 generic advisory agents**. Fourteen specialists are reused;
@@ -32,7 +32,7 @@ from the existing catalogue. They are explicit additions to the six source group
 The original fourteen-agent workflow and default catalogue remain unchanged.
 
 Run and inspect
----------------
+------------------
 
 .. code-block:: bash
 
@@ -66,7 +66,7 @@ Role cards, curated source notes, original case, upstream reports and immutable
 computed metrics are provided to the planner. Live LLM quality has not been tested.
 
 Three new role contracts
------------------------
+---------------------------
 
 **campus_design_engineer** reconciles owner demand, campus capacity, utility
 requirements and discipline interfaces. Skills cover capacity reconciliation,
@@ -96,7 +96,7 @@ IDs. Deliverables listed on cards are work to prepare. The offline replay genera
 screens, checklists and evidence requests, not completed engineering documents.
 
 Workflow and issue ownership
----------------------------
+-------------------------------
 
 The director establishes the brief, then the campus engineer performs the concept
 screen. Nine disciplines review it. The hall/site planner receives their reports,
@@ -112,7 +112,7 @@ The same project constraint may appear under several roles; row counts are not
 unique project risk counts. Service readiness and design approval remain false.
 
 Hall-capacity method and worked example
---------------------------------------
+------------------------------------------
 
 The new tool uses homogeneous racks and equal halls. The four ``layout`` fields
 are ``hall_count`` and ``rack_slots_per_hall`` (positive integers), plus
@@ -140,7 +140,7 @@ The tool does not check aisle geometry, rack placement, heterogeneous halls,
 maintenance access, hydraulic paths or physical distribution topology.
 
 Evidence and integration boundaries
------------------------------------
+--------------------------------------
 
 The six group names come from the two user-supplied screenshots received on
 11 November 2026. Exact agent titles and allocation are our functional design.
@@ -166,7 +166,7 @@ belong in ``datacenter-simulator``; this addition requests those analyses withou
 pretending to execute them.
 
 Validation
-----------
+-------------
 
 Tests cover all six groups, reuse of the fourteen original roles, the three new
 contracts, hall-by-hall rounding, independent slot/area limits, nonfinite inputs,

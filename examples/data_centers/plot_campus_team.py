@@ -1,6 +1,6 @@
 """
 Six team functions carry campus design gaps through delivery
-===========================================================
+===============================================================
 
 Seventeen generic advisory specialists reuse fourteen existing roles and add
 campus design, hall/site planning and facilities development. Inputs are synthetic;
