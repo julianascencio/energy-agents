@@ -80,7 +80,8 @@ Open ``outputs/operations/report.html``. The export also includes input and resu
 JSON, work-order drafts and a SHA-256 manifest. CLI writes to its explicit output
 directory; MCP tools only return objects and do not write files.
 
-``requirements/operations.txt`` pins the EDI commit tested with this workflow.
+``requirements/operations.txt`` pins the public PyPI release and wheel SHA-256
+tested with this workflow.
 The operations module itself uses only the standard library; CI and docs install
 that package with ``--no-deps`` to avoid unrelated scientific/model dependencies.
 Normal installation includes EDI's declared dependencies for its wider methods.

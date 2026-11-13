@@ -1,6 +1,4 @@
 # Public Energy Data Insights methods distribution; Python 3.12+.
 # Keep the release and wheel hash pinned together.
-# 0.1.0 lacks the required operations APIs; the shared CI action rejects it.
-# Update only after a compatible upstream release is published and validated.
-energy-methods==0.1.0 \
-    --hash=sha256:db77eeb5f839f510ec659ac8dddf40699d85bdfb5f3c79640ffc76e9e9807f07
+energy-methods==0.1.1 \
+    --hash=sha256:6ba0ac68e117de475458cf1c0d45ca3603813ab2f8bfe1e6769218245e89ae31

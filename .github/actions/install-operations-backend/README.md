@@ -17,18 +17,15 @@ Before tests or gallery execution, the action checks these public APIs:
 - `energy_methods.dispatch_review.DailyScheduleRecord`
 - `energy_methods.dispatch_review.review_dispatch_schedule`
 
-## Current release blocker
+## Compatible release
 
-As checked on 2026-11-13, the only published release is 0.1.0, uploaded on
-2026-11-03. Its wheel does not contain `operations` or `dispatch_review`.
-Installation succeeds, but the API check correctly fails. This version must
-not be described as a working operations backend.
+`energy-methods` 0.1.1 contains all four APIs. Version 0.1.0 predates them and
+cannot run this integration. Keep the exact public version and wheel hash
+in `requirements/operations.txt` together when upgrading.
 
-Publish an upstream release containing those APIs, then update the exact
-version and public wheel hash together in `requirements/operations.txt`.
-Run the operations integration tests, both CLI examples and the strict
-documentation/gallery build against that released wheel before merging.
-Do not skip tests, substitute local calculations or silently fall back to Git.
+Validate the operations integration tests, both CLI examples and the strict
+documentation/gallery build against the released wheel before merging.
+The API gate remains mandatory on every run.
 
 ## Reproduce
 
