@@ -66,8 +66,6 @@ jobs:
       - run: python -m pip install -e ".[dev,mcp]"
       # This EDI module is stdlib-only; other scientific EDI dependencies are unrelated.
       - uses: ./.github/actions/install-operations-backend
-        with:
-          token: ${{ secrets.EDI_READ_TOKEN }}
       - run: python -m pytest tests/test_operations_service.py tests/test_operations_mcp.py tests/test_cen_operations.py
       - run: energy-agents-ops --output outputs/operations
       - run: energy-agents-cen --output outputs/cen_chile
