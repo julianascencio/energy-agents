@@ -1,49 +1,43 @@
 name: Install pinned EDI operations backend
-description: Check out the exact private EDI revision before installing its methods package.
-inputs:
-  token:
-    description: Read-only token with contents access to julianascencio/energy-data-insights.
-    required: true
+description: Install the public PyPI wheel and require the operations APIs used by this repository.
 runs:
   using: composite
   steps:
-    - name: Validate access and read the immutable revision
-      id: pin
+    - name: Install the pinned public wheel
       shell: bash
-      env:
-        EDI_READ_TOKEN: ${{ inputs.token }}
+      run: >-
+        python -m pip install --no-deps --only-binary=:all: --require-hashes
+        --index-url https://pypi.org/simple -r requirements/operations.txt
+    - name: Require the published operations APIs
+      shell: bash
       run: |
-        if [ -z "$EDI_READ_TOKEN" ]; then
-          echo "::error::Set the energy-agents Actions secret EDI_READ_TOKEN with read-only Contents access to julianascencio/energy-data-insights."
-          exit 1
-        fi
         python - <<'PY'
-        import os
-        import re
-        from pathlib import Path
+        from importlib import import_module
+        from importlib.metadata import version
 
-        lines = [
-            line.strip()
-            for line in Path("requirements/operations.txt").read_text().splitlines()
-            if line.strip() and not line.lstrip().startswith("#")
-        ]
-        prefix = "energy-methods @ git+https://github.com/julianascencio/energy-data-insights.git@"
-        if len(lines) != 1:
-            raise SystemExit("Expected one pinned EDI operations requirement")
-        match = re.fullmatch(re.escape(prefix) + r"([0-9a-f]{40})#subdirectory=methods", lines[0])
-        if match is None:
-            raise SystemExit("EDI operations must use the expected repository and immutable commit")
-        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
-            output.write(f"revision={match.group(1)}\n")
+        required = {
+            "energy_methods.operations": ("DailyEnergyRecord", "analyze_daily_operations"),
+            "energy_methods.dispatch_review": ("DailyScheduleRecord", "review_dispatch_schedule"),
+        }
+        missing = []
+        for name, attributes in required.items():
+            try:
+                module = import_module(name)
+            except ImportError:
+                missing.append(name)
+                continue
+            missing.extend(
+                f"{name}.{attribute}"
+                for attribute in attributes
+                if not callable(getattr(module, attribute, None))
+            )
+        installed = version("energy-methods")
+        if missing:
+            raise SystemExit(
+                f"energy-methods {installed} from PyPI is incompatible: missing "
+                + ", ".join(missing)
+                + ". Publish a compatible upstream release, then update the version and wheel "
+                "hash in requirements/operations.txt. Integration tests must not be skipped."
+            )
+        print(f"energy-methods {installed}: required operations APIs are available")
         PY
-    - name: Check out the pinned private backend
-      uses: actions/checkout@v4
-      with:
-        repository: julianascencio/energy-data-insights
-        ref: ${{ steps.pin.outputs.revision }}
-        path: .edi-operations
-        token: ${{ inputs.token }}
-        persist-credentials: false
-    - name: Install the pinned methods wheel
-      shell: bash
-      run: python -m pip install --no-deps ./.edi-operations/methods

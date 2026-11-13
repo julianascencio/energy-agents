@@ -1,3 +1,6 @@
-# Tested Energy Data Insights operations backend (Python 3.12+).
-# Keep this immutable commit pin so model behavior cannot drift with main.
-energy-methods @ git+https://github.com/julianascencio/energy-data-insights.git@a915e69eaabb723426864a64dc94ec34a7052178#subdirectory=methods
+# Public Energy Data Insights methods distribution; Python 3.12+.
+# Keep the release and wheel hash pinned together.
+# 0.1.0 lacks the required operations APIs; the shared CI action rejects it.
+# Update only after a compatible upstream release is published and validated.
+energy-methods==0.1.0 \
+    --hash=sha256:db77eeb5f839f510ec659ac8dddf40699d85bdfb5f3c79640ffc76e9e9807f07

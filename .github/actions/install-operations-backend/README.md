@@ -1,20 +1,39 @@
-# Private EDI dependency in CI
+# Public EDI dependency in CI
 
-The documentation and operations integration jobs use this action to install
-the exact Energy Data Insights commit recorded in `requirements/operations.txt`.
-The standard `GITHUB_TOKEN` only has access to the current repository.
+Documentation and operations integration install the public `energy-methods`
+wheel from [PyPI](https://pypi.org/project/energy-methods/), using the exact version
+and SHA-256 in `requirements/operations.txt`. No GitHub credential or private
+repository checkout is used.
 
-Create an Actions repository secret named `EDI_READ_TOKEN` in
-[energy-agents settings](https://github.com/julianascencio/energy-agents/settings/secrets/actions).
-Use a fine-grained token restricted to `julianascencio/energy-data-insights`,
-with **Contents: read-only** permission. Configure and rotate it in GitHub;
-never commit the credential or put its value in an issue or pull request.
+The action installs only the wheel with `--no-deps --only-binary=:all:
+--require-hashes`. The required operations modules use the Python standard
+library; unrelated scientific dependencies are not installed in these jobs.
+Python 3.12 or newer is required.
 
-Both jobs pass the secret to this action. The pinned revision is parsed from
-the existing requirements file, so the action does not introduce a second pin.
-Checkout does not persist the token in Git configuration, and pip installs
-from that authenticated local checkout. Private source stays in the runner.
+Before tests or gallery execution, the action checks these public APIs:
 
-A missing token produces an explicit failure. The integration tests and
-documentation gallery remain required job steps; they are not skipped or
-replaced with mocks. Fork pull requests cannot use repository secrets.
+- `energy_methods.operations.DailyEnergyRecord`
+- `energy_methods.operations.analyze_daily_operations`
+- `energy_methods.dispatch_review.DailyScheduleRecord`
+- `energy_methods.dispatch_review.review_dispatch_schedule`
+
+## Current release blocker
+
+As checked on 2026-11-13, the only published release is 0.1.0, uploaded on
+2026-11-03. Its wheel does not contain `operations` or `dispatch_review`.
+Installation succeeds, but the API check correctly fails. This version must
+not be described as a working operations backend.
+
+Publish an upstream release containing those APIs, then update the exact
+version and public wheel hash together in `requirements/operations.txt`.
+Run the operations integration tests, both CLI examples and the strict
+documentation/gallery build against that released wheel before merging.
+Do not skip tests, substitute local calculations or silently fall back to Git.
+
+## Reproduce
+
+```bash
+python -m pip install --no-deps --only-binary=:all: --require-hashes \
+  --index-url https://pypi.org/simple -r requirements/operations.txt
+python -c "from energy_methods import operations, dispatch_review"
+```
