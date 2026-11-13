@@ -1,0 +1,19 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "53f47b87fe9a6213e85a7fe60d4cf2599ec26658",
+  "entries": [
+    {
+      "path": "data-retrieval/src/energy_data_retrieval/bess_catalogue/catalogue.py",
+      "sha256": "9393c255779be4d04973d2d52aed7f12cbdd68eb2200c1f67865a0afbd95dd84",
+      "symbols": [
+        "stable_id",
+        "validate_record",
+        "validate_catalogue",
+        "build_parquet"
+      ]
+    }
+  ],
+  "execution": false,
+  "scope": "One fetched BESS source file, plus consultation of existing procurement and debt capability catalogues; not a full inventory.",
+  "decision": "BESS catalogue validates project provenance and capacity scopes, not tender eligibility, award probability or ISC settlement. The bounded edi_context adapter exposes metadata only. No EDI numerical or retrieval dependency is justified for a development-spend decision tree."
+}

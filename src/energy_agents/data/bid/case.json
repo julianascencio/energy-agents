@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "USD",
+  "cash_basis": "present_value_at_decision",
+  "source": {
+    "url": "https://www.nyserda.ny.gov/About/Newsroom/2026-Announcements/2026-11-12-NYSERDA-Announces-2026-Bulk-Energy-Storage-Solicitation",
+    "publisher": "NYSERDA",
+    "publication_date": "2026-11-12",
+    "event_date": "2026-11-12",
+    "classification": "agency_announcement",
+    "observed": "Two-step bulk storage solicitation; eligibility precedes invited bids.",
+    "deadline_status": "unverified_weekday_date_conflict"
+  },
+  "assumptions": {
+    "qualification_probability": 0.6,
+    "award_probability_given_qualification": 0.25,
+    "staging_award_probability_haircut": 0.1,
+    "qualification_cost_usd": 40000,
+    "full_bid_cost_usd": 200000,
+    "staging_overhead_usd": 10000,
+    "award_project_npv_usd": 2000000,
+    "stage_delay_months": 3,
+    "annual_discount_rate": 0.08
+  },
+  "evidence_gaps": [
+    "Confirm authoritative solicitation deadline: release says Thursday December 15, 2026, which is Tuesday.",
+    "Obtain program manual and project eligibility assessment.",
+    "Validate bid costs, timing, qualification odds and award-conditional project valuation."
+  ],
+  "limitations": [
+    "All probabilities, costs and project value are assumptions; no calibrated forecast.",
+    "Project value is decision-date NPV net of all project costs, excluding application spending; not subsidy revenue.",
+    "No ISC settlement, safety certification or legal eligibility determination.",
+    "Timing effect on award odds is an explicit relative haircut; no claim that staging preserves competitiveness."
+  ]
+}
