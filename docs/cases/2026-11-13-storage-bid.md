@@ -40,3 +40,5 @@ CLI exports inputs, input SHA-256, trace/report and EDI metadata; no key/network
 Expected net value: no bid $0; upfront $60,000; staged $102,286.76. Staging incremental expected value $42,286.76; expected preparation spend falls from $240,000 to $167,713.24. Worst-case loss increases from $240,000 to $246,188.73. Staged break-even conditional project NPV is $1,242,320.28. These are synthetic decision-tree results, not realised customer benefit.
 
 464 local tests passed; five optional quantum backend tests skipped. Ruff, package wheel/source builds and installed-wheel offline CLI passed. Strict full documentation/gallery build passed after fixing a title underline; generated sensitivity chart and numerical table inspected. The full gallery used the public hash-pinned energy-methods 0.1.1 package. Hosted checks and PR link follow publication.
+
+Published non-draft PR: https://github.com/julianascencio/energy-agents/pull/23 — left open for review. Final-commit hosted check status is recorded on the PR after execution.
