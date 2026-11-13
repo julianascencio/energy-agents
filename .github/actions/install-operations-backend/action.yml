@@ -1,0 +1,43 @@
+name: Install pinned EDI operations backend
+description: Install the public PyPI wheel and require the operations APIs used by this repository.
+runs:
+  using: composite
+  steps:
+    - name: Install the pinned public wheel
+      shell: bash
+      run: >-
+        python -m pip install --no-deps --only-binary=:all: --require-hashes
+        --index-url https://pypi.org/simple -r requirements/operations.txt
+    - name: Require the published operations APIs
+      shell: bash
+      run: |
+        python - <<'PY'
+        from importlib import import_module
+        from importlib.metadata import version
+
+        required = {
+            "energy_methods.operations": ("DailyEnergyRecord", "analyze_daily_operations"),
+            "energy_methods.dispatch_review": ("DailyScheduleRecord", "review_dispatch_schedule"),
+        }
+        missing = []
+        for name, attributes in required.items():
+            try:
+                module = import_module(name)
+            except ImportError:
+                missing.append(name)
+                continue
+            missing.extend(
+                f"{name}.{attribute}"
+                for attribute in attributes
+                if not callable(getattr(module, attribute, None))
+            )
+        installed = version("energy-methods")
+        if missing:
+            raise SystemExit(
+                f"energy-methods {installed} from PyPI is incompatible: missing "
+                + ", ".join(missing)
+                + ". Publish a compatible upstream release, then update the version and wheel "
+                "hash in requirements/operations.txt. Integration tests must not be skipped."
+            )
+        print(f"energy-methods {installed}: required operations APIs are available")
+        PY

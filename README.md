@@ -341,6 +341,22 @@ Run `energy-agents-reserve --output outputs/reserve` to compare a reserve-limite
 
 ## Data center design agents
 
+The new **six-function campus team** covers design leadership, electrical/mechanical,
+campus design, hall/site planning, facilities development and end-to-end delivery.
+It reuses the fourteen specialists below and adds **Campus Design Engineer, Data
+Hall and Site Planner, and Facilities Development Manager**. Generic roles are
+inspired by the supplied team diagram; they do not impersonate employees.
+
+```bash
+energy-agents-campus --output outputs/campus_team
+python examples/data_centers/plot_campus_team.py
+```
+
+The runnable synthetic case exposes a **2 MW grid gap and 20 missing rack slots**.
+All seventeen roles have bounded advisory execution; delivery retains role-owned
+evidence and capacity issues. See [role mapping, tools and workflow](docs/sphinx/source/campus_team.rst).
+Default execution is scripted, with no live LLM or engineering approval claimed.
+
 Fourteen specialists cover all six design-team groups in Brian Bakerman's
 LinkedIn post, with telecoms and sustainability explicitly added. Each includes
 a role contract, research context, evidence checklist and bounded advisory runner.

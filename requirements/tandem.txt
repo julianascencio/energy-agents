@@ -1,2 +1,3 @@
 # Optional bounded scientific replay, Python 3.12+. EDI has a separate license.
-energy-methods @ git+https://github.com/julianascencio/energy-data-insights.git@22ec18c382643e21395726dcd6f4fad0d77f068f#subdirectory=methods
+# Reuse the public release validated for operations; no private Git checkout.
+-r operations.txt

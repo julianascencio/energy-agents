@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -e ".[docs,quantum]"
-      - run: python -m pip install --no-deps -r requirements/operations.txt
+      - uses: ./.github/actions/install-operations-backend
       - run: sphinx-build -W --keep-going -b html docs/sphinx/source docs/sphinx/build/html
         env:
           MPLBACKEND: Agg

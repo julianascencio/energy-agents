@@ -60,3 +60,8 @@ Data center design
 ------------------
 .. automodule:: energy_agents.data_center
    :members:
+
+Campus team
+-----------
+.. automodule:: energy_agents.campus
+   :members:
