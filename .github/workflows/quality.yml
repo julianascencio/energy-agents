@@ -33,6 +33,7 @@ jobs:
       - run: energy-agents-reserve --output outputs/reserve
       - run: energy-agents-campus --output outputs/campus_team
 
+      - run: energy-agents-debt --output outputs/wind_debt
       - run: energy-agents-tandem --output outputs/tandem
       - run: energy-agents-vppa --output outputs/vppa
       - run: energy-agents-procurement --output outputs/procurement

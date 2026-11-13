@@ -385,3 +385,7 @@ and the orchestrator. Includes synthetic NPV, downside and fee-ceiling results,
 versioned prompts and a runnable procurement gallery. See
 [method and reproduction](docs/sphinx/source/transformer_procurement.rst) and
 [case history](docs/cases/2026-11-08-transformer-procurement.md).
+
+### Wind debt capacity
+
+Run `energy-agents-debt` for a synthetic, evidence-gated debt-service coverage screen. It separates announced facilities from drawn debt and compares proposed borrowing with downside cash flow. See `docs/cases/2026-11-11-wind-debt.md` and the business gallery.

@@ -1,0 +1,32 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "72f62cf25c07ad9fab4565e8f9babfbf7af49082",
+  "entries": [
+    {
+      "path": "methods/src/energy_methods/offshore_wind_economics.py",
+      "sha256": "529ad98b5651363fc9d310a0306fa16e978c45e4b37dca7e239e75acc6a141ba",
+      "symbols": [
+        "OffshoreWindScenario",
+        "OffshoreWindEconomics",
+        "evaluate_offshore_wind",
+        "tariff_npv_jpy"
+      ]
+    },
+    {
+      "path": "data-retrieval/src/energy_data_retrieval/wind_catalogue/catalogue.py",
+      "sha256": "d7dddc3070bdd758228491dd78d1e3f3d61008ce19f015476fe4f356460f2f41",
+      "symbols": [
+        "stable_id",
+        "validate_record",
+        "_validate_curve",
+        "validate_catalogue",
+        "capacity_summary",
+        "build_parquet",
+        "upsert_records"
+      ]
+    }
+  ],
+  "scope": "Two retrieved source files; not full inventory",
+  "execution": false,
+  "decision": "Wind inventory validates assets; offshore economics is a real-JPY unlevered LCOE model with no debt model. Do not relabel its currency or duplicate it as debt sizing. The bounded edi_context adapter exposes metadata only."
+}
