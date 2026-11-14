@@ -1,0 +1,18 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "3d6000b9d981bbbf594eeee296a391c03f78c6e7",
+  "entries": [
+    {
+      "path": "methods/src/energy_methods/offshore_wind_economics.py",
+      "git_blob_sha": "88f9cd11bfd569fc3b69a0b40d7ffeac9fd3bd87",
+      "symbols": [
+        "OffshoreWindScenario",
+        "evaluate_offshore_wind",
+        "tariff_npv_jpy"
+      ]
+    }
+  ],
+  "execution": false,
+  "scope": "Consulted debt catalogue and fetched one economics source file; not full inventory.",
+  "decision": "The inspected real-JPY unlevered wind LCOE model excludes financing and taxes. It cannot supply this USD preferred-equity waterfall. Reuse finance role, orchestrator and validation helpers; expose bounded metadata without upstream execution or relabelled economics."
+}

@@ -389,3 +389,11 @@ versioned prompts and a runnable procurement gallery. See
 ### Wind debt capacity
 
 Run `energy-agents-debt` for a synthetic, evidence-gated debt-service coverage screen. It separates announced facilities from drawn debt and compares proposed borrowing with downside cash flow. See `docs/cases/2026-11-11-wind-debt.md` and the business gallery.
+
+### Preferred equity funding screen
+
+Run `energy-agents-equity` to compare common-only funding with a synthetic
+preferred-equity cash waterfall for solar/storage developers. Initial capital
+released is separated from sponsor value, investor value and terminal shortfalls.
+See [method and limitations](docs/sphinx/source/preferred_equity.rst) and
+[case history](docs/cases/2026-11-14-preferred-equity.md).

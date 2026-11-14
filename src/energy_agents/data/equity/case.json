@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "USD",
+  "cash_basis": "nominal_year_end_after_senior_debt_before_equity_distributions",
+  "source": {
+    "classification": "company_announcement",
+    "publisher": "Captona",
+    "publication_date": "2026-11-10",
+    "event_date": "2026-11-10",
+    "url": "https://www.businesswire.com/news/home/20261110915054/en/Sunrun-Partners-with-Captona-on-its-Latest-Preferred-Equity-Project-Finance-Transaction",
+    "observed_portfolio": {
+      "projects": 9400,
+      "solar_mw": 74,
+      "storage_mwh": 110
+    },
+    "terms_disclosed": false
+  },
+  "assumptions": {
+    "equity_requirement_usd": 10000000,
+    "preferred_capital_usd": 4000000,
+    "preferred_annual_rate": 0.08,
+    "transaction_fee_usd": 100000,
+    "discount_rate": 0.1,
+    "annual_cash_usd": [
+      500000,
+      600000,
+      800000,
+      1000000,
+      1200000
+    ],
+    "terminal_equity_proceeds_usd": 12000000
+  },
+  "evidence_gaps": [
+    "Actual preferred coupon, priority, fees, redemption and tax terms are undisclosed.",
+    "No calibrated generation, collections, operating costs, senior debt or exit valuation supplied."
+  ],
+  "limitations": [
+    "Synthetic illustrative portfolio is not a valuation of the announced 9400 projects.",
+    "Fixed preferred capital; cumulative non-compounding coupon; no interim redemption or residual preferred participation.",
+    "All available cash is nonnegative and already net of operating costs and senior debt; deficits/capital calls are unsupported.",
+    "Terminal proceeds are after debt repayment; no separate debt or tax-credit monetization model.",
+    "Discount rate is an assumption shared by both investors for accounting comparison, not a calibrated required return.",
+    "No probabilities, legal interpretation, field validation or live LLM benchmark."
+  ]
+}
