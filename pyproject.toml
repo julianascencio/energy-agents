@@ -20,6 +20,7 @@ dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1,<2"]
 docs = ["sphinx>=8,<9", "pydata-sphinx-theme>=0.16,<0.17", "sphinx-gallery>=0.19,<0.20", "matplotlib>=3.9,<4"]
 
 [project.scripts]
+energy-agents-equity = "energy_agents.business.equity:main"
 energy-agents-bid = "energy_agents.business.bid:main"
 energy-agents-debt = "energy_agents.business.debt:main"
 energy-agents-campus = "energy_agents.campus:main"

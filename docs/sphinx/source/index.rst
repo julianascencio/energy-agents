@@ -33,6 +33,7 @@ scripted tool counts with clearly separated published observations.
    data_center_design
    campus_team
    vppa_basis
+   preferred_equity
    storage_bid
    wind_debt
    tandem_premium

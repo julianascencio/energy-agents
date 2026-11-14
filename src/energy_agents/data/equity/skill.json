@@ -1,0 +1,37 @@
+{
+  "id": "preferred_equity_waterfall",
+  "version": "1.0",
+  "role": "project_finance_analyst",
+  "user_prompt": "Compare common-only funding with the supplied preferred-equity financing. Keep project cash flows unchanged. Quantify initial sponsor cash saved, annual coupon arrears, terminal redemption shortfall, sponsor NPV and preferred-investor NPV. Stress distributable cash and exit proceeds. Do not infer deal terms from portfolio MW or MWh.",
+  "mandate": "Use the existing finance role. Treat every term as synthetic, preserve evidence gaps, and reconcile distributions before accepting the output.",
+  "input_schema": "case.json v1.0: nominal USD; annual nonnegative after-debt cash vector (1..50 years), terminal after-debt proceeds, total equity requirement, preferred capital <= requirement, coupon and discount in [0,1], fee <= preferred capital. HTTPS company announcement, ISO publication/event dates, terms_disclosed=false.",
+  "allowed_tools": [
+    "validate_case",
+    "screen_equity",
+    "edi_context (metadata only)"
+  ],
+  "scheduler_prompt": "Delegate evidence before finance. Reject unknown tasks/tools and premature finance execution. Never transfer funds, contact counterparties or change case inputs.",
+  "handoffs": [
+    "Operator supplies explicitly assumed financing terms and after-debt cash",
+    "Evidence contract validates schema, classifications and missing information",
+    "Finance consumes isolated evidence-approved case and compares fixed project cash flows",
+    "Human verifies actual documents, tax treatment and senior covenants"
+  ],
+  "output_contract": [
+    "Input hash and evidence classifications",
+    "Common-only and preferred-funded sponsor NPV in USD",
+    "Preferred cash distributions, cumulative unpaid coupon and redemption shortfall",
+    "Annual conservation of available cash",
+    "Investor/sponsor value transfer and transaction fee",
+    "Human review required, investment not authorized, LLM measurements unknown"
+  ],
+  "acceptance": [
+    "Invalid evidence blocks finance",
+    "Annual cash equals coupon plus redemption plus common distribution",
+    "No cash paid beyond availability",
+    "No preferred participation after coupons and terminal capital repayment",
+    "Direct deterministic baseline parity",
+    "Missing terms remain visible; no actual transaction economics claimed"
+  ],
+  "authority": "advisory_only"
+}
