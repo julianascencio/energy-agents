@@ -54,4 +54,4 @@ Default execution is offline/key-free after installation and requires no EDI; op
 
 Local checks: 22 new tests pass. Full suite: 508 passed, five optional quantum-backend tests skipped (Qiskit/Torch unavailable). Ruff and package build pass. Strict full gallery/docs build and installed-wheel smoke (including executed EDI parity) pass. Charts and numerical output inspected. Hosted final-head status and independent-review status remain separate; no merge or deployment authorized by this record.
 
-Publication: PR link and final validation evidence will be recorded after publication.
+Published non-draft PR: https://github.com/julianascencio/energy-agents/pull/26. Final-head hosted checks are recorded on the PR after completion. No independent review or current integration claim is available; branch-protection read returns HTTP 403 (rulesets list is empty). PR publication is not merge or deployment.
