@@ -42,3 +42,5 @@ sphinx-build -W --keep-going -b html docs/sphinx/source docs/sphinx/build/html
 Offline CLI exports input, trace/report, input hash and EDI metadata. Gallery prints annual cash reconciliation and economics, with allocation and two-variable sensitivity plots. Tests cover independently calculated arrears, terminal impairment, no compounding, no interim redemption, zero preferred capital, conservation, fee/value identities, invalid inputs, evidence failure, permissions and handoffs. Publication and actual validation status follow below.
 
 Local validation: 488 tests passed, two optional neural-backend tests skipped because Torch is unavailable. Ruff, wheel/sdist build, installed-wheel offline CLI and strict full documentation/gallery build passed. Generated chart and numerical output inspected. No independent review or live LLM benchmark performed. Hosted checks will be recorded on the PR at the final head.
+
+Published non-draft PR: https://github.com/julianascencio/energy-agents/pull/24. Exact-head hosted CI results are recorded on the PR after execution. No independent review or current authorized integration claim is available; no merge or deployment performed.
