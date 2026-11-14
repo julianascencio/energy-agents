@@ -1,0 +1,54 @@
+{
+  "id": "heat_reuse_investment_screen",
+  "version": "1.0",
+  "authority": "advisory_only",
+  "user_prompt": "For a district-heating operator, compare continuing existing heat supply with investing in data-centre heat recovery. Preserve the heat-pump electricity boundary, match heat within each period, and calculate annual net savings, incremental NPV and break-even avoided heat cost. Stress heat demand and electricity prices. Identify missing measurements and contracts before any investment decision.",
+  "role_mandates": {
+    "evidence_contract": "Validate classifications, dates, units and missing inputs; never treat planned heat output as measured heat sales.",
+    "liquid_cooling_engineer": "Use heat_balance to reconcile source heat plus pump input with delivered heat and losses. Flag temperature, seasonal and hourly evidence gaps. Do not authorize cooling or district-network controls.",
+    "project_finance_analyst": "Use screen_heat_reuse on the verified thermal handoff. Avoid only marginal existing heat cost. Include incremental electricity, heat-source fees, variable and fixed O&M and initial CAPEX. Do not count server electricity twice.",
+    "energy_orchestrator": "Delegate evidence, then thermal, then finance. Only ready task IDs may run. Return rejected and blocked states honestly."
+  },
+  "input_schema": "case.json v1.0. Synthetic real CHF, ISO source/event/as_of dates, nonempty limitations/gaps. 1..8760 unique periods summing to 8760 hours; constant MW and COP per period. Numeric finite nonboolean inputs: load and recovery fractions 0..1, delivery efficiency (0,1], COP 1.01..20, positive period hours; nonnegative MW and costs; 1..50 years; discount 0..1. Limits enforced by validate_case.",
+  "allowed_tools": [
+    "validate_case",
+    "heat_balance",
+    "validate_balance",
+    "screen_heat_reuse",
+    "edi_crosscheck (optional pinned local method; no retrieval)"
+  ],
+  "forbidden_actions": [
+    "physical_controls",
+    "execute_contract",
+    "purchase_equipment",
+    "contact_supplier",
+    "trade_energy",
+    "retrieve_credentials"
+  ],
+  "evidence_requirements": [
+    "Primary announcement URL and separate event/publication dates",
+    "Actual project targets remain source metadata; operating and economic assumptions labelled synthetic",
+    "No realised savings, emissions reduction or LLM benchmark inferred"
+  ],
+  "handoffs": [
+    "Isolated operator input to evidence",
+    "Evidence-approved case to existing liquid_cooling_engineer role",
+    "Input-bound heat balance to existing project_finance_analyst role",
+    "Human diligence on measurements, costs, permits and contracts"
+  ],
+  "output_contract": [
+    "Input SHA256, source/assumption labels and unresolved evidence",
+    "Period energy ledger and annual totals in MWh",
+    "Baseline and intervention annual CHF cost; incremental NPV and break-even avoided CHF/MWh",
+    "Annual matching ceiling labelled as upper bound, not served energy",
+    "Investment not authorized; human review required; LLM cost/latency/tokens unknown"
+  ],
+  "acceptance": [
+    "Invalid evidence blocks thermal and finance",
+    "Heat conservation and demand/capacity bounds pass",
+    "Modified heat handoff rejected",
+    "Scripted workflow equals direct deterministic baseline",
+    "No new role or executable external action",
+    "Optional EDI execution has source hash, input hash and matching parity"
+  ]
+}

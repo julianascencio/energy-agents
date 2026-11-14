@@ -412,3 +412,12 @@ preferred-equity cash waterfall for solar/storage developers. Initial capital
 released is separated from sponsor value, investor value and terminal shortfalls.
 See [method and limitations](docs/sphinx/source/preferred_equity.rst) and
 [case history](docs/cases/2026-11-14-preferred-equity.md).
+
+### Data-centre heat recovery economics
+
+Run `energy-agents-heat` to compare heat recovery with existing district-heat supply.
+The synthetic case accounts for seasonal demand, heat-pump electricity, network
+losses and incremental costs. Existing cooling and finance roles exchange a checked
+heat balance; optional `--edi` executes a pinned energy-matching cross-check.
+See [method and reproduction](docs/sphinx/source/heat_reuse.rst) and
+[case history](docs/cases/2026-11-14-heat-reuse.md).
