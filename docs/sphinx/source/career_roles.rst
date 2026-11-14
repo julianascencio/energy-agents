@@ -142,7 +142,7 @@ API
    :members:
 
 Energy markets and regulatory policy director
---------------------------------------------
+---------------------------------------------
 
 ``career_energy_markets_regulatory_policy_director`` covers large-load
 interconnection, wholesale market design, demand response, flexible AI loads,

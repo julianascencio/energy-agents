@@ -1,6 +1,6 @@
 """
 Flexible AI data-center regulatory policy director
-================================================
+==================================================
 
 Run an offline policy work-plan agent for a fictional 100 MW campus with
 20 MW of potentially shiftable load. These numbers are synthetic inputs, not
