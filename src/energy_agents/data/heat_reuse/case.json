@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "CHF",
+  "cash_basis": "constant_real_year_end_incremental_before_tax",
+  "as_of": "2026-11-14",
+  "source": {
+    "classification": "company_announcement",
+    "publisher": "Infomaniak",
+    "url": "https://api.sttinfo.fi/tiedote/72501998/infomaniak-and-gruyere-energie-develop-a-data-center-project-in-bulle-designed-to-limit-its-footprint?lang=en&publisherId=69821841",
+    "publication_date": "2026-11-13",
+    "event_date": "2026-11-13",
+    "event": "Planning application put on public display",
+    "reported_project_targets": {
+      "it_capacity_mw": 2.5,
+      "heat_with_heat_pumps_gwh_year": 28,
+      "commissioning_year": 2028
+    },
+    "status": "planned, subject to permits and contracts; not operating observations"
+  },
+  "assumptions": {
+    "classification": "synthetic_assumptions",
+    "it_capacity_mw": 2.5,
+    "recoverable_it_heat_fraction": 0.9,
+    "heat_pump_output_capacity_mw": 3,
+    "network_delivery_efficiency": 0.95,
+    "capex_chf": 4000000,
+    "fixed_opex_chf_year": 100000,
+    "electricity_chf_mwh": 120,
+    "source_heat_fee_chf_mwh": 5,
+    "variable_opex_chf_mwh_delivered": 3,
+    "baseline_heat_cost_chf_mwh_delivered": 80,
+    "years": 15,
+    "discount_rate": 0.06
+  },
+  "periods": [
+    {
+      "id": "month_01",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 3.5
+    },
+    {
+      "id": "month_02",
+      "hours": 672,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 3.2
+    },
+    {
+      "id": "month_03",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 2.7
+    },
+    {
+      "id": "month_04",
+      "hours": 720,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 1.8
+    },
+    {
+      "id": "month_05",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 1
+    },
+    {
+      "id": "month_06",
+      "hours": 720,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 0.5
+    },
+    {
+      "id": "month_07",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 0.4
+    },
+    {
+      "id": "month_08",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 0.4
+    },
+    {
+      "id": "month_09",
+      "hours": 720,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 0.8
+    },
+    {
+      "id": "month_10",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 1.6
+    },
+    {
+      "id": "month_11",
+      "hours": 720,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 2.6
+    },
+    {
+      "id": "month_12",
+      "hours": 744,
+      "it_load_fraction": 0.8,
+      "heating_cop": 4,
+      "demand_mw": 3.3
+    }
+  ],
+  "evidence_gaps": [
+    "Hourly IT load and marginal heat demand at a shared delivery boundary",
+    "Temperature-dependent heat-pump COP, capacity and parasitic load measurements",
+    "Signed heat-source price, electricity tariff and allocation of investment costs",
+    "Equipment and connection quotes; commissioning, ramp-up and outage assumptions"
+  ],
+  "limitations": [
+    "All economics and operating profiles are synthetic; not a valuation of Bulle",
+    "Monthly flat simultaneous profiles overstate matching relative to unresolved intra-month variability; no storage",
+    "COP includes assumed heat-pump electrical input only; other incremental auxiliaries must enter costs or an effective COP",
+    "Existing supply fixed costs remain sunk; only displaced marginal heat cost is avoided",
+    "Server electricity and server CAPEX are unchanged in both options and excluded",
+    "No minimum-load, temperature, network capacity, reliability or hydraulic model",
+    "Repeated steady-state 8760-hour year; no escalation, tax, financing, degradation, subsidies, residual value or construction delay",
+    "No emissions benefit computed; the actual district network is already predominantly renewable"
+  ]
+}

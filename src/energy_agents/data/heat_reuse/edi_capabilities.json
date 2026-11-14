@@ -1,0 +1,24 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "edd4086a207e95651dc1e8096004b3db71c33e9c",
+  "inspected_at": "2026-11-14",
+  "path": "methods/src/energy_methods/hybrid_dispatch.py",
+  "blob_sha": "9a3f8bf79cce6d00d62adcf2ae3a23c9718de82e",
+  "source_sha256": "e404a6724ea9f3a332fb50e307e048edde610e8569a230b5177ca1350d536a39",
+  "dependency": "optional energy-methods; existing requirements/operations.txt hash-pinned 0.1.1; Python 3.12+",
+  "capability": "simulate_hybrid: finite-window MW/MWh energy balance",
+  "adapter": "Only no-storage matching; one call per period with thermal MW in supply channel, zero solar and battery. Heat conversion and economics stay local. Installed source hash must match.",
+  "execution": "Only when --edi is selected; metadata discovery alone is not execution",
+  "not_reused": [
+    {
+      "path": "methods/src/energy_methods/thermal_counterfactual.py",
+      "blob_sha": "ee318e87d9a5b5ca9152c33524cc6670837f318d",
+      "reason": "Comfort-event scoring, not heat-recovery economics"
+    },
+    {
+      "path": "methods/src/energy_methods/data_center_wind.py",
+      "blob_sha": "8c77dab36c25cc1207e6a037b1e4e29446d67bc4",
+      "reason": "Wind procurement screen wraps the generic balance; no thermal conversion"
+    }
+  ]
+}
