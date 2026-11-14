@@ -1,8 +1,8 @@
 """
-From 57 role descriptions to 53 reusable role agents
+From 58 role descriptions to 54 reusable role agents
 ====================================================================================================
 
-Every role description reviewed through 10 November 2026 maps to a generic agent.
+Every role description reviewed through 14 November 2026 maps to a generic agent.
 Duplicate procurement, forward-deployed engineering and translated support
 listings share contracts. Identifying source metadata is omitted. Job descriptions
 inform scope; they are not evidence
@@ -35,9 +35,9 @@ from energy_agents.orchestrator import AgentTask, run_orchestrator
 catalogue = career_catalogue()
 case = synthetic_career_case()
 reports = {r["id"]: run_career_agent(r["id"], case) for r in catalogue["roles"]}
-assert len(reports) == 53 and all(r["success"] for r in reports.values())
-assert sum(len(r["listing_ids"]) for r in catalogue["roles"]) == 57
-print("57 role descriptions -> 53 role contracts -> 53 scripted work plans")
+assert len(reports) == 54 and all(r["success"] for r in reports.values())
+assert sum(len(r["listing_ids"]) for r in catalogue["roles"]) == 58
+print("58 role descriptions -> 54 role contracts -> 54 scripted work plans")
 print("Protocol success is not completion or validation of professional work.")
 
 # %%
@@ -86,8 +86,8 @@ axes[0].barh([v + .18 for v in y], [listings[k] for k in labels], height=.34,
 axes[0].barh([v - .18 for v in y], [families[k] for k in labels], height=.34,
              color="#167d8d", label="Distinct agents")
 axes[0].set_yticks(y, labels)
-axes[0].set_xlabel("Count in 2026-11-10 snapshot")
-axes[0].set_title("Coverage across 11 role families")
+axes[0].set_xlabel("Count in 2026-11-14 snapshot")
+axes[0].set_title("Coverage across 12 role families")
 axes[0].legend(loc="lower right", fontsize=8)
 names = list(team["results"])
 present = [len(team["results"][n]["inspection"]["present_inputs"]) for n in names]

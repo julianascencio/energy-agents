@@ -127,6 +127,8 @@ to their postings. They are not publicly verifiable source citations.
      - :ref:`HR Administration Assistant <career_hr_administration_assistant>`
    * - ``role_source_057``
      - :ref:`Quantum Machine Learning Engineer <career_quantum_ml_engineer>`
+   * - ``role_source_058``
+     - :ref:`Energy Markets and Regulatory Policy Director <career_energy_markets_regulatory_policy_director>`
 
 Role contracts
 ~~~~~~~~~~~~~~
@@ -980,6 +982,45 @@ Review checks:
 Suggested KPIs: ``signal_mapping_coverage``, ``integration_test_coverage``.
 
 Handoffs: :ref:`Data and Knowledge Intelligence Architect <career_knowledge_architect>`, :ref:`SCADA and EMS Delivery Engineer <career_scada_ems_engineer>`.
+
+Energy markets and policy
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _career_energy_markets_regulatory_policy_director:
+
+**Energy Markets and Regulatory Policy Director**
+
+``career_energy_markets_regulatory_policy_director`` — Develop evidence-linked market design and regulatory strategies for flexible AI data centers while evaluating reliability, affordability and access to electricity.
+
+Responsibilities:
+
+* Monitor FERC, DOE, state public utility commissions and RTO/ISO proceedings, including PJM, ERCOT and MISO, with dated primary-source evidence.
+* Analyze large-load interconnection, service agreements, queue milestones, upgrade allocation, collateral and stranded-cost exposure.
+* Compare wholesale market participation, demand response, flexible-load tariffs and settlement options against the applicable jurisdiction.
+* Assess resource adequacy, transmission planning and reliability consequences using explicit load, curtailment and rebound assumptions.
+* Evaluate electricity affordability and distributional impacts for participating customers, other ratepayers and communities.
+* Develop alternative policy positions, recommendations and implementation paths with documented tradeoffs.
+* Prepare draft regulatory comments, policy papers, testimony, leadership briefings and stakeholder meeting materials.
+* Map member priorities, record consensus and dissent, and coordinate proposed engagement with regulators, utilities and grid operators.
+
+Required inputs: ``policy_objective``, ``jurisdiction_and_market``, ``proceeding_evidence``, ``load_flexibility_profile``, ``cost_and_reliability_evidence``, ``member_positions``, ``engagement_calendar``.
+
+Deliverables: ``regulatory_watch_and_deadlines``, ``jurisdiction_and_barrier_matrix``, ``policy_options_and_impact_assessment``, ``draft_comments_and_testimony``, ``coalition_consensus_and_engagement_plan``, ``leadership_brief``.
+
+Review checks:
+
+* For each legal or market claim require primary-source URL, docket or tariff section, publication date, retrieval date, effective date and status; flag absent evidence.
+* Distinguish proposals, stakeholder recommendations, final orders, effective tariffs, stays and appeals; never infer current law from a job description.
+* Check federal, state and market-specific jurisdiction explicitly; do not transplant PJM or MISO rules into ERCOT.
+* Validate deadlines, timezone, filing requirements and standing against the actual proceeding before proposing submission.
+* Distinguish connection capacity, firm service, dispatchable demand reduction and accredited capacity; test baseline, telemetry, availability, rebound and performance penalties.
+* Disclose cost allocation, cross-subsidy and stranded-asset assumptions; quantify uncertainty and avoid double counting flexibility benefits.
+* Trace recommendations to evidence and member authorization; preserve dissent, confidential information and unresolved questions.
+* All filings, testimony, representation and external communications remain drafts for qualified review and explicit authorization; claim no employer affiliation, personal relationships or professional credentials.
+
+Suggested KPIs: ``primary_source_claim_coverage_fraction``, ``unresolved_jurisdiction_questions``, ``verified_deadline_coverage_fraction``, ``member_positions_reconciled_fraction``, ``scenario_ratepayer_cost_usd``, ``scenario_connection_delay_months``.
+
+Handoffs: :ref:`Power Grid Domain Expert <career_powergrid_expert>`, :ref:`Energy Systems Operations and Maintenance Lead <career_energy_operations_lead>`, :ref:`Governance Risk and Compliance Director <career_grc_director>`, :ref:`Utility and Grid Strategic Account Director <career_utility_account_director>`.
 
 Finance
 ^^^^^^^

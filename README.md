@@ -114,7 +114,7 @@ catalogue also includes roles still at the design stage.
 
 ## Public-career role agents
 
-**53 generic agents cover 57 public role descriptions** reviewed through 10 November
+**54 generic agents cover 58 public role descriptions** reviewed through 14 November
 2026. They span AI engineering and delivery, data and IoT platforms,
 energy operations, sales, finance, IT, governance, marketing, strategy, HR and legal
 support. Repeated procurement, FDE and translated support listings share agents.
@@ -389,3 +389,18 @@ versioned prompts and a runnable procurement gallery. See
 ### Wind debt capacity
 
 Run `energy-agents-debt` for a synthetic, evidence-gated debt-service coverage screen. It separates announced facilities from drawn debt and compares proposed borrowing with downside cash flow. See `docs/cases/2026-11-11-wind-debt.md` and the business gallery.
+
+### Energy markets and regulatory policy director
+
+`career_energy_markets_regulatory_policy_director` develops evidence-linked work
+plans and optional LLM proposals for large-load interconnection, flexible AI data
+centers, wholesale markets, reliability, affordability and coalition advocacy.
+It requires jurisdiction-specific evidence and distinguishes proposed from effective
+rules. Outputs include draft comments/testimony, policy options and leadership briefs.
+
+```bash
+python examples/enterprise/plot_energy_policy_director.py
+```
+
+The offline example uses a fictional campus and exposes missing regulatory evidence;
+it does not monitor live proceedings or submit filings.
