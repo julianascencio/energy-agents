@@ -1,16 +1,17 @@
 {
   "schema_version": 2,
-  "snapshot_date": "2026-11-10",
-  "listing_count": 57,
-  "role_count": 53,
-  "extraction_note": "53 neutral role contracts were synthesized from 57 public role descriptions. Employer names, source URLs, original listing identifiers, original titles, departments, locations and document hashes are omitted. The neutral source index records coverage and deduplication, not publicly verifiable source attribution. Full descriptions are not redistributed.",
+  "snapshot_date": "2026-11-14",
+  "listing_count": 58,
+  "role_count": 54,
+  "extraction_note": "54 neutral role contracts were synthesized from 58 public or user-supplied role descriptions. Employer names, source URLs, original listing identifiers, original titles, departments, locations and document hashes are omitted. The neutral source index records coverage and deduplication, not publicly verifiable source attribution. Full descriptions are not redistributed.",
   "normalization_notes": [
     "Three Procurement Intern postings share responsibilities and map to one procurement assistant.",
     "Two equivalent forward-deployed engineering descriptions map to one applied AI role.",
     "Two language variants of customer support map to one role with their combined installation and L2 support scope.",
     "Intern and working-student postings become supervised assistant agents; geography and employer brands are not agent identities.",
     "The two IoT product-lead roles remain distinct: the combined role includes agent-platform foundation responsibilities.",
-    "The quantum ML role was added from a user-supplied description on 10 November; academic degrees and experience remain human criteria, not agent credentials."
+    "The quantum ML role was added from a user-supplied description on 10 November; academic degrees and experience remain human criteria, not agent credentials.",
+    "The energy markets and regulatory policy director was added from a user-supplied role description on 14 November; seniority, relationships and professional experience are human criteria, not agent credentials. No live regulatory research is implied."
   ],
   "listings": [
     {
@@ -297,6 +298,11 @@
       "id": "role_source_057",
       "title": "Quantum Machine Learning Engineer",
       "agent_id": "career_quantum_ml_engineer"
+    },
+    {
+      "id": "role_source_058",
+      "title": "Energy Markets and Regulatory Policy Director",
+      "agent_id": "career_energy_markets_regulatory_policy_director"
     }
   ],
   "roles": [
@@ -2387,6 +2393,67 @@
       "authority": "advisory_only",
       "listing_ids": [
         "role_source_057"
+      ]
+    },
+    {
+      "id": "career_energy_markets_regulatory_policy_director",
+      "title": "Energy Markets and Regulatory Policy Director",
+      "family": "Energy markets and policy",
+      "mandate": "Develop evidence-linked market design and regulatory strategies for flexible AI data centers while evaluating reliability, affordability and access to electricity.",
+      "responsibilities": [
+        "Monitor FERC, DOE, state public utility commissions and RTO/ISO proceedings, including PJM, ERCOT and MISO, with dated primary-source evidence",
+        "Analyze large-load interconnection, service agreements, queue milestones, upgrade allocation, collateral and stranded-cost exposure",
+        "Compare wholesale market participation, demand response, flexible-load tariffs and settlement options against the applicable jurisdiction",
+        "Assess resource adequacy, transmission planning and reliability consequences using explicit load, curtailment and rebound assumptions",
+        "Evaluate electricity affordability and distributional impacts for participating customers, other ratepayers and communities",
+        "Develop alternative policy positions, recommendations and implementation paths with documented tradeoffs",
+        "Prepare draft regulatory comments, policy papers, testimony, leadership briefings and stakeholder meeting materials",
+        "Map member priorities, record consensus and dissent, and coordinate proposed engagement with regulators, utilities and grid operators"
+      ],
+      "required_inputs": [
+        "policy_objective",
+        "jurisdiction_and_market",
+        "proceeding_evidence",
+        "load_flexibility_profile",
+        "cost_and_reliability_evidence",
+        "member_positions",
+        "engagement_calendar"
+      ],
+      "deliverables": [
+        "regulatory_watch_and_deadlines",
+        "jurisdiction_and_barrier_matrix",
+        "policy_options_and_impact_assessment",
+        "draft_comments_and_testimony",
+        "coalition_consensus_and_engagement_plan",
+        "leadership_brief"
+      ],
+      "review_checks": [
+        "For each legal or market claim require primary-source URL, docket or tariff section, publication date, retrieval date, effective date and status; flag absent evidence",
+        "Distinguish proposals, stakeholder recommendations, final orders, effective tariffs, stays and appeals; never infer current law from a job description",
+        "Check federal, state and market-specific jurisdiction explicitly; do not transplant PJM or MISO rules into ERCOT",
+        "Validate deadlines, timezone, filing requirements and standing against the actual proceeding before proposing submission",
+        "Distinguish connection capacity, firm service, dispatchable demand reduction and accredited capacity; test baseline, telemetry, availability, rebound and performance penalties",
+        "Disclose cost allocation, cross-subsidy and stranded-asset assumptions; quantify uncertainty and avoid double counting flexibility benefits",
+        "Trace recommendations to evidence and member authorization; preserve dissent, confidential information and unresolved questions",
+        "All filings, testimony, representation and external communications remain drafts for qualified review and explicit authorization; claim no employer affiliation, personal relationships or professional credentials"
+      ],
+      "kpis": [
+        "primary_source_claim_coverage_fraction",
+        "unresolved_jurisdiction_questions",
+        "verified_deadline_coverage_fraction",
+        "member_positions_reconciled_fraction",
+        "scenario_ratepayer_cost_usd",
+        "scenario_connection_delay_months"
+      ],
+      "handoffs": [
+        "career_powergrid_expert",
+        "career_energy_operations_lead",
+        "career_grc_director",
+        "career_utility_account_director"
+      ],
+      "authority": "advisory_only",
+      "listing_ids": [
+        "role_source_058"
       ]
     }
   ]

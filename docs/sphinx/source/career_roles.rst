@@ -1,8 +1,8 @@
 Public-career role agents
 ====================================================================================================
 
-Research through 10 November 2026 covered **57 public role descriptions**, represented
-by **53 generic agent contracts** across AI, data, energy operations, commercial,
+Research through 14 November 2026 covered **58 public role descriptions**, represented
+by **54 generic agent contracts** across AI, data, energy operations, commercial,
 finance, IT, security, marketing, strategy, HR and legal support.
 
 The packaged catalogue contains generic responsibilities and a neutral source
@@ -115,7 +115,7 @@ are cases and upstream reports are copied into the next role's context. The
 gallery chooses five roles for value discovery, requirements, solution planning,
 security and implementation handoff. Failed dependencies block downstream work.
 Choose an explicit DAG of at most 50 tasks, consistent with the existing runner;
-the CLI's 53 independent work plans are not one dependency graph.
+the CLI's 54 independent work plans are not one dependency graph.
 
 Suggested handoffs are routing hints, not automatically scheduled work. Existing
 :doc:`forward_deployed`, :doc:`python_engineer`, :doc:`pv_operations`, and
@@ -140,3 +140,27 @@ API
 
 .. automodule:: energy_agents.career_roles
    :members:
+
+Energy markets and regulatory policy director
+---------------------------------------------
+
+``career_energy_markets_regulatory_policy_director`` covers large-load
+interconnection, wholesale market design, demand response, flexible AI loads,
+resource adequacy, transmission planning and ratepayer affordability. It prepares
+policy options, draft comments and testimony, leadership briefings, and coalition
+engagement plans. Its instructions require jurisdiction-specific primary sources,
+rule status, effective dates and verified deadlines, including explicit separation
+of PJM, MISO and ERCOT assumptions.
+
+Run the dedicated offline example::
+
+   python examples/enterprise/plot_energy_policy_director.py
+
+The fictional 100 MW campus has 20 MW of unvalidated potential flexibility.
+The example intentionally lacks proceeding evidence, cost and reliability evidence,
+and an engagement calendar. It demonstrates input-gap detection and scripted work
+plans, not current legal analysis, economic results or completed regulatory work.
+Use ``CareerRolePlanner`` with this role ID for optional model-generated proposals;
+the validator checks structure and evidence IDs, not legal correctness. There is
+no live monitoring connector or filing tool. External representation and submission
+require a separately authorized human process.
