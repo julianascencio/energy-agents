@@ -1,0 +1,10 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "fc63c5f97e6513e7f290340ddfdce0b80962644a",
+  "path": "methods/src/energy_methods/hybrid_dispatch.py",
+  "blob_sha": "9a3f8bf79cce6d00d62adcf2ae3a23c9718de82e",
+  "capability": "MW/MWh renewable supply and storage balance",
+  "execution": false,
+  "boundary": "Metadata-only context adapter. Method is unsuitable for mandatory price-triggered load removal and contractual opportunity costs; no upstream dispatch or calibration claimed. Existing heat-reuse and operations adapters retain actual EDI execution.",
+  "dependencies": "No optional EDI package required for this screen; source version pinned above."
+}
