@@ -1,6 +1,6 @@
 # ISO-NE proposed non-firm service: interruption economics
 
-Date: 2026-11-15. PR: pending publication. Status: implemented, advisory scenario; not an effective tariff or a service-eligibility opinion.
+Date: 2026-11-15. PR: [#27](https://github.com/julianascencio/energy-agents/pull/27). Status: implemented, advisory scenario; not an effective tariff or a service-eligibility opinion.
 
 ## News selection and evidence
 
