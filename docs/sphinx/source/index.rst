@@ -34,6 +34,7 @@ scripted tool counts with clearly separated published observations.
    campus_team
    vppa_basis
    heat_reuse
+   guarantee_liquidity
    preferred_equity
    storage_bid
    wind_debt

@@ -1,0 +1,8 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "fc63c5f97e6513e7f290340ddfdce0b80962644a",
+  "path": "methods/src/energy_methods/offshore_wind_economics.py",
+  "git_blob_sha": "88f9cd11bfd569fc3b69a0b40d7ffeac9fd3bd87",
+  "execution": false,
+  "decision": "Existing source-derived equity catalogue consulted and current economics source inspected. Real-JPY unlevered wind LCOE cannot supply NIS guarantee liquidity. Metadata-only bounded adapter; no duplicated connector or upstream execution dependency."
+}
