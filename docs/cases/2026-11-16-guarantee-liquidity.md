@@ -1,6 +1,6 @@
 # 16 November 2026 — Bank-guarantee collateral and liquidity
 
-PR: pending publication.
+PR: [#28](https://github.com/julianascencio/energy-agents/pull/28).
 
 Selected [Enlight's issuer announcement](https://www.globenewswire.com/news-release/2026/11/16/3403923/0/en/enlight-renewable-energy-and-shemen-yielding-real-estate-sign-agreement-to-advance-development-of-a-data-center-with-planned-power-capacity-of-up-to-150-mw-in-israel.html), published 16 November 2026 at 11:30 ET; agreement announced the same day. NIS 334m estimated aggregate guarantee exposure and equal partner shares motivate a concrete treasury decision. Proposed connection is up to 150 MW; it is not approved capacity. Final regulation and approvals remain unresolved. No trending claim.
 
