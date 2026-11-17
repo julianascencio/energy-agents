@@ -421,3 +421,11 @@ losses and incremental costs. Existing cooling and finance roles exchange a chec
 heat balance; optional `--edi` executes a pinned energy-matching cross-check.
 See [method and reproduction](docs/sphinx/source/heat_reuse.rst) and
 [case history](docs/cases/2026-11-14-heat-reuse.md).
+
+### Firm renewable supply procurement
+
+Run `energy-agents-firm` to distinguish renewable energy coverage from hours of
+full-load service and audit backup capacity, cash costs and residual opportunity
+loss. The synthetic seven-day example reuses the finance role and optional pinned
+EDI matching method. See [method and reproduction](docs/sphinx/source/firm_supply.rst)
+and [case history](docs/cases/2026-11-17-firm-supply.md).
