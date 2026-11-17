@@ -1,7 +1,7 @@
 # Firm supply procurement: audit energy coverage and hourly gaps
 
 Status: implemented; publication and exact-head check evidence recorded in the PR.
-PR: pending publication.
+PR: [#29](https://github.com/julianascencio/energy-agents/pull/29) (non-draft).
 
 ## Evidence and selection
 
@@ -89,3 +89,15 @@ Publication, verified CI, merge and deployment are separate outcomes. A clean CI
 run does not supply a company integration claim or independent review. No release,
 deployment, energy trade, physical control, purchase or third-party contact is
 part of this case.
+
+Local validation: 20 focused tests passed; full suite 527 passed with six optional
+skips. Installing the missing pandas dependency then passed all 16 tandem tests,
+including the skipped replay. Five local Qiskit/Torch checks remain delegated to
+the retained dedicated CI backend job. Ruff, source/wheel builds, isolated
+installed-wheel CLI parity and strict Sphinx/gallery build passed. The plotted
+outputs were visually inspected. The optional EDI adapter executed successfully
+with parity and source hash
+`e404a6724ea9f3a332fb50e307e048edde610e8569a230b5177ca1350d536a39`.
+Input digest: `cf077d7df77e80dd3b8e11eeeb54fca9131ce68e6408e85e6d65fa93388bf067`.
+Final-head CI and review observations are in the PR description; local results
+are not a substitute for those checks.
