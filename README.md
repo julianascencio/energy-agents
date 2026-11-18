@@ -421,3 +421,9 @@ losses and incremental costs. Existing cooling and finance roles exchange a chec
 heat balance; optional `--edi` executes a pinned energy-matching cross-check.
 See [method and reproduction](docs/sphinx/source/heat_reuse.rst) and
 [case history](docs/cases/2026-11-14-heat-reuse.md).
+
+### Non-firm service economics
+
+Run `energy-agents-nonfirm` for a synthetic price-triggered interruption screen,
+with contribution losses, avoided energy costs and break-even firm-service savings.
+See [method and reproduction](docs/sphinx/source/nonfirm_service.rst).

@@ -1,0 +1,42 @@
+{
+  "id": "nonfirm_service_economics",
+  "version": "1.0",
+  "authority": "advisory_only",
+  "user_prompt": "Compare all-firm service with a specified non-firm tranche under the proposed price-trigger mechanism. Calculate curtailed MWh, event restart costs, lost business contribution net of avoided electricity, annual benefit, NPV and break-even annual avoided firm costs. Stress interruption duration and business contribution. Keep proposal status and synthetic customer assumptions explicit.",
+  "role_mandates": {
+    "evidence_contract": "Validate proposal status, dates, units, annual chronology and full curtailability. This is not regulatory eligibility review.",
+    "project_finance_analyst": "Reconcile lost contribution excluding electricity against avoided electricity expense. Include restart, flexibility CAPEX and OPEX. Never infer tariff savings from the announcement.",
+    "energy_orchestrator": "Only delegate evidence then finance; reject premature and unknown actions."
+  },
+  "input_schema": "case.json v1.0: synthetic USD; ISO HTTPS announcement with publication <= as_of and proposal_not_effective_rule status; constant-real year-end economics; 1..8760 ordered blocks of positive hours totalling 8760, finite price -10000..100000 USD/MWh; nonnegative costs and MW; nonfirm <= flexible <= total load; years integer 1..50, discount 0..1. validate_case enforces bounds.",
+  "allowed_tools": [
+    "validate_case",
+    "screen_nonfirm",
+    "data_file(edi_context): metadata only"
+  ],
+  "evidence_requirements": [
+    "Source event/publication distinction",
+    "Explicit final-tariff, nodal-price and customer-cost gaps",
+    "No realised benefit or legal compliance claim"
+  ],
+  "handoffs": [
+    "Operator supplies synthetic chronology and fully curtailable tranche",
+    "Evidence-approved isolated input to existing finance role",
+    "Human policy/engineering review of tariff, service contracts, actual controls and workload feasibility"
+  ],
+  "output_contract": [
+    "Input hash and proposed rule status",
+    "Period curtailed MWh and cash ledger",
+    "Contiguous event count and restart costs",
+    "Annual incremental benefit, NPV and break-even annual avoided firm cost in USD",
+    "Eligibility unknown; no dispatch authority; LLM measurements unknown"
+  ],
+  "acceptance": [
+    "Threshold equality triggers reduction",
+    "Consecutive high-price blocks count one event",
+    "Lost contribution excludes electricity to avoid double counting",
+    "Invalid evidence blocks finance",
+    "Workflow equals deterministic baseline",
+    "No external controls, contracts, trades, purchases or contacts"
+  ]
+}

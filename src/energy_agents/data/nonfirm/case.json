@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "USD",
+  "as_of": "2026-11-15",
+  "source": {
+    "publisher": "ISO New England",
+    "status": "proposal_not_effective_rule",
+    "publication_date": "2026-11-13",
+    "event": "Proposal filing announced that week; precise filing timestamp not established here",
+    "url": "https://isonewswire.com/2026/11/13/iso-ne-files-proposal-with-ferc-to-address-large-loads/",
+    "announced_threshold_usd_mwh": 250
+  },
+  "assumptions": {
+    "cash_basis": "constant_real_year_end_incremental_before_tax",
+    "load_mw": 100,
+    "nonfirm_mw": 40,
+    "flexible_mw": 40,
+    "threshold_usd_mwh": 250,
+    "lost_contribution_usd_mwh": 500,
+    "restart_usd_event": 20000,
+    "annual_avoided_firm_cost_usd": 1200000,
+    "annual_flex_opex_usd": 100000,
+    "flex_capex_usd": 2000000,
+    "years": 10,
+    "discount_rate": 0.08
+  },
+  "periods": [
+    {
+      "hours": 4000,
+      "price_usd_mwh": 60
+    },
+    {
+      "hours": 60,
+      "price_usd_mwh": 300
+    },
+    {
+      "hours": 3000,
+      "price_usd_mwh": 70
+    },
+    {
+      "hours": 60,
+      "price_usd_mwh": 500
+    },
+    {
+      "hours": 1640,
+      "price_usd_mwh": 80
+    }
+  ],
+  "evidence_gaps": [
+    "Final approved tariff, eligibility, nodal study and firm/non-firm service cost quotes",
+    "Chronological nodal price scenarios and operator dispatch instructions",
+    "Measured curtailable load, restart/SLA losses and customer workload economics"
+  ],
+  "limitations": [
+    "Illustrative threshold-only screen; not full tariff compliance, a forecast, or an ISO dispatch simulation",
+    "Synthetic 8760-hour block chronology repeats annually; each year starts a new accounting window",
+    "No generation, battery, load rebound, work rescheduling, ramping, minimum run times or price response optimization",
+    "Business contribution excludes electricity; avoided firm costs are assumed annual equivalents, not published tariff discounts",
+    "Same connection date in both options; no speed-to-power benefit, tax, financing, inflation or residual value",
+    "Source regional historical high-price frequency is not used as a site forecast; local stress may differ",
+    "Firm priority does not guarantee outage-free service; reliability events outside price triggers are excluded"
+  ]
+}
