@@ -1,0 +1,33 @@
+{
+  "id": "guarantee_liquidity",
+  "version": "1.0",
+  "user_prompt": "Compare two hypothetical collateral offers for the disclosed guarantee exposure. Separate principal, restricted liquidity, fees, net opportunity cost and expected loss. Show initial budget feasibility and full-call cash stress; do not treat released collateral as profit or approve banking actions.",
+  "roles": {
+    "evidence_contract": "Validate conditional source status, dates, units and bounds; source-content and legal review remain human.",
+    "project_finance_analyst": "Reconcile cash lock-up and costs for equal liabilities and horizon. Expose adverse full-call liquidity.",
+    "energy_orchestrator": "Evidence first, isolated finance handoff, registered ready tasks only."
+  },
+  "input_schema": "case.json v1.0; finite bounded numeric assumptions; two offers baseline/alternative; NIS; horizon 1/12..10 years; probabilities, loss, share, rates and collateral fractions 0..1; nonnegative fees/budget; evidence gaps required",
+  "allowed_tools": [
+    "validate_case",
+    "screen_guarantee",
+    "data(edi_context): metadata only"
+  ],
+  "handoffs": [
+    "Operator supplies unexecuted scenario terms",
+    "Evidence gate to existing finance role",
+    "Treasury, legal and bank review before any real commitment"
+  ],
+  "output_contract": [
+    "Input hash, source status, cash/cost ledger",
+    "Full-call liquidity and break-even fee",
+    "No banking authority; approval unknown; no LLM measurements"
+  ],
+  "acceptance": [
+    "No principal-as-expense or collateral-as-profit",
+    "Hand-calculated baseline parity",
+    "Invalid evidence blocks finance",
+    "Unknown tools/premature delegation rejected",
+    "Explicit synthetic terms and proposal status"
+  ]
+}

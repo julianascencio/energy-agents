@@ -21,6 +21,7 @@ docs = ["sphinx>=8,<9", "pydata-sphinx-theme>=0.16,<0.17", "sphinx-gallery>=0.19
 
 [project.scripts]
 energy-agents-nonfirm = "energy_agents.business.nonfirm:main"
+energy-agents-guarantee = "energy_agents.business.guarantee:main"
 energy-agents-heat = "energy_agents.business.heat_reuse:main"
 energy-agents-equity = "energy_agents.business.equity:main"
 energy-agents-bid = "energy_agents.business.bid:main"
