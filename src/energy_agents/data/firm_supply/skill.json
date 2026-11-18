@@ -1,0 +1,50 @@
+{
+  "id": "firm_supply_procurement_audit",
+  "version": "1.0",
+  "authority": "advisory_only",
+  "user_prompt": "For an industrial power buyer, compare fixed-window renewable delivery offers with backup supply. Separate energy coverage from fully served hours, size peak residual shortfall, and report cash cost plus scenario lost contribution. Compare fee-only selection with the audited result and vary backup MW and lost contribution. Do not infer availability or realised savings from a global model median.",
+  "role_mandates": {
+    "evidence_contract": "Check dates, classifications and UTC trace alignment. Calculate delivery_audit. Published model statistics are context, not customer measurements or quotations.",
+    "project_finance_analyst": "Recompute the input-bound audit before accepting a handoff. Include the fixed offer fee, backup capacity and energy cash costs, and separately show residual lost contribution. Preserve uncertainty and avoid authorizing procurement.",
+    "energy_orchestrator": "Run evidence then finance using only ready registered tasks; reject external actions and expose failures."
+  },
+  "input_schema": "case.json v1.0: labelled synthetic USD finite-window case; ISO evidence dates no later than as_of; HTTPS published-model source; nonempty gaps/limitations; 1..87840 contiguous UTC hourly timestamps and aligned nonnegative MW deliveries for 2..20 uniquely named offers; positive total demand; nonnegative finite nonboolean fees, backup MW and costs. Bounds enforced by validate_case. Initial implementation rejects observed classifications.",
+  "allowed_tools": [
+    "validate_case",
+    "delivery_audit",
+    "screen_firm_supply",
+    "edi_crosscheck (optional hash-pinned local matching only)"
+  ],
+  "forbidden_actions": [
+    "trade_energy",
+    "buy_backup",
+    "execute_contract",
+    "physical_controls",
+    "contact_vendor",
+    "retrieve_credentials"
+  ],
+  "evidence_requirements": [
+    "Retain news and atlas URLs and event/publication/access dates.",
+    "Keep published model results, synthetic profiles, assumed prices and computed outputs separate.",
+    "Obtain customer traces, metering boundaries, engineering constraints, quotes and lost-margin evidence before deployment."
+  ],
+  "handoffs": [
+    "Case to evidence schema and delivery audit",
+    "Input SHA256-bound delivery ledger to existing finance role",
+    "Human diligence on profiles, service terms and backup feasibility"
+  ],
+  "output_contract": [
+    "Source and input SHA256; coverage and full-hour counts before and after backup; peak deficit MW; residual MWh.",
+    "Fixed supply fee, backup capacity/energy cash costs, separate scenario lost contribution, economic cost and break-even lost contribution.",
+    "Fee-only comparator and direct deterministic/workflow parity; no agent superiority claim.",
+    "Purchase not authorized; evidence gaps explicit; LLM execution false and cost/latency/tokens unknown."
+  ],
+  "acceptance": [
+    "Contiguous trace/evidence failures block finance",
+    "Conserve demand = renewable + backup + residual; do not count surplus as served",
+    "Equal energy coverage can yield different full-hour coverage and backup MW",
+    "Reject modified/stale handoff and premature/external planner actions",
+    "Direct and scripted workflow numerical parity",
+    "Optional EDI checks source hash and delivered MWh; discovery alone never called execution"
+  ]
+}

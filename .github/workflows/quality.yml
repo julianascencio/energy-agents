@@ -35,6 +35,7 @@ jobs:
 
       - run: energy-agents-nonfirm --output outputs/nonfirm
       - run: energy-agents-guarantee --output outputs/guarantee
+      - run: energy-agents-firm --output outputs/firm_supply
       - run: energy-agents-heat --output outputs/heat_reuse
       - run: energy-agents-equity --output outputs/preferred_equity
       - run: energy-agents-bid --output outputs/storage_bid
@@ -72,7 +73,8 @@ jobs:
       - run: python -m pip install -e ".[dev,mcp]"
       # This EDI module is stdlib-only; other scientific EDI dependencies are unrelated.
       - uses: ./.github/actions/install-operations-backend
-      - run: python -m pytest tests/test_operations_service.py tests/test_operations_mcp.py tests/test_cen_operations.py tests/test_heat_reuse.py
+      - run: python -m pytest tests/test_operations_service.py tests/test_operations_mcp.py tests/test_cen_operations.py tests/test_heat_reuse.py tests/test_firm_supply.py
+      - run: energy-agents-firm --edi --output outputs/firm_supply_edi
       - run: energy-agents-heat --edi --output outputs/heat_reuse_edi
       - run: energy-agents-ops --output outputs/operations
       - run: energy-agents-cen --output outputs/cen_chile

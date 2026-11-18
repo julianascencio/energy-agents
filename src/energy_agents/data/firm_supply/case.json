@@ -1,0 +1,1071 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "USD",
+  "cash_basis": "undiscounted_finite_window_before_tax",
+  "as_of": "2026-11-17",
+  "source": {
+    "publisher": "GWEC / Ember",
+    "classification": "published_model_not_observed_operation",
+    "url": "https://www.gwec.net/news/increasing-wind-in-the-clean-energy-mix-cuts-the-cost-of-electricity-by-nearly-20",
+    "event_date": "2026-11-13",
+    "publication_date": "2026-11-16",
+    "reported_model": {
+      "global_median_solar_battery_90_percent_usd_mwh": 105,
+      "global_median_with_wind_90_percent_usd_mwh": 86
+    },
+    "measurement_note": "Published global model medians are context only; they do not price these offers. Atlas documentation defines coverage as energy served / energy demanded, not fully served hours.",
+    "atlas_url": "https://ember-labs-org.github.io/WindSolarBatteryAtlas_Labs/",
+    "atlas_accessed": "2026-11-17",
+    "atlas_landing_page_updated": "2026-11-16"
+  },
+  "assumptions": {
+    "classification": "synthetic_assumptions",
+    "backup_mw": 2,
+    "backup_usd_mw_day": 200,
+    "backup_usd_mwh": 200,
+    "lost_contribution_usd_mwh": 2000
+  },
+  "baseline_offer": "concentrated_gap",
+  "hours": [
+    {
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-01T23:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-02T23:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-03T23:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-04T23:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-05T23:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-06T23:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T00:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T01:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T02:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T03:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T04:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T05:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T06:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T07:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T08:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T09:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T10:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T11:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T12:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T13:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T14:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T15:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T16:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T17:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T18:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T19:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T20:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T21:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T22:00:00+00:00",
+      "demand_mw": 10
+    },
+    {
+      "timestamp": "2026-01-07T23:00:00+00:00",
+      "demand_mw": 10
+    }
+  ],
+  "offers": [
+    {
+      "id": "concentrated_gap",
+      "profile_classification": "synthetic_net_delivery_after_storage",
+      "window_fee_usd": 126000,
+      "delivered_mw": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "distributed_gap",
+      "profile_classification": "synthetic_net_delivery_after_storage",
+      "window_fee_usd": 133000,
+      "delivered_mw": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    }
+  ],
+  "evidence_gaps": [
+    "No customer meter data, vendor quote, measured renewable or battery profile.",
+    "No validated backup availability, start time, fuel budget or lost-contribution estimate.",
+    "No project-specific solar/wind/storage engineering or contractual service guarantee."
+  ],
+  "limitations": [
+    "Deliberately constructed seven-day profiles with equal 90% energy coverage; not an Ember dataset or reproduction of its cost results.",
+    "Net deliveries include any upstream storage; physical generation and state of charge are not simulated or validated.",
+    "Backup starts instantly and is continuously available at its MW limit with unlimited fuel; grid imports and network limits excluded.",
+    "Hourly average adequacy is not sub-hourly reliability; fully served hours are not probability-of-availability forecasts.",
+    "No annualization, discounting, taxes, escalation, emissions, restart costs, minimum loading or correlated backup failure.",
+    "Supply fee is fixed for this window; no resale revenue for excess; no double counting of backup energy as renewable.",
+    "Lost contribution is scenario opportunity cost, not a cash payment, contract penalty or realised saving.",
+    "These traces do not prove wind is superior; real procurement requires location-specific profiles and enforceable terms."
+  ]
+}

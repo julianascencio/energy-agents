@@ -34,6 +34,7 @@ scripted tool counts with clearly separated published observations.
    campus_team
    vppa_basis
    nonfirm_service
+   firm_supply
    heat_reuse
    guarantee_liquidity
    preferred_equity

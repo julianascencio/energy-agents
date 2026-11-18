@@ -431,3 +431,11 @@ See [method and reproduction](docs/sphinx/source/nonfirm_service.rst).
 ### Bank-guarantee liquidity screen
 
 Run `energy-agents-guarantee` for a synthetic treasury comparison separating restricted cash, fees, opportunity cost and contingent losses. See [method and reproduction](docs/sphinx/source/guarantee_liquidity.rst) and [case history](docs/cases/2026-11-16-guarantee-liquidity.md). Advisory only; no bank or grid approval.
+
+### Firm renewable supply procurement
+
+Run `energy-agents-firm` to distinguish renewable energy coverage from hours of
+full-load service and audit backup capacity, cash costs and residual opportunity
+loss. The synthetic seven-day example reuses the finance role and optional pinned
+EDI matching method. See [method and reproduction](docs/sphinx/source/firm_supply.rst)
+and [case history](docs/cases/2026-11-17-firm-supply.md).
