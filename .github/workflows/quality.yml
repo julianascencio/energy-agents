@@ -33,6 +33,7 @@ jobs:
       - run: energy-agents-reserve --output outputs/reserve
       - run: energy-agents-campus --output outputs/campus_team
 
+      - run: energy-agents-nonfirm --output outputs/nonfirm
       - run: energy-agents-guarantee --output outputs/guarantee
       - run: energy-agents-heat --output outputs/heat_reuse
       - run: energy-agents-equity --output outputs/preferred_equity
