@@ -33,8 +33,10 @@ scripted tool counts with clearly separated published observations.
    data_center_design
    campus_team
    vppa_basis
+   nonfirm_service
    firm_supply
    heat_reuse
+   guarantee_liquidity
    preferred_equity
    storage_bid
    wind_debt

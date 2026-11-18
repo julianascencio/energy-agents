@@ -422,6 +422,16 @@ heat balance; optional `--edi` executes a pinned energy-matching cross-check.
 See [method and reproduction](docs/sphinx/source/heat_reuse.rst) and
 [case history](docs/cases/2026-11-14-heat-reuse.md).
 
+### Non-firm service economics
+
+Run `energy-agents-nonfirm` for a synthetic price-triggered interruption screen,
+with contribution losses, avoided energy costs and break-even firm-service savings.
+See [method and reproduction](docs/sphinx/source/nonfirm_service.rst).
+
+### Bank-guarantee liquidity screen
+
+Run `energy-agents-guarantee` for a synthetic treasury comparison separating restricted cash, fees, opportunity cost and contingent losses. See [method and reproduction](docs/sphinx/source/guarantee_liquidity.rst) and [case history](docs/cases/2026-11-16-guarantee-liquidity.md). Advisory only; no bank or grid approval.
+
 ### Firm renewable supply procurement
 
 Run `energy-agents-firm` to distinguish renewable energy coverage from hours of

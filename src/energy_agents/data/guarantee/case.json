@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "currency": "NIS",
+  "classification": "synthetic_terms",
+  "as_of": "2026-11-16",
+  "source": {
+    "publisher": "Enlight Renewable Energy",
+    "publication_date": "2026-11-16",
+    "event_date": "2026-11-16",
+    "status": "announced_estimate_subject_to_approvals",
+    "aggregate_guarantee_nis": 334000000,
+    "url": "https://www.globenewswire.com/news-release/2026/11/16/3403923/0/en/enlight-renewable-energy-and-shemen-yielding-real-estate-sign-agreement-to-advance-development-of-a-data-center-with-planned-power-capacity-of-up-to-150-mw-in-israel.html"
+  },
+  "assumptions": {
+    "sponsor_share": 0.5,
+    "years": 2,
+    "annual_opportunity_spread": 0.04,
+    "call_probability": 0.02,
+    "net_loss_fraction": 0.4,
+    "initial_liquidity_budget_nis": 60000000
+  },
+  "offers": {
+    "baseline": {
+      "collateral_fraction": 1,
+      "annual_fee_rate": 0.005,
+      "setup_fee_nis": 0
+    },
+    "alternative": {
+      "collateral_fraction": 0.25,
+      "annual_fee_rate": 0.015,
+      "setup_fee_nis": 200000
+    }
+  },
+  "evidence_gaps": [
+    "Executed guarantee and bank collateral/fee/recovery terms",
+    "Final grid regulation and project approval",
+    "Customer liquidity budget and calibrated call-risk estimate"
+  ],
+  "limitations": [
+    "All bank offers, duration, risk and opportunity spread are synthetic; guarantee face is an announced estimate, not a funded expense",
+    "Simple undiscounted nominal NIS over the stated horizon; all fees paid upfront, no tax, FX or compounding",
+    "Opportunity spread is net of collateral interest; do not add another funding cost on top",
+    "Equal face liability and call risk across offers; collateral can fund a call but does not reduce the legal liability",
+    "Full call occurs before recovery; expected loss is a separate probability-weighted measure, not a liquidity reserve",
+    "Initial budget feasibility does not establish full-call solvency, bank approval, covenant headroom or project value",
+    "No lease, land purchase, construction revenue, grid eligibility or physical dispatch model"
+  ]
+}
