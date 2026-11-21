@@ -6,7 +6,7 @@
   https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-24439
 - Announcement: https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html
 - Publication index: https://www.boe.es/boe/dias/2026/11/21/
-- PR: publication pending; link will be recorded after creation.
+- PR: https://github.com/julianascencio/energy-agents/pull/30 (non-draft).
 
 ## Selection and prior work
 
