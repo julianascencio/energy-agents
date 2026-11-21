@@ -1,0 +1,18 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "e72d9d822b442f6392c80ce12dfc62f738f51ddd",
+  "inspected_at": "2026-11-21",
+  "path": "methods/src/energy_methods/hybrid_dispatch.py",
+  "blob_sha": "9a3f8bf79cce6d00d62adcf2ae3a23c9718de82e",
+  "source_sha256": "e404a6724ea9f3a332fb50e307e048edde610e8569a230b5177ca1350d536a39",
+  "dependency": "optional energy-methods; existing requirements/operations.txt hash-pinned 0.1.1; Python 3.12+",
+  "capability": "simulate_hybrid: finite-window MW/MWh energy balance",
+  "adapter": "One-hour eligible backing in generic supply channel, zero solar and battery, positive load. Reuses simulate_hybrid only to cross-check min(backing,load); not compensation or legal eligibility.",
+  "execution": "Only when --edi is selected; metadata discovery alone is not execution",
+  "not_reused": [
+    {
+      "path": "methods/src/energy_methods/data_center_wind.py",
+      "reason": "Existing dispatch wrapper cannot infer full-load served hours or residual loss from coverage alone; use generic matching and explicit customer-meter audit."
+    }
+  ]
+}

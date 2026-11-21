@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "EUR",
+  "pathway": "standard_article_8_80_percent",
+  "month": "2027-02",
+  "as_of": "2026-11-21",
+  "source": {
+    "url": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2026-24439",
+    "publisher": "BOE",
+    "document": "Real Decreto 1032/2026",
+    "event_date": "2026-11-20",
+    "publication_date": "2026-11-21",
+    "effective_date": "2026-11-22",
+    "retrieved_date": "2026-11-21",
+    "classification": "published_legislation_not_customer_data",
+    "raw_xml_sha256": "6bc6b231cd2d65983dd2fd123ce6cdee203b019f32a004f09b36d0210f3e598c",
+    "excerpt_sha256": "6c25143421b820c59997fa2f2788d11dec9aedee5a617308a6c2932155dc0f4d"
+  },
+  "scope": {
+    "applicability": "assumed_in_scope_mainland_new_20MW_data_centre",
+    "additionality": "assumed_satisfied_separately_not_calculated",
+    "backing": "assumed_eligible_allocated_net_backing_no_double_counting",
+    "storage": "none",
+    "transition": "no_SRAP_or_strategic_project_exception",
+    "national_mix_exception": "assumed_not_applicable",
+    "legal_status": "scenario_only_requires_specialist_and_system_operator_review"
+  },
+  "topup_eur_mwh": 40,
+  "implementation_eur": 5000,
+  "limitations": [
+    "Only the standard 80% hourly-correlation pathway and article 9.3 rates are modelled; no additionality, sanctions, access suspension or total compliance cost.",
+    "Positive demand in every hour of one complete Europe/Madrid calendar month; zero-load treatment and other billing zones are unsupported.",
+    "All profiles, eligibility and prices are synthetic assumptions, not customer quotes or measured operation.",
+    "Top-up is an all-in incremental shaping premium; common energy costs cancel by assumption. No physical dispatch, storage attribution, market settlement or revenue is calculated.",
+    "Monthly compensation is provisional under article 9.4 and subject to annual official regularisation; this is not an invoice."
+  ],
+  "evidence_gaps": [
+    "Obtain metering and allocated eligible backing, producer/contract evidence, and applicability review.",
+    "Confirm additionality, exceptions, storage accounting, tariff version and official billing interpretation.",
+    "Obtain executable shaping quotes including settlement effects, taxes and implementation costs."
+  ]
+}

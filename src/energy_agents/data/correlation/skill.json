@@ -1,0 +1,49 @@
+{
+  "id": "hourly_correlation_cost_screen",
+  "version": "1.0",
+  "authority": "advisory_only",
+  "user_prompt": "For an assumed in-scope mainland Spanish data centre on the standard 80% pathway, compare one complete month of eligible hourly renewable backing with a proposed shaping top-up. Calculate unweighted hourly deviation, article 9.3 tariff exposure, premium and implementation costs, net cost reduction and break-even premium. Separate synthetic assumptions from published rules. Do not certify compliance or optimize by paying compensation instead of meeting obligations.",
+  "role_mandates": {
+    "evidence_contract": "Validate pinned source provenance, full month including DST, positive loads and explicit assumed eligibility/scope. Create input-bound correlation_audit; do not infer legal eligibility from a profile.",
+    "project_finance_analyst": "Recompute the evidence handoff, compare compensation and all-in incremental premium plus implementation cost; preserve excluded costs and uncertainty.",
+    "energy_orchestrator": "Delegate only registered ready evidence then finance tasks; reject external actions."
+  },
+  "input_schema": "Expanded case.json v1 plus hours: canonical contiguous UTC interval starts spanning one full Europe/Madrid month; positive demand_mwh, nonnegative backing_mwh/topup_mwh <=10000; finite nonboolean numeric inputs; nonnegative topup_eur_mwh/implementation_eur <=1e9. Synthetic only. Exact scope and provenance contracts; nonempty limitations/gaps. reference_case expands the documented 24-hour synthetic pattern.",
+  "allowed_tools": [
+    "validate_case",
+    "correlation_audit",
+    "screen_correlation",
+    "edi_crosscheck (optional local hash-pinned physical matching only)"
+  ],
+  "forbidden_actions": [
+    "trade_energy",
+    "execute_contract",
+    "physical_controls",
+    "contact_vendor",
+    "certify_compliance",
+    "retrieve_credentials"
+  ],
+  "evidence_requirements": [
+    "Published BOE XML and extracted articles 8-9 with SHA256; event, publication, effective and retrieval dates.",
+    "Assumed additionality, allocation, exclusions and standard pathway remain explicit.",
+    "Real deployment requires specialist and system-operator verification; the software schema does not provide it."
+  ],
+  "handoffs": [
+    "Scenario -> evidence audit bound by SHA256",
+    "Evidence -> existing finance role with recomputed audit equality",
+    "Cost screen -> human diligence; no transactional authorization"
+  ],
+  "output_contract": [
+    "Monthly MWh and hourly unweighted deviation; tariff and modelled compensation per scenario",
+    "Top-up MWh, incremental premium, implementation cost, net reduction and break-even quote",
+    "Source/input hashes, limitations, gaps; compliance_certified=false and purchase_authorized=false",
+    "Scripted/direct parity; live LLM not executed and cost/latency/tokens unknown"
+  ],
+  "acceptance": [
+    "Test exact 0/5/10/20/50% tariff boundaries and tiny positive deviation",
+    "Reject incomplete months, malformed/zero load, nonfinite numbers, scope changes and source changes",
+    "Reject stale/tampered handoffs and premature/external actions",
+    "Demonstrate that aggregate energy coverage is not the unweighted deviation calculation",
+    "EDI physical parity is not legal validation"
+  ]
+}
