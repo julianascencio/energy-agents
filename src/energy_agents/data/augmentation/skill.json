@@ -1,0 +1,49 @@
+{
+  "id": "maintained_duration_augmentation_screen",
+  "version": "1.0",
+  "authority": "advisory_only",
+  "user_prompt": "For a renewable developer screening the Dominican Republic four-hour storage requirement, compare upfront oversizing with additions at specified years across 15 years. Use explicitly synthetic retention, costs and service assumptions. Show cohort capacities, annual service margins, discounted capacity costs and future-price break-even. Stress the same fixed designs under faster degradation; do not redesign silently, infer tender compliance, revenue or realised savings.",
+  "role_mandates": {
+    "evidence_contract": "Validate source snapshot, labelled assumptions and bounds. Size whole-MWh cohorts for the end of each interval and produce capacity_audit with input SHA256. Identify every untested tender requirement and engineering condition.",
+    "project_finance_analyst": "Use the existing finance role. Recompute the input-bound audit before accepting it; discount additions at commissioning time and O&M at each year end. Withhold comparative savings when either design fails the screen. Separate cost reduction from project NPV and income.",
+    "energy_orchestrator": "Route evidence before finance using registered ready tasks only. No external actions or case mutation."
+  },
+  "input_schema": "case.json v1.0: fixed reviewed source record; ISO as_of >= access date; synthetic USD constant-real before-tax at service start; 15 years and 4 hours. Finite nonboolean bounds enforced in validate_case. Positive target/inverter MW, SOC service window, efficiency, pack MWh DC, site MWh DC limit; retention in [0.8,1]; costs nonnegative; discount in [0,1]; unique ordered integer addition years including zero and excluding terminal year; 1..20 named retention/price stress scenarios excluding reserved ID design; nonempty limitations/gaps. Reject observed/project-quote classifications.",
+  "allowed_tools": [
+    "validate_case",
+    "capacity_audit",
+    "screen_augmentation",
+    "edi_crosscheck: optional hash-pinned local service envelope"
+  ],
+  "forbidden_actions": [
+    "submit_bid",
+    "purchase_battery",
+    "execute_contract",
+    "physical_controls",
+    "contact_supplier",
+    "retrieve_credentials"
+  ],
+  "evidence_requirements": [
+    "Preserve primary URL, resolution/event date, unknown official publication date, access date, section/page locators and PDF SHA256.",
+    "Treat 900 MW as tender ceiling, not awarded battery capacity; keep 20 MW demonstration target synthetic.",
+    "Obtain full tender amendments/annexes, OEM warranties, cost/compatibility quotes, installation outage and site engineering evidence before an actual decision."
+  ],
+  "handoffs": [
+    "Synthetic case to evidence validation and capacity audit",
+    "Input-SHA256-bound cohorts and annual physical trace to existing finance role; recompute rejects stale or altered content",
+    "Human technical/procurement review of unresolved requirements; no purchase authorization"
+  ],
+  "output_contract": [
+    "Cohort MWh DC and addition times; annual degraded DC capacity, available AC MWh, sustainable MW, first failing year and site limit.",
+    "Capex/event and O&M timing ledger, 15-year present cost in real USD, valid conditional reduction and break-even future equipment price multiplier.",
+    "Fixed-design stress results; null savings if either comparator fails. Direct deterministic versus scripted workflow parity.",
+    "LLM executed false, usage/cost/latency unknown; evidence gaps; no compliance or realized benefit claim."
+  ],
+  "acceptance": [
+    "Capacity immediately before an addition must satisfy the target under design assumptions; later additions cannot repair earlier shortfall.",
+    "Whole-pack rounding, DC/AC/SOC/power limits and capacity-based O&M reconcile.",
+    "Independent arithmetic tests, zero fade/discount/cost cases and crossover identity pass.",
+    "Reject evidence edits, nonfinite/bool/range errors, altered handoff, premature finance and forbidden actions.",
+    "Optional EDI parity includes every plan, year and stress scenario with source hash verified."
+  ]
+}

@@ -449,3 +449,13 @@ EUR 21,880 conditional net cost reduction at an assumed EUR 40/MWh premium and
 EUR 5,000 implementation cost. It does not certify compliance or calculate an
 official invoice. See the [method and commands](docs/sphinx/source/correlation_cost.rst)
 and [case record](docs/cases/2026-11-21-hourly-correlation.md).
+
+### Maintaining four-hour battery capacity
+
+Run `energy-agents-augmentation` to compare upfront oversizing with staged battery
+additions over 15 years. The synthetic screen prices capacity, checks service
+limits and stresses the fixed designs under faster fade and higher future costs.
+It reuses the finance role, orchestrator and optional pinned EDI service envelope.
+See [method and reproduction](docs/sphinx/source/battery_augmentation.rst) and
+[case history](docs/cases/2026-11-22-battery-augmentation.md). No tender compliance
+or realised savings are claimed.

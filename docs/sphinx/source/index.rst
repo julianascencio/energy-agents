@@ -40,6 +40,7 @@ scripted tool counts with clearly separated published observations.
    guarantee_liquidity
    preferred_equity
    storage_bid
+   battery_augmentation
    wind_debt
    tandem_premium
    transformer_procurement

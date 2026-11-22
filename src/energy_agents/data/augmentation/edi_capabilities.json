@@ -1,0 +1,27 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "e72d9d822b442f6392c80ce12dfc62f738f51ddd",
+  "inspected_at": "2026-11-22",
+  "path": "methods/src/energy_methods/bess_service_envelope.py",
+  "blob_sha": "c3d2936e718bb7f30546aa5a15910c92230f1b54",
+  "source_sha256": "0653d403fe530320e2d8f517d055ba1fb3c81ad86343e16222a707fa29cec2dd",
+  "dependency": "Optional energy-methods 0.1.1, Python 3.12+; existing requirements/operations.txt pins wheel SHA256. Standard-library method only; install wheel with --no-deps. Core offline screen requires Python 3.11+ and no EDI.",
+  "capability": "screen_bess_service: constant AC power limit from remaining DC capacity, SOC window and discharge efficiency",
+  "adapter": "For each plan/year/scenario pass remaining DC MWh after cohort degradation, usable_capacity_fraction=1, explicit initial/reserve SOC and discharge efficiency. Check sustainable AC MW. Never reapply retention or double-count efficiency. Does not validate economics, warranty, recharge, grid-forming, or tender compliance.",
+  "execution": "Only --edi or the dedicated integration test executes EDI; catalogue inspection is not execution.",
+  "licensing": "Upstream methods metadata declares LicenseRef-ASVA-Noncommercial-1.0; a commercial offering would require appropriate upstream rights. No upstream source is vendored.",
+  "not_reused": [
+    {
+      "path": "methods/src/energy_methods/bess_merchant_finance.py",
+      "reason": "Merchant cashflow and captured-margin model uses retention but has no cohort additions, maintained-duration sizing or augmentation costs. No revenue is inferred here."
+    },
+    {
+      "path": "methods/src/energy_methods/degradation.py",
+      "reason": "Climate-driven PV degradation, not a calibrated battery ageing model."
+    },
+    {
+      "path": "methods/src/energy_methods/hybrid_dispatch.py",
+      "reason": "Dispatch simulation is unnecessary for a fully charged single-event capacity envelope; no renewable trace or recharge claim."
+    }
+  ]
+}

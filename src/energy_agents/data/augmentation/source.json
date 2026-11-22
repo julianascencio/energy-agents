@@ -1,0 +1,23 @@
+{
+  "classification": "observed_regulator_resolution_not_contract_or_supplier_data",
+  "publisher": "Superintendencia de Electricidad, Dominican Republic",
+  "url": "https://sie.gob.do/wp-content/uploads/2026/11/SIE-155-2026-LCE-EDES-LP-NGR-01-2026.pdf",
+  "resolution": "SIE-155-2026-LCE",
+  "event_date": "2026-11-19",
+  "publication_date": null,
+  "publication_date_note": "Official index does not state a publication date; accessible on 2026-11-22. Secondary coverage dated 2026-11-22.",
+  "access_date": "2026-11-22",
+  "facts": {
+    "tender_ceiling_mw": 900,
+    "supply_months": 180,
+    "storage_duration_hours": 4
+  },
+  "locators": {
+    "supply_months": "section 4.1 II(a), page 8",
+    "tender_ceiling": "section 4.1 II(e), page 9",
+    "duration": "section 4.3 VII, page 14",
+    "capacity_maintenance": "section 4.3, page 13",
+    "annex_availability": "operative paragraph Third, page 15"
+  },
+  "download_sha256": "ec451c1dae78fcb2785befcd2e43ab3b0680e36a2bfd2cc2474caa164316b96a"
+}
