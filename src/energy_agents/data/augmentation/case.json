@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "as_of": "2026-11-22",
+  "currency": "USD",
+  "cash_basis": "constant_real_before_tax_at_service_start",
+  "source": {
+    "classification": "observed_regulator_resolution_not_contract_or_supplier_data",
+    "publisher": "Superintendencia de Electricidad, Dominican Republic",
+    "url": "https://sie.gob.do/wp-content/uploads/2026/11/SIE-155-2026-LCE-EDES-LP-NGR-01-2026.pdf",
+    "resolution": "SIE-155-2026-LCE",
+    "event_date": "2026-11-19",
+    "publication_date": null,
+    "publication_date_note": "Official index does not state a publication date; accessible on 2026-11-22. Secondary coverage dated 2026-11-22.",
+    "access_date": "2026-11-22",
+    "facts": {
+      "tender_ceiling_mw": 900,
+      "supply_months": 180,
+      "storage_duration_hours": 4
+    },
+    "locators": {
+      "supply_months": "section 4.1 II(a), page 8",
+      "tender_ceiling": "section 4.1 II(e), page 9",
+      "duration": "section 4.3 VII, page 14",
+      "capacity_maintenance": "section 4.3, page 13",
+      "annex_availability": "operative paragraph Third, page 15"
+    },
+    "download_sha256": "ec451c1dae78fcb2785befcd2e43ab3b0680e36a2bfd2cc2474caa164316b96a"
+  },
+  "years": 15,
+  "service_hours": 4,
+  "assumptions_classification": "synthetic_not_supplier_quotes_or_warranties",
+  "target_mw": 20,
+  "inverter_mw": 20,
+  "initial_soc": 1,
+  "reserve_soc": 0.1,
+  "discharge_efficiency": 0.95,
+  "design_annual_retention": 0.98,
+  "pack_mwh_dc": 1,
+  "site_limit_mwh_dc": 200,
+  "installed_usd_per_mwh_dc": 180000,
+  "opex_usd_per_mwh_dc_year": 1500,
+  "augmentation_event_usd": 250000,
+  "discount_rate": 0.08,
+  "augmentation_years": [
+    0,
+    5,
+    10
+  ],
+  "scenarios": [
+    {
+      "id": "future_price_double",
+      "annual_retention": 0.98,
+      "future_price_multiplier": 2
+    },
+    {
+      "id": "future_price_quadruple",
+      "annual_retention": 0.98,
+      "future_price_multiplier": 4
+    },
+    {
+      "id": "faster_fade_fixed_design",
+      "annual_retention": 0.97,
+      "future_price_multiplier": 1
+    }
+  ],
+  "evidence_gaps": [
+    "Full tender bases, annexes, capacity measurement boundary and augmentation permissions not reviewed.",
+    "No project award, OEM quotes, warranty retention curves, cycling/temperature data or supplier compatibility evidence.",
+    "No validated installation outage, recharge, grid-forming or ancillary-service design."
+  ],
+  "limitations": [
+    "Synthetic capacity-cost screen only; no tender compliance, revenue, realised savings or investment approval.",
+    "Constant annual retention per cohort is an assumption, not a calibrated calendar/cycle ageing model. Costs are constant-real USD at service start; no FX, taxes, debt or price forecast.",
+    "Each addition is installed instantly at the start of its interval; old cohorts remain in service. Compatibility, outages and commissioning must be separately established.",
+    "100% initial SOC and a fixed reserve/discharge-efficiency factor apply to one four-hour service event. Recharging and repeated dispatch are not modelled.",
+    "Battery capacity-variable installed costs, fixed augmentation-event costs and capacity-based O&M only. Common inverter, solar/wind, land and grid costs cancel; no terminal salvage or disposal difference is valued.",
+    "End-of-year checks bound intervening capacity only under monotone assumed fade and constant power/SOC factors; power quality, dynamic derating and all other tender duties remain untested."
+  ]
+}

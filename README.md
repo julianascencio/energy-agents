@@ -439,3 +439,13 @@ full-load service and audit backup capacity, cash costs and residual opportunity
 loss. The synthetic seven-day example reuses the finance role and optional pinned
 EDI matching method. See [method and reproduction](docs/sphinx/source/firm_supply.rst)
 and [case history](docs/cases/2026-11-17-firm-supply.md).
+
+### Maintaining four-hour battery capacity
+
+Run `energy-agents-augmentation` to compare upfront oversizing with staged battery
+additions over 15 years. The synthetic screen prices capacity, checks service
+limits and stresses the fixed designs under faster fade and higher future costs.
+It reuses the finance role, orchestrator and optional pinned EDI service envelope.
+See [method and reproduction](docs/sphinx/source/battery_augmentation.rst) and
+[case history](docs/cases/2026-11-22-battery-augmentation.md). No tender compliance
+or realised savings are claimed.
