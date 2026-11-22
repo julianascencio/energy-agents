@@ -440,6 +440,16 @@ loss. The synthetic seven-day example reuses the finance role and optional pinne
 EDI matching method. See [method and reproduction](docs/sphinx/source/firm_supply.rst)
 and [case history](docs/cases/2026-11-17-firm-supply.md).
 
+### Spanish data-centre hourly correlation cost screen
+
+The 21 November 2026 BOE publication motivates a bounded, synthetic procurement
+screen. `energy-agents-correlation` compares a shaping premium against modelled
+standard-path hourly-correlation compensation. The 20 MW February example yields
+EUR 21,880 conditional net cost reduction at an assumed EUR 40/MWh premium and
+EUR 5,000 implementation cost. It does not certify compliance or calculate an
+official invoice. See the [method and commands](docs/sphinx/source/correlation_cost.rst)
+and [case record](docs/cases/2026-11-21-hourly-correlation.md).
+
 ### Maintaining four-hour battery capacity
 
 Run `energy-agents-augmentation` to compare upfront oversizing with staged battery

@@ -35,6 +35,7 @@ scripted tool counts with clearly separated published observations.
    vppa_basis
    nonfirm_service
    firm_supply
+   correlation_cost
    heat_reuse
    guarantee_liquidity
    preferred_equity
