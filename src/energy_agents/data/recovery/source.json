@@ -1,0 +1,17 @@
+{
+  "url": "https://yukonenergy.ca/about-us/news-events/yukon-energy-terminates-contract-with-sungrid-solutions-and-announces-new-approach-to-complete-the-whitehorse-battery-storage-project",
+  "publisher": "Yukon Energy",
+  "publication_date": "2026-11-23",
+  "event_date": "2026-11-23",
+  "event_date_precision": "announcement date; exact legal termination date not separately stated",
+  "access_date": "2026-11-27",
+  "classification": "primary_announcement_context_only",
+  "locator": "Opening paragraphs, remaining-work paragraph and Quick Facts",
+  "facts": {
+    "project_budget_cad": 35000000,
+    "original_contract_value_cad": 25700000,
+    "target_completion_year": 2027
+  },
+  "qualification": "Remaining equipment/subcontractor prices and scope unconfirmed. Contract value is not expenditure. Recoveries are pursued, not received. No inferred actual budget headroom.",
+  "funding_discrepancy": "Announcement states CAD16.5m commitment, CAD15m received and CAD1.65m remaining (10%). These rounded figures do not reconcile exactly; none calibrates the synthetic cash ledger."
+}

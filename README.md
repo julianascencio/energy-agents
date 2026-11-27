@@ -459,3 +459,13 @@ It reuses the finance role, orchestrator and optional pinned EDI service envelop
 See [method and reproduction](docs/sphinx/source/battery_augmentation.rst) and
 [case history](docs/cases/2026-11-22-battery-augmentation.md). No tender compliance
 or realised savings are claimed.
+
+### Battery project completion budget
+
+`energy-agents-recovery --output outputs/recovery` compares replacement-EPC and
+owner-prime remaining-work quotes, separates gross budget from cash funding, and
+excludes disputed recoveries. The 27 November 2026 case uses **synthetic** CAD
+inputs, tests quote/capacity/grant-delay sensitivity and saves a reusable evidence
+and finance workflow. See [case and provenance](docs/cases/2026-11-27-completion-budget.md)
+and [gallery example](examples/business/plot_completion_budget.py). Optional
+`--edi` executes the existing hash-pinned service-envelope crosscheck.

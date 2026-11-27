@@ -1,0 +1,23 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "eea4916ef3cd43a5805c9584b7f4bcf5df4c3505",
+  "inspected_at": "2026-11-27",
+  "path": "methods/src/energy_methods/bess_service_envelope.py",
+  "blob_sha": "c3d2936e718bb7f30546aa5a15910c92230f1b54",
+  "source_sha256": "0653d403fe530320e2d8f517d055ba1fb3c81ad86343e16222a707fa29cec2dd",
+  "dependency": "Optional energy-methods 0.1.1, Python 3.12+; existing requirements/operations.txt pins wheel SHA256. Standard-library method only; install wheel with --no-deps. Core offline screen requires Python 3.11+ and no EDI.",
+  "capability": "screen_bess_service: constant AC power limit from remaining DC capacity, SOC window and discharge efficiency",
+  "adapter": "Pass synthetic service inputs and each scenario capacity fraction to screen_bess_service; compare sustainable MW and available AC MWh. Identical asset assumptions for both procurement plans. No validation of construction costs, cold damage, safety or completion. Source blob unchanged from the augmentation catalogue.",
+  "execution": "Only --edi or the dedicated integration test executes EDI. Inspection is not execution.",
+  "licensing": "Upstream methods metadata declares LicenseRef-ASVA-Noncommercial-1.0; a commercial offering would require appropriate upstream rights. No upstream source is vendored.",
+  "not_reused": [
+    {
+      "path": "methods/src/energy_methods/bess_merchant_finance.py",
+      "reason": "Merchant operating NPV is outside a remaining-construction gross-budget/cash reconciliation."
+    },
+    {
+      "path": "methods/src/energy_methods/margin_relief.py",
+      "reason": "Reserve-margin gaps are not construction costs or a battery qualification test."
+    }
+  ]
+}
