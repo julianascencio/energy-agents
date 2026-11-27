@@ -115,8 +115,18 @@ appropriate rights for any commercial deployment. No new credentials or live API
 36 focused tests passed, including independent budget/cash arithmetic, adverse
 quotes, late and disputed receipts, zero costs, scope/payment rejection, evidence
 integrity, permissions, handoffs and actual EDI parity/hash rejection.
-Full-suite, build, strict docs/gallery and final GitHub checks are recorded below
-after execution; pending checks are not treated as successful. Independent review
-and a current integration claim remain requirements before any merge.
+Full local suite: **647 passed, zero skips** on Python 3.12.14 after installing
+optional test dependencies. Ruff and whitespace checks passed. Wheel and source
+distribution builds passed; the installed-wheel CLI ran in an isolated environment
+outside the checkout. Strict Sphinx/gallery build passed after fixing an RST
+heading; generated tables and the three-panel figure were inspected. No benchmark
+or usage measurement is inferred from test runtime.
 
-PR: pending publication. No merge or deployment performed by this run.
+Published [PR #32](https://github.com/julianascencio/energy-agents/pull/32), non-draft,
+from unique branch `case/20261127-completion-budget`. Main was unchanged and no
+other open PR existed immediately before publishing. Final-head CI/check evidence
+is recorded in the PR description after this history-link commit; local success
+is not a claim of successful GitHub CI. Independent review is not completed and no
+current company integration claim was found. Default-branch protection inspection
+returned HTTP403; rulesets returned an empty list. These are unresolved merge
+gates. No merge or deployment performed by this run.
