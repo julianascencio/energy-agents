@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "AUD",
+  "cash_basis": "nominal_year_end_after_debt_and_tax_before_sharing",
+  "as_of": "2026-11-28",
+  "source": {
+    "publisher": "DCCEEW / ASL",
+    "classification": "public_tender_documents",
+    "publication_date": "2026-11-26",
+    "event_date": "2026-11-27",
+    "access_date": "2026-11-28",
+    "url": "https://asl.org.au/tenders/cis-tender-12-nem-generation",
+    "guidelines_url": "https://asl.org.au/-/media/services/files/cis/cis-12-nem/cis-tender-12-nem-tender-guidelines.pdf?rev=5931635e776449b485adc597c0dff92a&sc_lang=en",
+    "locator": "Section 4.3, printed pages 26-28 (PDF pages 35-37 zero-based)",
+    "facts": {
+      "generation_target_mw": 5000,
+      "optional_first_nations_set_aside_mw": 500,
+      "economic_interest_threshold_fraction": 0.05,
+      "bid_closing_date": "2027-02-05"
+    },
+    "interpretation": "Cash-flow evidence supports review; a matching NPV does not establish eligibility, support, governance, commercial agreement or tender success."
+  },
+  "initial_equity_aud": 50000000,
+  "terminal_equity_proceeds_aud": 40000000,
+  "discount_rate": 0.08,
+  "annual": [
+    {
+      "year": 1,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 2,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 3,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 4,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 5,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 6,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 7,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 8,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 9,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 10,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 11,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 12,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 13,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 14,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 15,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 16,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 17,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 18,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 19,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    },
+    {
+      "year": 20,
+      "gross_revenue_aud": 30000000,
+      "distributable_cash_aud": 8000000
+    }
+  ],
+  "equity": {
+    "fraction": 0.05,
+    "recipient_contribution_aud": 0,
+    "setup_cost_aud": 100000,
+    "annual_admin_aud": 20000
+  },
+  "revenue_share": {
+    "fraction": 0.015,
+    "recipient_contribution_aud": 0,
+    "setup_cost_aud": 200000,
+    "annual_admin_aud": 50000,
+    "start_year": 1,
+    "end_year": 20
+  },
+  "evidence_gaps": [
+    "No actual project financial model, tax advice, contracts or recipient funding terms.",
+    "No verified community support, governance, eligible organisation or commercial agreement.",
+    "No official numerical discount-rate or NPV-equivalence rule is asserted."
+  ],
+  "limitations": [
+    "Every financial input is synthetic; gifted equity is an assumption, not a tender requirement.",
+    "No capital calls, refinancing, guarantees, distributions restrictions or stochastic probabilities.",
+    "A common discount rate ignores differing payment risk, voting rights and liquidity.",
+    "Revenue share is an externally funded obligation if operating cash is insufficient; not capped by cash.",
+    "No terminal value beyond the supplied exit proceeds and no recipient taxes."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "publisher": "DCCEEW / ASL",
+  "classification": "public_tender_documents",
+  "publication_date": "2026-11-26",
+  "event_date": "2026-11-27",
+  "access_date": "2026-11-28",
+  "url": "https://asl.org.au/tenders/cis-tender-12-nem-generation",
+  "guidelines_url": "https://asl.org.au/-/media/services/files/cis/cis-12-nem/cis-tender-12-nem-tender-guidelines.pdf?rev=5931635e776449b485adc597c0dff92a&sc_lang=en",
+  "locator": "Section 4.3, printed pages 26-28 (PDF pages 35-37 zero-based)",
+  "facts": {
+    "generation_target_mw": 5000,
+    "optional_first_nations_set_aside_mw": 500,
+    "economic_interest_threshold_fraction": 0.05,
+    "bid_closing_date": "2027-02-05"
+  },
+  "interpretation": "Cash-flow evidence supports review; a matching NPV does not establish eligibility, support, governance, commercial agreement or tender success."
+}
