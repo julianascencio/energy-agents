@@ -1,0 +1,211 @@
+{
+  "version": "1.0",
+  "classification": "synthetic",
+  "currency": "CAD",
+  "cash_basis": "nominal_undiscounted_before_tax",
+  "as_of": "2026-11-27",
+  "source": {
+    "url": "https://yukonenergy.ca/about-us/news-events/yukon-energy-terminates-contract-with-sungrid-solutions-and-announces-new-approach-to-complete-the-whitehorse-battery-storage-project",
+    "publisher": "Yukon Energy",
+    "publication_date": "2026-11-23",
+    "event_date": "2026-11-23",
+    "event_date_precision": "announcement date; exact legal termination date not separately stated",
+    "access_date": "2026-11-27",
+    "classification": "primary_announcement_context_only",
+    "locator": "Opening paragraphs, remaining-work paragraph and Quick Facts",
+    "facts": {
+      "project_budget_cad": 35000000,
+      "original_contract_value_cad": 25700000,
+      "target_completion_year": 2027
+    },
+    "qualification": "Remaining equipment/subcontractor prices and scope unconfirmed. Contract value is not expenditure. Recoveries are pursued, not received. No inferred actual budget headroom.",
+    "funding_discrepancy": "Announcement states CAD16.5m commitment, CAD15m received and CAD1.65m remaining (10%). These rounded figures do not reconcile exactly; none calibrates the synthetic cash ledger."
+  },
+  "horizon_months": 12,
+  "budget_cad": 35000000,
+  "spent_cad": 24000000,
+  "opening_cash_cad": 1000000,
+  "funding_limit_cad": 8800000,
+  "required_scope": [
+    "deficiencies",
+    "integration",
+    "commissioning",
+    "management"
+  ],
+  "service": {
+    "power_mw": 10,
+    "capacity_mwh_dc": 60,
+    "target_mw": 10,
+    "hours": 4,
+    "initial_soc": 1,
+    "reserve_soc": 0.1,
+    "efficiency": 0.95
+  },
+  "unpaid": [
+    {
+      "id": "certified_legacy",
+      "amount_cad": 2000000,
+      "month": 1
+    }
+  ],
+  "receipts": [
+    {
+      "id": "completion_grant",
+      "kind": "grant",
+      "status": "assumed_conditional",
+      "amount_cad": 1500000,
+      "lag_after_completion_months": 1
+    },
+    {
+      "id": "disputed_damages",
+      "kind": "recovery",
+      "status": "disputed",
+      "amount_cad": 2000000,
+      "lag_after_completion_months": 0
+    }
+  ],
+  "plans": [
+    {
+      "id": "replacement_epc",
+      "completion_month": 9,
+      "packages": [
+        {
+          "id": "epc",
+          "scope": [
+            "deficiencies",
+            "integration",
+            "commissioning",
+            "management"
+          ],
+          "amount_cad": 9000000,
+          "payments": [
+            {
+              "month": 2,
+              "fraction": 0.2
+            },
+            {
+              "month": 5,
+              "fraction": 0.4
+            },
+            {
+              "month": 9,
+              "fraction": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owner_prime",
+      "completion_month": 9,
+      "packages": [
+        {
+          "id": "remedial",
+          "scope": [
+            "deficiencies"
+          ],
+          "amount_cad": 3000000,
+          "payments": [
+            {
+              "month": 1,
+              "fraction": 0.8
+            },
+            {
+              "month": 6,
+              "fraction": 0.2
+            }
+          ]
+        },
+        {
+          "id": "systems",
+          "scope": [
+            "integration"
+          ],
+          "amount_cad": 2800000,
+          "payments": [
+            {
+              "month": 2,
+              "fraction": 0.5
+            },
+            {
+              "month": 7,
+              "fraction": 0.5
+            }
+          ]
+        },
+        {
+          "id": "tests",
+          "scope": [
+            "commissioning"
+          ],
+          "amount_cad": 1000000,
+          "payments": [
+            {
+              "month": 8,
+              "fraction": 0.5
+            },
+            {
+              "month": 9,
+              "fraction": 0.5
+            }
+          ]
+        },
+        {
+          "id": "owner_management",
+          "scope": [
+            "management"
+          ],
+          "amount_cad": 800000,
+          "payments": [
+            {
+              "month": 3,
+              "fraction": 0.5
+            },
+            {
+              "month": 9,
+              "fraction": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "base",
+      "owner_quote_uplift": 0,
+      "capacity_fraction": 1,
+      "receipt_delay_months": 0
+    },
+    {
+      "id": "owner_quotes_plus_20pct",
+      "owner_quote_uplift": 0.2,
+      "capacity_fraction": 1,
+      "receipt_delay_months": 0
+    },
+    {
+      "id": "grant_after_horizon",
+      "owner_quote_uplift": 0,
+      "capacity_fraction": 1,
+      "receipt_delay_months": 4
+    },
+    {
+      "id": "capacity_down_30pct",
+      "owner_quote_uplift": 0,
+      "capacity_fraction": 0.7,
+      "receipt_delay_months": 0
+    }
+  ],
+  "evidence_gaps": [
+    "No actual paid-cost or certified-unpaid ledger, scope reconciliation or completion quotes.",
+    "No actual grant agreement, payable timing, recovery settlement or liquidity facility.",
+    "No OEM capacity/deficiency tests, acceptance signoff, safety or grid-service certification."
+  ],
+  "limitations": [
+    "All project and financial inputs are synthetic, including the CAD35m budget scale; this is not an estimate for Whitehorse.",
+    "No taxes, interest, discounting, operating revenues, consequential losses or probabilities. Scenario prices include assumed contingency; no calibrated risk distribution.",
+    "Monthly cash convention pays all outflows before receipts in a month; opening cash and funding limit are hypothetical.",
+    "Physical screen is one fully charged event, no auxiliaries, recharge, outages, temperature or safety model.",
+    "No legal entitlement, procurement approval or field validation."
+  ]
+}

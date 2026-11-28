@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "id": "bess-completion-budget",
+  "user_request": "Compare replacement-EPC and owner-prime completion options from an itemized unpaid ledger and remaining-scope quotes. Reconcile gross budget headroom separately from cash funding; exclude disputed recoveries. Challenge scope and asset readiness before reporting conditional savings.",
+  "role_mandates": {
+    "evidence_contract": "Validate synthetic classification, reviewed source, disjoint scope coverage, payments and service inputs. Produce an input-hashed ledger and physical screen. Do not invent invoices, tests or approvals.",
+    "project_finance_analyst": "Recompute the evidence handoff; compare forward costs, gross forecast-at-completion, peak funding before monthly receipts, horizon-end funding and price crossover. Retain adverse and non-comparable scenarios.",
+    "energy_orchestrator": "Delegate only registered ready evidence and finance tasks. No purchases, contract execution or external communication."
+  },
+  "input_schema": "case.json v1; finite nonboolean CAD amounts, 1..36 integer horizon, ISO as_of >= source access; exactly replacement_epc and owner_prime, unique package IDs disjoint from unpaid IDs; each required work scope exactly once per plan; nonnegative payment fractions summing to one, unique months within horizon; completion within horizon, all payments by completion; common unpaid rows paid within horizon. Receipts: grant/assumed_conditional or recovery/disputed only, lag >=0. Unique named scenarios, owner quote uplift [-1,3], capacity fraction [0,1], delay 0..36 months. Positive target, duration and capacity; SOC 0<=reserve<initial<=1; efficiency (0,1]. Explicit limitations and gaps. All inputs are synthetic, not actual quotes or tests.",
+  "allowed_tools": [
+    "validate_case",
+    "completion_audit",
+    "screen_recovery",
+    "edi_crosscheck (optional hash-pinned local method)"
+  ],
+  "forbidden_actions": [
+    "purchase",
+    "execute_contract",
+    "contact_supplier",
+    "physical_controls",
+    "submit_claim",
+    "retrieve_credentials"
+  ],
+  "evidence_requirements": [
+    "Preserve event versus publication/access dates and original URL.",
+    "Original contract value cannot substitute for paid plus outstanding costs.",
+    "Do not net grants or disputed damages against gross construction budget; do not claim source funding figures reconcile.",
+    "Require actual scope/invoices/quotes, grant evidence and OEM/engineering acceptance before decisions."
+  ],
+  "handoffs": [
+    "Input-hashed scope/payment/service audit -> existing finance role; exact recomputation rejects stale or changed handoffs.",
+    "Finance report -> human procurement/technical review, no automatic action."
+  ],
+  "output_contract": [
+    "Per plan/scenario: quote and unpaid cost, forecast gross completion cost, headroom, monthly cash ledger, peak and terminal funding, funding shortfall.",
+    "Service MW/MWh and physical comparison validity. Conditional forward-cost reduction is null on failed service screen.",
+    "Owner quote uplift crossover, ignored disputed receipt amount, beyond-horizon receipts and evidence gaps.",
+    "Baseline is direct deterministic arithmetic; scripted workflow parity. No LLM execution or benefit claim, tokens/cost/latency unknown."
+  ],
+  "acceptance": [
+    "No omitted or double-counted scope, duplicate payments or costs.",
+    "Sunk costs cancel in forward savings but remain in gross budget.",
+    "Late or disputed receipts cannot improve peak cash before they are available.",
+    "Zero, boundary, adverse quote, capacity failure, stale handoff and forbidden-action tests pass."
+  ]
+}
