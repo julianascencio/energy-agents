@@ -20,6 +20,7 @@ dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1,<2"]
 docs = ["sphinx>=8,<9", "pydata-sphinx-theme>=0.16,<0.17", "sphinx-gallery>=0.19,<0.20", "matplotlib>=3.9,<4"]
 
 [project.scripts]
+energy-agents-sharing = "energy_agents.business.sharing:main"
 energy-agents-recovery = "energy_agents.business.recovery:main"
 energy-agents-correlation = "energy_agents.business.correlation:main"
 energy-agents-augmentation = "energy_agents.business.augmentation:main"

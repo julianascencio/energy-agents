@@ -1,0 +1,28 @@
+{
+  "repository": "julianascencio/energy-data-insights",
+  "commit": "0f3c90cbb13b8ecc72f5d6c6b44beb319a7d4aaf",
+  "access_date": "2026-11-28",
+  "entries": [
+    {
+      "path": "methods/src/energy_methods/bess_merchant_finance.py",
+      "git_blob_sha": "993330daa80b50c66805b555f7e519baaf9bfe23",
+      "symbols": [
+        "merchant_cashflow_screen",
+        "annual_level_debt_service_eur"
+      ],
+      "fit": "Merchant BESS EUR cashflow and debt screen; cannot substitute for supplied renewable-project AUD after-tax distributions or benefit-sharing terms."
+    },
+    {
+      "path": "methods/src/energy_methods/bess_service_envelope.py",
+      "git_blob_sha": "c3d2936e718bb7f30546aa5a15910c92230f1b54",
+      "symbols": [
+        "screen_bess_service"
+      ],
+      "fit": "Previously verified unchanged physical service screen; no physical dispatch input is required here."
+    }
+  ],
+  "execution": false,
+  "scope": "Focused source-derived catalogue consultation, reusing unchanged physical-module checkpoint; no full catalogue revalidation.",
+  "adapter": "Bounded packaged metadata via data_file; no network, arbitrary imports, vendor code or claimed EDI execution.",
+  "decision": "Reuse energy-agents finance role, orchestrator, numeric validation and digest. Neither upstream method prices community rights. No new EDI dependency is justified."
+}

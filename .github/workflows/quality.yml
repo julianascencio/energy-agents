@@ -37,6 +37,7 @@ jobs:
       - run: energy-agents-guarantee --output outputs/guarantee
       - run: energy-agents-correlation --output outputs/correlation
       - run: energy-agents-firm --output outputs/firm_supply
+      - run: energy-agents-sharing --output outputs/sharing
       - run: energy-agents-recovery --output outputs/recovery
       - run: energy-agents-augmentation --output outputs/augmentation
       - run: energy-agents-heat --output outputs/heat_reuse

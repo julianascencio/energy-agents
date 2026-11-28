@@ -1,0 +1,42 @@
+{
+  "id": "benefit_sharing_cashflow_comparison",
+  "version": "1.0",
+  "role": "project_finance_analyst",
+  "user_prompt": "Compare the supplied common-equity and gross-revenue sharing proposals. Separate recipient NPV from sponsor incremental cost, administration and upfront contributions. Show timing, terminal receipts and operating funding gaps. Calculate a purely algebraic revenue fraction matching recipient NPV; never label it tender qualification. Stress revenue, distributable cash, sharing duration and discount rate.",
+  "mandate": "Use the existing finance role and deterministic tools. Preserve synthetic labels and source snapshot; no assumption of community consent, eligibility or award probability.",
+  "input_schema": "case.json v1.0: nominal AUD; 1..50 consecutive year-end rows; nonnegative revenue and after-debt/tax distributable cash <= revenue; initial equity, terminal after-debt/tax proceeds; discount/fractions in [0,1]; recipient contributions at year zero; sponsor setup/admin costs; inclusive revenue sharing start/end within horizon.",
+  "allowed_tools": [
+    "validate_case",
+    "sharing_audit",
+    "screen_sharing",
+    "data_file (packaged catalogue only)"
+  ],
+  "scheduler_prompt": "Delegate evidence before finance. Only registered ready tasks may run. No contact, agreement, submission, payment, trading or physical controls.",
+  "evidence_requirements": [
+    "Reviewed public source snapshot and ISO dates",
+    "Explicit financial assumptions and outstanding evidence gaps",
+    "Input SHA256; recompute evidence audit at finance handoff"
+  ],
+  "handoffs": [
+    "Operator supplies synthetic or independently reviewed scenario inputs; this example accepts synthetic classification only",
+    "Evidence contract validates snapshot and schema; it cannot authenticate external facts or consent",
+    "Finance consumes the case and input-bound audit",
+    "Human project finance and First Nations advisers review financial and nonfinancial evidence before any external use"
+  ],
+  "output_contract": [
+    "Annual recipient operating/exit receipts, admin, sponsor net cash and funding gaps",
+    "Recipient NPV and sponsor incremental cost PV in AUD",
+    "No-sharing sponsor diagnostic and equity baseline",
+    "Revenue fraction at recipient NPV parity, with feasibility flag",
+    "No qualification determination; no agreements authorized; unmeasured LLM usage unknown"
+  ],
+  "acceptance": [
+    "Invalid evidence blocks finance",
+    "Changed handoff rejected",
+    "Annual cash conservation including sponsor top-ups",
+    "Zero denominator yields null parity fraction",
+    "Terminal proceeds excluded from operating funding gap coverage",
+    "Deterministic/scripted parity; no invented agent performance"
+  ],
+  "authority": "advisory_only"
+}

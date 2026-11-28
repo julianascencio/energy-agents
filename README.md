@@ -469,3 +469,11 @@ inputs, tests quote/capacity/grant-delay sensitivity and saves a reusable eviden
 and finance workflow. See [case and provenance](docs/cases/2026-11-27-completion-budget.md)
 and [gallery example](examples/business/plot_completion_budget.py). Optional
 `--edi` executes the existing hash-pinned service-envelope crosscheck.
+
+### Benefit-sharing cash flows
+
+`energy-agents-sharing --output outputs/sharing` compares synthetic AUD common-equity
+and revenue-sharing payments, sponsor costs and funding gaps. Inspired by CIS
+Tender 12; it does not determine qualification or community support. See
+[the case record](docs/cases/2026-11-28-benefit-sharing.md) and
+[gallery example](examples/business/plot_benefit_sharing.py).
